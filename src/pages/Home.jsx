@@ -10,6 +10,9 @@ import Hybrid from "../components/Hybrid";
 import FeaturedShows from "../components/FeaturedShows";
 import AboutFun from "../components/AboutFun";
 import News from "../components/News";
+import Partner from "../components/Partner";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 const Home = () => {
 	const data = useContext(GlobalContext);
@@ -52,6 +55,9 @@ const Home = () => {
 			<FeaturedShows dataHome={dataHome} />
 			<AboutFun dataHome={dataHome} />
 			<News dataHome={dataHome} />
+			<Partner dataHome={dataHome} />
+			<Newsletter dataHome={dataHome} />
+			<Footer dataHome={dataHome} />
 		</>
 	);
 };

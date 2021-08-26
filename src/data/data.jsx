@@ -46,6 +46,50 @@ export const data = [
 				// NEWS START
 				news: "On the News",
 				// NEWS END
+
+				// PARTNER START
+				partner1: "PARTNERS",
+				partner2: "Become a Partner",
+				partner3: "Lead the future for hybrid shows.",
+				// PARTNER END
+
+				// PARTNER START
+				newsletter1: "Subscribe Newsletter",
+				// PARTNER END
+
+				// FOOTER START
+				footer: [
+					{
+						t: "How it Works",
+						l: "",
+					},
+					{
+						t: "FAQ",
+						l: "",
+					},
+					{
+						t: "Jobs",
+						l: "",
+					},
+					{
+						t: "Contact Us",
+						l: "",
+					},
+					{
+						t: "Media",
+						l: "",
+					},
+					{
+						t: "Privacy Policy",
+						l: "",
+					},
+					{
+						t: "Terms & Conditions",
+						l: "",
+					},
+				],
+				footerBtn: "View all Shows",
+				// FOOTER END
 			},
 		},
 		DE: {

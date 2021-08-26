@@ -40,6 +40,7 @@ $color2: #5324fa;
 $color3: #e45364;
 $color4: #231f2e;
 $color5: #863bf8;
+$color6: #5525eb;
 // VARIABLES END
 // GLOBAL CLASSES START
 html {
@@ -244,6 +245,21 @@ html {
 	}
 }
 
+.underlineDark {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 4px;
+		width: 20px;
+		background: #000;
+		bottom: 0%;
+		left: 0%;
+		z-index: 9999;
+	}
+}
+
 // HEADER START
 .header_container {
 	height: 80px;
@@ -380,9 +396,57 @@ html {
 	background-color: $color4;
 	padding: 5rem 0rem 3rem 0rem;
 
-	img {
+	.logo {
 		height: 15px;
 		width: auto;
 	}
+
+	.newsSliderContainer {
+		.news_card {
+			width: 200px;
+		}
+	}
 }
 // NEWS END
+
+// PARTNER START
+.partner_container {
+	padding: 5rem 0rem 8rem 0rem;
+
+	h1 {
+		margin-left: -3px;
+	}
+
+	.underText {
+		margin-top: -1rem;
+	}
+}
+// PARTNER END
+
+// NEWSLETTER START
+.newsletter_container {
+	background: #231f2e;
+	padding: 2rem 0rem;
+
+	input {
+		width: 280px;
+		background: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		border-radius: 10px;
+		border: none;
+		height: 100;
+		padding: 0.2rem 1rem;
+	}
+
+	button {
+		background: $color5;
+	}
+}
+// NEWSLETTER END
+
+// FOOTER START
+.footer_container {
+	background: $color6;
+	padding: 5rem 0rem 2.5rem 0rem;
+}
+// FOOTER END
