@@ -7,7 +7,7 @@ const Hero = ({ dataHome }) => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-10 col-lg-6 mx-auto position-relative">
+						<div className="col-10 col-lg-6 mx-auto">
 							<h1 className="bold text-white underline pb-4">
 								{dataHome.hero}
 							</h1>

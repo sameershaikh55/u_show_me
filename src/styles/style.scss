@@ -226,7 +226,7 @@ html {
 		background: #fff;
 		bottom: 0%;
 		left: 0%;
-		z-index: 9999;
+		z-index: 1;
 	}
 }
 
@@ -241,7 +241,7 @@ html {
 		background: #fff;
 		bottom: 0%;
 		left: 0%;
-		z-index: 9999;
+		z-index: 1;
 	}
 }
 
@@ -256,7 +256,7 @@ html {
 		background: #000;
 		bottom: 0%;
 		left: 0%;
-		z-index: 9999;
+		z-index: 1;
 	}
 }
 
@@ -265,6 +265,7 @@ html {
 	height: 80px;
 	position: fixed;
 	width: 100%;
+	z-index: 9999;
 	left: 0%;
 	transition: 0.6s;
 
@@ -320,14 +321,87 @@ html {
 // STICKY START
 .header_container.sticky {
 	background-color: $color4;
-	z-index: 9999;
 }
 // HEADER END
+
+/* ==================== SideBAR STYLING END ======================== */
+.SideBarContainer {
+	position: fixed;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	color: white;
+	font-size: 2.2rem;
+	background-color: $color6;
+	height: 400px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+	.logo {
+		position: absolute;
+		top: 3%;
+		left: 3%;
+
+		img {
+			width: 120px;
+		}
+	}
+}
+
+.SideBarContainer ul {
+	padding-left: 0rem;
+}
+
+.SideBarContainer ul li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	padding: 0.4rem 0rem;
+	text-align: center;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+		padding-bottom: 5px;
+	}
+	.activeNav::after {
+		content: "";
+		position: absolute;
+		left: 0%;
+		bottom: 0%;
+		height: 10%;
+		width: 100%;
+		background-color: #007bbc;
+		border-radius: 5px;
+	}
+}
+
+.CrossBTn {
+	position: absolute;
+	top: 8.2%;
+	right: 5.5%;
+	cursor: pointer;
+}
+
+.SideBarContainer.sticky {
+	background-color: $color4;
+}
+/* ==================== SideBAR STYLING END ======================== */
+
 // HERO START
 .hero_container {
 	background: rgb(121, 47, 249);
 	background: linear-gradient(90deg, #792ff9 53%, #5324fa 50%);
 	height: 700px;
+
 	h1 {
 		font-size: 5.4rem;
 	}

@@ -7,8 +7,9 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 import logo from "../assets/images/logo.svg";
+import { ImCross } from "react-icons/im";
 
-const Header = ({ language, handleChange }) => {
+const Header = ({ language, handleChange, setIsOpen, isOpen }) => {
 	// STICKY FUNCTIONS START
 	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".header_container");
@@ -28,10 +29,19 @@ const Header = ({ language, handleChange }) => {
 							<div className="d-flex justify-content-between w-100">
 								<div className="d-flex align-items-center">
 									<div className="logo_container d-flex align-items-center">
-										<GiHamburgerMenu
-											className="text-white me-4"
-											fontSize="1.6rem"
-										/>
+										{(isOpen && (
+											<ImCross
+												onClick={() => setIsOpen(false)}
+												className="text-white me-4"
+												fontSize="1.6rem"
+											/>
+										)) || (
+											<GiHamburgerMenu
+												onClick={() => setIsOpen(true)}
+												className="text-white me-4"
+												fontSize="1.6rem"
+											/>
+										)}
 										<img src={logo} alt="" />
 									</div>
 								</div>

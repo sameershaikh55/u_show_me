@@ -220,7 +220,7 @@ html body {
   background: #fff;
   bottom: 0%;
   left: 0%;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .underlineAbout {
@@ -235,7 +235,7 @@ html body {
   background: #fff;
   bottom: 0%;
   left: 0%;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .underlineDark {
@@ -250,13 +250,14 @@ html body {
   background: #000;
   bottom: 0%;
   left: 0%;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .header_container {
   height: 80px;
   position: fixed;
   width: 100%;
+  z-index: 9999;
   left: 0%;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -317,9 +318,88 @@ html body {
 
 .header_container.sticky {
   background-color: #231f2e;
-  z-index: 9999;
 }
 
+/* ==================== SideBAR STYLING END ======================== */
+.SideBarContainer {
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  color: white;
+  font-size: 2.2rem;
+  background-color: #5525eb;
+  height: 400px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.SideBarContainer .logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.SideBarContainer .logo img {
+  width: 120px;
+}
+
+.SideBarContainer ul {
+  padding-left: 0rem;
+}
+
+.SideBarContainer ul li {
+  position: relative;
+  list-style: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  padding: 0.4rem 0rem;
+  text-align: center;
+}
+
+.SideBarContainer ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.SideBarContainer ul li .activeNav::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  height: 10%;
+  width: 100%;
+  background-color: #007bbc;
+  border-radius: 5px;
+}
+
+.CrossBTn {
+  position: absolute;
+  top: 8.2%;
+  right: 5.5%;
+  cursor: pointer;
+}
+
+.SideBarContainer.sticky {
+  background-color: #231f2e;
+}
+
+/* ==================== SideBAR STYLING END ======================== */
 .hero_container {
   background: #792ff9;
   background: -webkit-gradient(linear, left top, right top, color-stop(53%, #792ff9), color-stop(50%, #5324fa));

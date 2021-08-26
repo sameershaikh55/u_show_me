@@ -13,8 +13,12 @@ import News from "../components/News";
 import Partner from "../components/Partner";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { useHooks } from "../hooks/useHooks.jsx";
+import Sidebar from "../components/Sidebar";
 
 const Home = () => {
+	const { isOpen, setIsOpen } = useHooks();
+
 	const data = useContext(GlobalContext);
 	const [language, setLanguage] = useState("EN");
 	const [dataHome, setDataHome] = useState(data[0].EN.home);
@@ -38,10 +42,13 @@ const Home = () => {
 	return (
 		<>
 			<Header
+				isOpen={isOpen}
+				setIsOpen={setIsOpen}
 				language={language}
 				setLanguage={setLanguage}
 				handleChange={handleChange}
 			/>
+			<Sidebar isOpen={isOpen} ClickEvent={setIsOpen} />
 			<Hero dataHome={dataHome} />
 			<About dataHome={dataHome} />
 
