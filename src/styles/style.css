@@ -592,6 +592,16 @@ input:focus {
   background: #231f2e;
 }
 
+.who_container .who_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .WHOSlide1,
 .WHOSlide2,
 .WHOSlide3,
@@ -679,10 +689,7 @@ input:focus {
   }
 }
 
-.WHOSlide1 .WHO_detail,
-.WHOSlide2 .WHO_detail,
-.WHOSlide3 .WHO_detail,
-.WHOSlide4 .WHO_detail {
+.WHO_detail {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -690,10 +697,7 @@ input:focus {
   animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.WHOSlide1 .WHO_detail input,
-.WHOSlide2 .WHO_detail input,
-.WHOSlide3 .WHO_detail input,
-.WHOSlide4 .WHO_detail input {
+.WHO_detail input {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   width: 300px;
@@ -703,45 +707,74 @@ input:focus {
   color: #fff;
 }
 
-.WHOSlide1 .WHO_detail input:focus,
-.WHOSlide2 .WHO_detail input:focus,
-.WHOSlide3 .WHO_detail input:focus,
-.WHOSlide4 .WHO_detail input:focus {
+.WHO_detail input:focus {
   outline: none;
 }
 
-.WHOSlide1 .WHO_detail input::-webkit-input-placeholder,
-.WHOSlide2 .WHO_detail input::-webkit-input-placeholder,
-.WHOSlide3 .WHO_detail input::-webkit-input-placeholder,
-.WHOSlide4 .WHO_detail input::-webkit-input-placeholder {
+.WHO_detail input::-webkit-input-placeholder {
   color: #fff;
 }
 
-.WHOSlide1 .WHO_detail input:-ms-input-placeholder,
-.WHOSlide2 .WHO_detail input:-ms-input-placeholder,
-.WHOSlide3 .WHO_detail input:-ms-input-placeholder,
-.WHOSlide4 .WHO_detail input:-ms-input-placeholder {
+.WHO_detail input:-ms-input-placeholder {
   color: #fff;
 }
 
-.WHOSlide1 .WHO_detail input::-ms-input-placeholder,
-.WHOSlide2 .WHO_detail input::-ms-input-placeholder,
-.WHOSlide3 .WHO_detail input::-ms-input-placeholder,
-.WHOSlide4 .WHO_detail input::-ms-input-placeholder {
+.WHO_detail input::-ms-input-placeholder {
   color: #fff;
 }
 
-.WHOSlide1 .WHO_detail input::placeholder,
-.WHOSlide2 .WHO_detail input::placeholder,
-.WHOSlide3 .WHO_detail input::placeholder,
-.WHOSlide4 .WHO_detail input::placeholder {
+.WHO_detail input::placeholder {
   color: #fff;
 }
 
-.WHOSlide1 .WHO_detail button,
-.WHOSlide2 .WHO_detail button,
-.WHOSlide3 .WHO_detail button,
-.WHOSlide4 .WHO_detail button {
+.WHO_detail button {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.WHO_detail.mobile {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  width: 100%;
+}
+
+.WHO_detail.mobile input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  color: #fff;
+}
+
+.WHO_detail.mobile input:focus {
+  outline: none;
+}
+
+.WHO_detail.mobile input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.WHO_detail.mobile input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.WHO_detail.mobile input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.WHO_detail.mobile input::placeholder {
+  color: #fff;
+}
+
+.WHO_detail.mobile button {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   padding: 0.5rem 0.8rem;
@@ -859,6 +892,10 @@ input:focus {
   font-size: 2rem;
 }
 
+.whoMobile {
+  display: none;
+}
+
 .footer_container {
   background: #5525eb;
   padding: 5rem 0rem 2.5rem 0rem;
@@ -899,6 +936,39 @@ input:focus {
   }
   .footer_container {
     padding: 3rem 0rem 2.5rem 0rem;
+  }
+  .who_container .who_inner {
+    display: none;
+  }
+  .whoMobile {
+    display: block;
+  }
+  .whoMobile .MuiPaper-root {
+    color: #fff;
+  }
+  .whoMobile .MuiSvgIcon-root {
+    color: #fff;
+  }
+  .whoMobile .MuiAccordionSummary-root {
+    min-height: 60px;
+  }
+  .whoMobile .MuiAccordion-rounded {
+    border-radius: 0px !important;
+  }
+  .whoMobile .MuiAccordion-root.Mui-expanded {
+    margin: 0px;
+  }
+  .whoMobile .MuiAccordion-rounded:first-child {
+    background: #541dec;
+  }
+  .whoMobile .MuiAccordion-rounded:nth-child(2) {
+    background: #eb5565;
+  }
+  .whoMobile .MuiAccordion-rounded:nth-child(3) {
+    background: #ebab54;
+  }
+  .whoMobile .MuiAccordion-rounded:nth-child(4) {
+    background: #17bb6f;
   }
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
+import WHOMobile from "./WHOMobile";
 
 const WHO = ({ dataHome }) => {
 	const {
@@ -11,8 +12,15 @@ const WHO = ({ dataHome }) => {
 		slide2T,
 		slide2T2,
 		slide2D,
+		slide3T,
+		slide3T2,
+		slide3D,
+		slide4T,
+		slide4T2,
+		slide4D,
 		present,
 		send,
+		newLet,
 	} = dataHome;
 
 	const [one, setOne] = useState(false);
@@ -117,7 +125,7 @@ const WHO = ({ dataHome }) => {
 	return (
 		<div className="who_container">
 			<div className="page_container2">
-				<div className="d-flex">
+				<div className="who_inner">
 					<div className="WHOSlide1">
 						{/* ICONS START */}
 						<div className="icons">
@@ -232,20 +240,12 @@ const WHO = ({ dataHome }) => {
 						<div className="text_content h-100">
 							<div className="inner_text">
 								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">Brand</h1>
+								<h1 className="underlineAbout text-white">{slide3T}</h1>
 							</div>
 							{three && (
 								<div className="WHO_detail ms-5 text-white">
-									<h2 className="mb-4">
-										Sponsor shows and measure engagements{" "}
-									</h2>
-									<p className="mb-0">
-										Your Brand finally have the power to maximize awareness and
-										new ways of engagement with digital audiences. UshowMe
-										provides you tools for your brand to get the highlight it
-										deserves with measurable results. UshowMe offers full
-										integration capabilities.
-									</p>
+									<h2 className="mb-4">{slide3T2}</h2>
+									<p className="mb-0">{slide3D}</p>
 									<p>{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
@@ -286,19 +286,13 @@ const WHO = ({ dataHome }) => {
 						<div className="text_content h-100">
 							<div className="inner_text">
 								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">Fan</h1>
+								<h1 className="underlineAbout text-white">{slide4T}</h1>
 							</div>
 							{four && (
 								<div className="WHO_detail ms-5 text-white">
-									<h2 className="mb-4">Have fun with new interactions </h2>
-									<p className="mb-0">
-										UshowMe gives you more access to your favorite artists than
-										if you were there in person. Connect your camera, express
-										emotions and your best moves on the Top Fans Stage. Speak
-										with everybody on the chat and engage with artists on
-										excitants Meet & Greets.
-									</p>
-									<p>Subscribe Newsletter:</p>
+									<h2 className="mb-4">{slide4T2}</h2>
+									<p className="mb-0">{slide4D}</p>
+									<p>{newLet}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
@@ -319,6 +313,9 @@ const WHO = ({ dataHome }) => {
 							)}
 						</div>
 					</div>
+				</div>
+				<div className="whoMobile">
+					<WHOMobile dataHome={dataHome} />
 				</div>
 			</div>
 		</div>

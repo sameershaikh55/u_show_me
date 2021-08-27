@@ -81,10 +81,15 @@ export const data = [
 				slide2T2: "Scale Shows beyond your venue/location",
 				slide2D:
 					"With UshowMe, you as a Producer and/or Venue, can evolve to hybrid and reach your audiences beyond physical limitations, monetize with multiple streams and bring sponsors already present on your physical venue/festival into digital.",
-				slide2T: "Producer/ Venue",
-				slide2T2: "Scale Shows beyond your venue/location",
-				slide2D:
-					"With UshowMe, you as a Producer and/or Venue, can evolve to hybrid and reach your audiences beyond physical limitations, monetize with multiple streams and bring sponsors already present on your physical venue/festival into digital.",
+				slide3T: "Brand",
+				slide3T2: "Sponsor shows and measure engagements",
+				slide3D:
+					"Your Brand finally have the power to maximize awareness and new ways of engagement with digital audiences. UshowMe provides you tools for your brand to get the highlight it deserves with measurable results. UshowMe offers full integration capabilities.",
+				slide4T: "Fan",
+				slide4T2: "Have fun with new interactions",
+				slide4D:
+					"UshowMe gives you more access to your favorite artists than if you were there in person. Connect your camera, express emotions and your best moves on the Top Fans Stage. Speak with everybody on the chat and engage with artists on excitants Meet & Greets.",
+				newLet: "Subscribe Newsletter:",
 				// WHO END
 
 				// FOOTER START
