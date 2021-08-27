@@ -69,6 +69,24 @@ export const data = [
 				newsletterBtn: "Send",
 				// PARTNER END
 
+				// WHO END
+				who1: "I’m an",
+				present: "Get the Presentation:",
+				send: "Send",
+				slide1T: "Artist/ Label",
+				slide1T2: "Reach and interact with global audiences",
+				slide1D:
+					"Never have to leave your fans out again. With UshowMe, count on including and interacting with everyone, increasing revenue via multiple streams for both the live stream and video-on-demand versions and also bring your own sponsors onboard.",
+				slide2T: "Producer/ Venue",
+				slide2T2: "Scale Shows beyond your venue/location",
+				slide2D:
+					"With UshowMe, you as a Producer and/or Venue, can evolve to hybrid and reach your audiences beyond physical limitations, monetize with multiple streams and bring sponsors already present on your physical venue/festival into digital.",
+				slide2T: "Producer/ Venue",
+				slide2T2: "Scale Shows beyond your venue/location",
+				slide2D:
+					"With UshowMe, you as a Producer and/or Venue, can evolve to hybrid and reach your audiences beyond physical limitations, monetize with multiple streams and bring sponsors already present on your physical venue/festival into digital.",
+				// WHO END
+
 				// FOOTER START
 				footer: [
 					{

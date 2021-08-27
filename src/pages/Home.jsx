@@ -66,7 +66,7 @@ const Home = () => {
 			{/* IMAGE END */}
 
 			<Hybrid dataHome={dataHome} />
-			{/* <WHO /> */}
+			<WHO dataHome={dataHome} />
 			<FeaturedShows dataHome={dataHome} />
 			<AboutFun dataHome={dataHome} />
 			<News dataHome={dataHome} />
