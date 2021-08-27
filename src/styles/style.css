@@ -660,6 +660,7 @@ input:focus {
   max-width: 200px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  word-break: break-all;
 }
 
 .WHOSlide1 .underlineAbout,
