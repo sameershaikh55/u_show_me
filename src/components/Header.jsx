@@ -28,24 +28,27 @@ const Header = ({ language, handleChange, setIsOpen, isOpen }) => {
 						<div className="col-11 col-lg-12 mx-auto w-100">
 							<div className="d-flex justify-content-between w-100">
 								<div className="d-flex align-items-center">
-									<div className="logo_container d-flex align-items-center">
+									<div className="logo_container2">
+										<img className="d-block d-sm-none" src={logo} alt="" />
+									</div>
+									<div className="logo_container ms-3 ms-sm-0 d-flex align-items-center">
 										{(isOpen && (
 											<ImCross
 												onClick={() => setIsOpen(false)}
-												className="text-white me-4"
+												className="text-white me-4 pointer"
 												fontSize="1.6rem"
 											/>
 										)) || (
 											<GiHamburgerMenu
 												onClick={() => setIsOpen(true)}
-												className="text-white me-4"
+												className="text-white me-4 pointer"
 												fontSize="1.6rem"
 											/>
 										)}
-										<img src={logo} alt="" />
+										<img className="d-none d-sm-block" src={logo} alt="" />
 									</div>
 								</div>
-								<div className="secondHalf d-flex align-items-center">
+								<div className="secondHalf d-none d-sm-flex align-items-center">
 									<div className="icons_container">
 										<a href="" className="text-decoration-none text-dark">
 											<FaLinkedinIn

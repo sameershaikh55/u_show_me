@@ -16,6 +16,24 @@ const News = ({ dataHome }) => {
 		slidesToScroll: 1,
 		initialSlide: 0,
 		centerPadding: 50,
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+		],
 	};
 
 	const data = [
@@ -73,7 +91,7 @@ const News = ({ dataHome }) => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<img className="logo" src={logo} alt="" />
-							<h1 className="text-white f50 underlineAbout pb-4 mt-2">
+							<h1 className="text-white f50 underlineAbout reg pb-4 mt-2">
 								{news}
 							</h1>
 
@@ -84,7 +102,7 @@ const News = ({ dataHome }) => {
 										return (
 											<div className="news_card mt-5 px-2" key={ind}>
 												<img className="w-100" src={i} alt="" />
-												<div className="ps-3 mt-2">
+												<div className="mt-2 reg">
 													{t}
 													<button className="mt-2 purpleBg px-2 text-white d-flex align-items-center border-0">
 														<BsFillEyeFill className="me-2" /> Read the Full

@@ -28,6 +28,17 @@ export const data = [
 				],
 				// HYBRID END
 
+				// SIDEBAR START
+				sideBar: [
+					{ t: "ABOUT US" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "HOW IT WORKS" },
+					{ t: "WHO ARE U?" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
 				// WHO START
 				who1: "START BY SELECTING",
 				who2: "Who are U?",
@@ -55,6 +66,7 @@ export const data = [
 
 				// PARTNER START
 				newsletter1: "Subscribe Newsletter",
+				newsletterBtn: "Send",
 				// PARTNER END
 
 				// FOOTER START

@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import partner from "../assets/images/partner.svg";
+import { IoArrowUpCircle } from "react-icons/io5";
 
 const Partner = ({ dataHome }) => {
 	const { partner1, partner2, partner3 } = dataHome;
@@ -13,6 +14,24 @@ const Partner = ({ dataHome }) => {
 		slidesToScroll: 1,
 		initialSlide: 0,
 		centerPadding: 50,
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+		],
 	};
 	return (
 		<div className="partner_container">
@@ -20,9 +39,11 @@ const Partner = ({ dataHome }) => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
-							<p className="mb-0">{partner1}</p>
-							<h1 className="underlineAbout">{partner2}</h1>
-							<p className="underText mb-0 underlineDark pb-4 f24">{partner3}</p>
+							<p className="mb-0 reg">{partner1}</p>
+							<h1 className="underlineAbout bold">{partner2}</h1>
+							<p className="underText mb-0 underlineDark reg pb-4 f24">
+								{partner3}
+							</p>
 
 							<div className="newsSliderContainer">
 								<Slider {...settings}>
@@ -34,6 +55,10 @@ const Partner = ({ dataHome }) => {
 										);
 									})}
 								</Slider>
+							</div>
+
+							<div className="d-block d-md-none mt-5 text-center">
+								<IoArrowUpCircle fontSize="3rem" color="#863bf8" />
 							</div>
 						</div>
 					</div>

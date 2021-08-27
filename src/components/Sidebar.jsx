@@ -1,9 +1,16 @@
 import React from "react";
-import { ImCross } from "react-icons/im";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.svg";
+import {
+	FaLinkedinIn,
+	FaFacebookF,
+	FaInstagram,
+	FaTwitter,
+} from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
-const Sidebar = ({ isOpen, ClickEvent }) => {
+const Sidebar = ({ isOpen, ClickEvent, language, handleChange, dataHome }) => {
+	const { sideBar } = dataHome;
+
 	// STICKY FUNCTIONS START
 	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".SideBarContainer");
@@ -13,14 +20,7 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 		}
 	});
 	// STICKY FUNCTIONS END
-	const data = [
-		{ t: "ABOUT US" },
-		{ t: "FEATURED SHOWS" },
-		{ t: "HYBRID IS THE FUTURE" },
-		{ t: "HOW IT WORKS" },
-		{ t: "WHO ARE U?" },
-		{ t: "FAQ" },
-	];
+
 	return (
 		<div
 			onClick={ClickEvent}
@@ -35,16 +35,19 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
-								{data.map((prev, i) => {
+								{sideBar.map((prev, i) => {
 									return (
-										<div key={i} className="col-6 mt-3">
+										<div
+											key={i}
+											className="col-12 col-sm-6 text-center text-sm-start mt-3"
+										>
 											<h2>
 												<NavLink
 													exact
 													to="/"
 													activeClassName="activeNav"
 													onClick={ClickEvent}
-													className="text-white text-decoration-none"
+													className="text-white text-decoration-none bold"
 												>
 													{prev.t}
 												</NavLink>
@@ -52,6 +55,53 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 										</div>
 									);
 								})}
+								<div className="secondHalf d-flex flex-column mt-4 d-sm-none align-items-center">
+									<div className="icons_container">
+										<a href="" className="text-decoration-none text-dark">
+											<FaLinkedinIn
+												fontSize="2rem"
+												className="icon ms-3 p-1 rounded-circle"
+											/>
+										</a>
+										<a href="" className="text-decoration-none text-dark">
+											<FaFacebookF
+												fontSize="2rem"
+												className="icon ms-3 p-1 rounded-circle"
+											/>
+										</a>
+										<a href="" className="text-decoration-none text-dark">
+											<FaInstagram
+												fontSize="2rem"
+												className="icon ms-3 p-1 rounded-circle"
+											/>
+										</a>
+										<a href="" className="text-decoration-none text-dark">
+											<FaTwitter
+												fontSize="2rem"
+												className="icon ms-3 p-1 rounded-circle"
+											/>
+										</a>
+										<a href="" className="text-decoration-none text-dark">
+											<FiMail
+												fontSize="2rem"
+												className="icon ms-3 p-1 rounded-circle"
+											/>
+										</a>
+									</div>
+									<div className="ms-4 mt-3">
+										<select
+											name=""
+											id=""
+											className="text-white border-0 bg-transparent pointer"
+											value={language}
+											onChange={handleChange}
+										>
+											<option value="EN">EN</option>
+											<option value="PT">PT</option>
+											<option value="DE">DE</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

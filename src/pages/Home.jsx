@@ -15,6 +15,7 @@ import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { useHooks } from "../hooks/useHooks.jsx";
 import Sidebar from "../components/Sidebar";
+import WHO from "../components/WHO";
 
 const Home = () => {
 	const { isOpen, setIsOpen } = useHooks();
@@ -48,7 +49,13 @@ const Home = () => {
 				setLanguage={setLanguage}
 				handleChange={handleChange}
 			/>
-			<Sidebar isOpen={isOpen} ClickEvent={setIsOpen} />
+			<Sidebar
+				isOpen={isOpen}
+				ClickEvent={setIsOpen}
+				handleChange={handleChange}
+				language={language}
+				dataHome={dataHome}
+			/>
 			<Hero dataHome={dataHome} />
 			<About dataHome={dataHome} />
 
@@ -59,6 +66,7 @@ const Home = () => {
 			{/* IMAGE END */}
 
 			<Hybrid dataHome={dataHome} />
+			{/* <WHO /> */}
 			<FeaturedShows dataHome={dataHome} />
 			<AboutFun dataHome={dataHome} />
 			<News dataHome={dataHome} />
