@@ -743,9 +743,16 @@ input {
 		transition: 0.6s;
 
 		.inner_text {
+			-webkit-animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s
+				both;
+			animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s both;
 			max-width: 250px;
 			transition: 0.6s;
 			word-break: break-all;
+		}
+
+		.inner_text.two {
+			display: none;
 		}
 	}
 
@@ -886,11 +893,26 @@ input {
 
 		.inner_text {
 			transition: 0.8s;
-			display: flex;
+			display: none;
 			align-items: center;
 			justify-content: start;
 			white-space: nowrap;
-			margin-left: -17rem;
+
+			&.firstS {
+				margin-left: -25rem;
+			}
+
+			&.secondS {
+				margin-left: -14.5rem;
+			}
+
+			&.fourthS {
+				margin-left: -20.5rem;
+			}
+
+			&.thirdS {
+				margin-left: -18rem;
+			}
 
 			.underlineAbout {
 				transition: 0.8s;
@@ -908,22 +930,26 @@ input {
 			}
 		}
 
+		.inner_text.two {
+			display: flex;
+			-webkit-animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s
+				both;
+			animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s both;
+
+			h6 {
+				font-size: 0.9rem;
+			}
+			h1 {
+				font-size: 1.6rem;
+			}
+		}
+
 		h1 {
 			transition: 0.8s;
 			font-size: 2rem;
 		}
 	}
 }
-
-// .WHOSlide5.min_slide {
-// 	.inner_text {
-// 		margin-left: -25rem;
-// 	}
-// }
-
-// .WHOSlide5.min_slide .text_content .inner_text {
-// 	margin-left: -25rem;
-// }
 
 .whoMobile {
 	display: none;

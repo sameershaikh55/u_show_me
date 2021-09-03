@@ -21,9 +21,9 @@ const Header = ({
 	third,
 	setIsOpen,
 	isOpen,
+	on,
+	setOn,
 }) => {
-	const [on, setOn] = useState(false);
-
 	// STICKY FUNCTIONS START
 	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".header_container");

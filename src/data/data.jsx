@@ -83,7 +83,7 @@ export const data = [
 				// PARTNER END
 
 				// WHO END
-				who1under: "I’m an",
+				who1under: "I’m a",
 				present: "Get in Touch:",
 				present2: "Subscribe Newsletter:",
 				send: "Send",

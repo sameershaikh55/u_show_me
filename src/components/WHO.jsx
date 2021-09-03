@@ -149,6 +149,12 @@ const WHO = ({ dataHome }) => {
 									{slide1T}
 								</h1>
 							</div>
+							<div className="inner_text two firstS w-100">
+								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold w-100">
+									{slide1T}
+								</h1>
+							</div>
 							{one && (
 								<div
 									// style={{ opacity: (one && 1) || 0 }}
@@ -195,6 +201,12 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide2T}
+								</h1>
+							</div>
+							<div className="inner_text two secondS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
 								<h1 className="underlineAbout text-white NeueMachina fw-bold">
 									{slide2T}
@@ -248,6 +260,12 @@ const WHO = ({ dataHome }) => {
 									{slide3T}
 								</h1>
 							</div>
+							<div className="inner_text two thirdS">
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide3T}
+								</h1>
+							</div>
 							{three && (
 								<div className="WHO_detail ms-5 text-white">
 									<h4 className="mb-4 NeueMachina fw-bold">{slide3T2}</h4>
@@ -291,6 +309,12 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide4T}
+								</h1>
+							</div>
+							<div className="inner_text two fourthS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
 								<h1 className="underlineAbout text-white NeueMachina fw-bold">
 									{slide4T}

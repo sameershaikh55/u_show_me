@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Slider from "react-slick";
 import top from "../assets/images/top.svg";
 
@@ -10,7 +11,7 @@ const Partner = ({ dataHome }) => {
 		infinite: false,
 		arrows: false,
 		slidesToShow: 5,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		initialSlide: 0,
 		centerPadding: 50,
 		responsive: [
@@ -18,15 +19,15 @@ const Partner = ({ dataHome }) => {
 				breakpoint: 900,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 2,
 					infinite: true,
 				},
 			},
 			{
 				breakpoint: 575,
 				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
+					slidesToShow: 2,
+					slidesToScroll: 2,
 					infinite: true,
 				},
 			},
@@ -58,7 +59,7 @@ const Partner = ({ dataHome }) => {
 								<Slider {...settings}>
 									{data.map((prev, ind) => {
 										return (
-											<div className="partner_card mt-5 px-2" key={ind}>
+											<div className="partner_card mt-4 px-2" key={ind}>
 												<img src={prev} alt="" />
 											</div>
 										);
@@ -66,8 +67,17 @@ const Partner = ({ dataHome }) => {
 								</Slider>
 							</div>
 
-							<div className="mt-5 pt-2 text-center">
-								<img src={top} alt="" />
+							<div className="text-center">
+								<Link
+									smooth={true}
+									duration={600}
+									spy={true}
+									offset={-100}
+									to="top"
+									className="mt-5 pt-2 pointer"
+								>
+									<img src={top} alt="" />
+								</Link>
 							</div>
 						</div>
 					</div>

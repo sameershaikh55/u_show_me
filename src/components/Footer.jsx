@@ -1,5 +1,5 @@
 import React from "react";
-import { BiRightArrowAlt } from "react-icons/bi";
+import rightArrow from "../assets/images/rightArrow.svg";
 import { NavLink } from "react-router-dom";
 import logo2 from "../assets/images/logo2.svg";
 
@@ -21,7 +21,7 @@ const Footer = ({ dataHome }) => {
 										const { t, l } = prev;
 										return (
 											<NavLink
-												className="text-white text-decoration-none reg mx-3 f14"
+												className="text-white text-decoration-none NeueMachina mx-3 f14"
 												key={i}
 												to={l}
 											>
@@ -36,8 +36,9 @@ const Footer = ({ dataHome }) => {
 										href="https://app.ushowme.tv/"
 										className="text-decoration-none"
 									>
-										<button className="btnS bg3 text-white reg border-0 ps-1 pe-2">
-											<BiRightArrowAlt fontSize="1.2rem" /> {footerBtn}
+										<button className="btnS bg3 text-white NeueMachina fw600 py-1 border-0 ps-1 pe-2">
+											<img src={rightArrow} alt="arrow" className="ms-2 me-2" />{" "}
+											{footerBtn}
 										</button>
 									</a>
 								</div>
