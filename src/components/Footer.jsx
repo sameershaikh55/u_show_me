@@ -8,11 +8,11 @@ const Footer = ({ dataHome }) => {
 
 	return (
 		<div className="footer_container">
-			<div className="page_container">
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
-							<div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+			<div className="page_container w-100">
+				<div className="container-fluid w-100">
+					<div className="row w-100">
+						<div className="col-11 col-md-12 mx-auto w-100">
+							<div className="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
 								<div>
 									<img src={logo2} alt="" />
 								</div>
@@ -31,9 +31,15 @@ const Footer = ({ dataHome }) => {
 									})}
 								</div>
 								<div className="mt-4 mt-lg-0">
-									<button className="bg3 text-white reg border-0 ps-1 pe-2">
-										<BiRightArrowAlt fontSize="1.2rem" /> {footerBtn}
-									</button>
+									<a
+										target="blank"
+										href="https://app.ushowme.tv/"
+										className="text-decoration-none"
+									>
+										<button className="btnS bg3 text-white reg border-0 ps-1 pe-2">
+											<BiRightArrowAlt fontSize="1.2rem" /> {footerBtn}
+										</button>
+									</a>
 								</div>
 							</div>
 						</div>

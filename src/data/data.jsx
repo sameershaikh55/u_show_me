@@ -1,3 +1,5 @@
+import asterik from "../assets/images/asterik.svg";
+
 export const data = [
 	{
 		EN: {
@@ -13,9 +15,20 @@ export const data = [
 				aboutL:
 					"UshowMe is an interactive live stream and video-on-demand platform to help Artists, Event producers, such as Venues and Festivals evolve to hybrid shows with global reach, deliver new experiences, multiple revenue streams and give brands and digital audiences new ways of engagement.",
 				aboutR1: "BUILDING FOR ANY MODERN DEVICES",
-				aboutR2:
-					"UshowMe’s responsive design is tailored to deliver the best experiences and interactions to your audience, no matter what modern device they use.",
-				aboutR3: "see list of supported devices on the FAQ page.",
+				aboutR2: (
+					<p>
+						UshowMe’s responsive design is tailored to deliver the best
+						experiences and interactions to your audience, no matter what modern
+						device they use
+						<img src={asterik} alt="" className="asterik_up" />.
+					</p>
+				),
+				aboutR3: (
+					<p className="text-white mb-0 spaceMono">
+						see list of supported devices on the{" "}
+						<span className="purpleBg px-1">FAQ</span> page.
+					</p>
+				),
 				// ABOUT END
 
 				// HYBRID START
@@ -70,8 +83,9 @@ export const data = [
 				// PARTNER END
 
 				// WHO END
-				who1: "I’m an",
-				present: "Get the Presentation:",
+				who1under: "I’m an",
+				present: "Get in Touch:",
+				present2: "Subscribe Newsletter:",
 				send: "Send",
 				slide1T: "Artist/ Label",
 				slide1T2: "Reach and interact with global audiences",
@@ -96,11 +110,11 @@ export const data = [
 				footer: [
 					{
 						t: "How it Works",
-						l: "",
+						l: "hiw",
 					},
 					{
 						t: "FAQ",
-						l: "",
+						l: "faq",
 					},
 					{
 						t: "Jobs",
@@ -140,9 +154,20 @@ export const data = [
 				aboutL:
 					"UshowMe ist eine interaktive Live-Stream- und Video-on-Demand-Plattform, die Künstlern, Veranstaltungsproduzenten wie Veranstaltungsorten und Festivals dabei hilft, sich zu hybriden Shows mit globaler Reichweite zu entwickeln, neue Erlebnisse, mehrere Einnahmequellen zu bieten und Marken und digitales Publikum neue Möglichkeiten der Interaktion zu bieten .",
 				aboutR1: "GEBÄUDE FÜR JEDE MODERNE GERÄTE",
-				aboutR2:
-					"Das reaktionsschnelle Design von UshowMe ist darauf zugeschnitten, Ihrem Publikum die besten Erfahrungen und Interaktionen zu bieten, unabhängig davon, welches moderne Gerät es verwendet.",
-				aboutR3: "siehe Liste der unterstützten Geräte auf der FAQ-Seite.",
+				aboutR2: (
+					<p>
+						Das reaktionsschnelle Design von UshowMe ist darauf zugeschnitten,
+						Ihrem Publikum die besten Erfahrungen und Interaktionen zu bieten,
+						unabhängig davon, welches moderne Gerät es verwendet
+						<img src={asterik} alt="" className="asterik_up" />.
+					</p>
+				),
+				aboutR3: (
+					<p className="text-white mb-0 spaceMono">
+						siehe Liste der unterstützten Geräte auf der{" "}
+						<span className="purpleBg px-1">FAQ</span>-Seite.
+					</p>
+				),
 				// ABOUT END
 
 				// HYBRID START
@@ -197,8 +222,9 @@ export const data = [
 				// PARTNER END
 
 				// WHO END
-				who1: "ich bin ein",
+				who1under: "ich bin ein",
 				present: "Holen Sie sich die Präsentation:",
+				present2: "Assine o Newsletter:",
 				send: "Senden",
 				slide1T: "Künstler/ Label",
 				slide1T2:
@@ -225,11 +251,11 @@ export const data = [
 				footer: [
 					{
 						t: "Wie es funktioniert",
-						l: "",
+						l: "hiw",
 					},
 					{
 						t: "FAQ",
-						l: "",
+						l: "faq",
 					},
 					{
 						t: "Arbeitsplätze",
@@ -269,9 +295,20 @@ export const data = [
 				aboutL:
 					"UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda para ajudar artistas, produtores de eventos, como locais e festivais, a evoluir para shows híbridos com alcance global, oferecer novas experiências, múltiplos fluxos de receita e dar a marcas e públicos digitais novas formas de engajamento .",
 				aboutR1: "CONSTRUÇÃO PARA QUALQUER DISPOSITIVO MODERNO",
-				aboutR2:
-					"O design responsivo do UshowMe é adaptado para oferecer as melhores experiências e interações ao seu público, independentemente do dispositivo moderno que eles usam.",
-				aboutR3: "veja a lista de dispositivos suportados na página de FAQ.",
+				aboutR2: (
+					<p>
+						O design responsivo do UshowMe é adaptado para oferecer as melhores
+						experiências e interações ao seu público, independentemente do
+						dispositivo moderno que eles usam
+						<img src={asterik} alt="" className="asterik_up" />.
+					</p>
+				),
+				aboutR3: (
+					<p className="text-white mb-0 spaceMono">
+						veja a lista de dispositivos suportados na página de{" "}
+						<span className="purpleBg px-1">FAQ</span>.
+					</p>
+				),
 				// ABOUT END
 
 				// HYBRID START
@@ -326,8 +363,9 @@ export const data = [
 				// PARTNER END
 
 				// WHO END
-				who1: "Eu sou um",
+				who1under: "Eu sou um",
 				present: "Obtenha a apresentação:",
+				present2: "Abonniere den Newsletter:",
 				send: "Mandar",
 				slide1T: "Artista / gravadora",
 				slide1T2: "Alcance e interaja com públicos globais",
@@ -352,11 +390,11 @@ export const data = [
 				footer: [
 					{
 						t: "Como funciona",
-						l: "",
+						l: "hiw",
 					},
 					{
 						t: "Perguntas frequentes",
-						l: "",
+						l: "faq",
 					},
 					{
 						t: "Empregos",

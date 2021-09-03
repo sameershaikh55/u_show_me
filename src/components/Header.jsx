@@ -1,93 +1,181 @@
-import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import {
-	FaLinkedinIn,
-	FaFacebookF,
-	FaInstagram,
-	FaTwitter,
-} from "react-icons/fa";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
-import { ImCross } from "react-icons/im";
+import down from "../assets/images/down.svg";
+import up from "../assets/images/up.svg";
+import hamburger from "../assets/images/hamburger.svg";
+import cross from "../assets/images/cross.svg";
+import { Link } from "react-scroll";
 
-const Header = ({ language, handleChange, setIsOpen, isOpen }) => {
+// IMPORTING ICONS
+import i1 from "../assets/images/shareIcons/i1.svg";
+import i2 from "../assets/images/shareIcons/i2.svg";
+import i3 from "../assets/images/shareIcons/i3.svg";
+import i4 from "../assets/images/shareIcons/i4.svg";
+import i5 from "../assets/images/shareIcons/i5.svg";
+
+const Header = ({
+	dropdown,
+	dropdown2,
+	dropdown3,
+	second,
+	third,
+	setIsOpen,
+	isOpen,
+}) => {
+	const [on, setOn] = useState(false);
+
 	// STICKY FUNCTIONS START
 	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".header_container");
 		if (header !== null) {
 			header.classList.toggle("sticky", window.scrollY > 1);
-			header.classList.toggle("shadow-sm", window.scrollY > 1);
+
+			if (true) {
+				header.classList.remove("shadow-sm", window.scrollY > 1);
+			}
 		}
 	});
 	// STICKY FUNCTIONS END
 
+	// SHARE ICONS DATA
+	const data = [
+		{
+			img: i1,
+			link: "https://www.linkedin.com/company/ushowme/",
+		},
+		{
+			img: i2,
+			link: "https://www.facebook.com/ushowme.tv",
+		},
+		{
+			img: i3,
+			link: "https://www.instagram.com/ushowme/",
+		},
+		{
+			img: i4,
+			link: "https://twitter.com/UshowMe_Shows/",
+		},
+		{
+			img: i5,
+			link: "mailto:hello@ushowme.tv",
+		},
+	];
+
 	return (
 		<div className="header_container d-flex justify-content-center align-items-center">
-			<div className="page_container w-100">
-				<div className="container-fluid w-100">
+			<div className="w-100">
+				<div className="container-fluid ps-4 pe-0 w-100">
 					<div className="row w-100">
 						<div className="col-11 col-lg-12 mx-auto w-100">
 							<div className="d-flex justify-content-between w-100">
 								<div className="d-flex align-items-center">
 									<div className="logo_container2">
-										<img className="d-block d-sm-none" src={logo} alt="" />
+										<Link
+											smooth={true}
+											duration={600}
+											spy={true}
+											offset={-100}
+											to="top"
+										>
+											<img
+												className="pointer d-block d-sm-none"
+												src={logo}
+												alt=""
+											/>
+										</Link>
 									</div>
 									<div className="logo_container ms-3 ms-sm-0 d-flex align-items-center">
 										{(isOpen && (
-											<ImCross
+											<img
+												style={{ width: "25px" }}
+												src={cross}
+												alt="cross"
+												className="pointer"
 												onClick={() => setIsOpen(false)}
-												className="text-white me-4 pointer"
-												fontSize="1.6rem"
 											/>
 										)) || (
-											<GiHamburgerMenu
+											<img
+												src={hamburger}
+												alt="hamburger"
+												className="pointer"
 												onClick={() => setIsOpen(true)}
-												className="text-white me-4 pointer"
-												fontSize="1.6rem"
 											/>
 										)}
-										<img className="d-none d-sm-block" src={logo} alt="" />
+										<Link
+											smooth={true}
+											duration={600}
+											spy={true}
+											offset={-100}
+											to="top"
+										>
+											<img
+												className="pointer ps-4 d-none d-sm-block"
+												src={logo}
+												alt=""
+											/>
+										</Link>
 									</div>
 								</div>
 								<div className="secondHalf d-none d-sm-flex align-items-center">
 									<div className="icons_container">
-										<a href="" className="text-decoration-none text-dark">
-											<FaLinkedinIn
-												fontSize="1.5rem"
-												className="icon ms-2 p-1 rounded-circle"
-											/>
-										</a>
-										<a href="" className="text-decoration-none text-dark">
-											<FaFacebookF
-												fontSize="1.5rem"
-												className="icon ms-2 p-1 rounded-circle"
-											/>
-										</a>
-										<a href="" className="text-decoration-none text-dark">
-											<FaInstagram
-												fontSize="1.5rem"
-												className="icon ms-2 p-1 rounded-circle"
-											/>
-										</a>
-										<a href="" className="text-decoration-none text-dark">
-											<FaTwitter
-												fontSize="1.5rem"
-												className="icon ms-2 p-1 rounded-circle"
-											/>
-										</a>
+										{data.map((prev, ind) => {
+											return (
+												<a
+													key={ind}
+													href={prev.link}
+													target="blank"
+													className="text-decoration-none text-dark ms-2"
+												>
+													<img src={prev.img} alt="" />
+												</a>
+											);
+										})}
 									</div>
-									<div className="ms-4">
-										<select
-											name=""
-											id=""
-											className="text-white border-0 bg-transparent pointer"
-											value={language}
-											onChange={handleChange}
-										>
-											<option value="EN">EN</option>
-											<option value="PT">PT</option>
-											<option value="DE">DE</option>
-										</select>
+									<div className="select ms-4 spaceMono text-white">
+										<ul className="list-unstyled">
+											<li
+												onClick={() => setOn(!on)}
+												className="spaceMono fw-bold d-flex align-items-center pointer"
+											>
+												{dropdown.t}{" "}
+												{(on && (
+													<img
+														style={{ width: "12px", height: "auto" }}
+														src={down}
+														alt=""
+														className="ms-2"
+													/>
+												)) || (
+													<img
+														style={{ width: "12px", height: "auto" }}
+														src={up}
+														alt=""
+														className="ms-2"
+													/>
+												)}
+											</li>
+											{on && (
+												<div className="position-absolute">
+													<li
+														onClick={second}
+														className="spaceMono fw-bold d-flex align-items-center pointer"
+													>
+														{dropdown2.t} <div></div>
+													</li>
+													<li
+														onClick={third}
+														className="spaceMono fw-bold d-flex align-items-center pointer"
+													>
+														{dropdown3.t} <div></div>
+													</li>
+												</div>
+											)}
+										</ul>
 									</div>
+									<div
+										style={{ height: (on && "140px") || "0px" }}
+										className="select_bg"
+									></div>
 								</div>
 							</div>
 						</div>

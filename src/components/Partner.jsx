@@ -1,14 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import partner from "../assets/images/partner.svg";
-import { IoArrowUpCircle } from "react-icons/io5";
+import top from "../assets/images/top.svg";
 
 const Partner = ({ dataHome }) => {
 	const { partner1, partner2, partner3 } = dataHome;
 	var settings = {
 		centerMode: true,
 		dots: false,
-		infinite: true,
+		infinite: false,
 		arrows: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
@@ -33,32 +32,42 @@ const Partner = ({ dataHome }) => {
 			},
 		],
 	};
+
+	const data = [
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/Blueticket_Logo.jpg",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/CCA_Logo.jpg",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/LACS_Logo.jpg",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/IdeaSpaces_Logo.png",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/Demium_Logo.jpg",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/BackStage_Logo.jpg",
+	];
+
 	return (
 		<div className="partner_container">
-			<div className="page_container">
-				<div className="container-fluid">
+			<div className="w-100">
+				<div className="container-fluid px-0">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
-							<p className="mb-0 reg">{partner1}</p>
-							<h1 className="underlineAbout bold">{partner2}</h1>
-							<p className="underText mb-0 underlineDark reg pb-4 f24">
+							<p className="mb-0 NeueMachina">{partner1}</p>
+							<h1 className="underlineAbout NeueMachina fw-bold">{partner2}</h1>
+							<p className="underText mb-0 underlineDark NeueMachina pb-4 f24">
 								{partner3}
 							</p>
 
-							<div className="newsSliderContainer">
+							<div className="partner">
 								<Slider {...settings}>
-									{[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((prev, ind) => {
+									{data.map((prev, ind) => {
 										return (
-											<div className="news_card mt-5 px-2" key={ind}>
-												<img className="w-100" src={partner} alt="" />
+											<div className="partner_card mt-5 px-2" key={ind}>
+												<img src={prev} alt="" />
 											</div>
 										);
 									})}
 								</Slider>
 							</div>
 
-							<div className="d-block d-md-none mt-5 text-center">
-								<IoArrowUpCircle fontSize="3rem" color="#863bf8" />
+							<div className="mt-5 pt-2 text-center">
+								<img src={top} alt="" />
 							</div>
 						</div>
 					</div>

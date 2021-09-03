@@ -34,6 +34,7 @@ function App() {
 				</div>
 			</div>
 
+			<div id="top"></div>
 			<Switch>
 				<Route exact path="/" component={Home} />
 			</Switch>

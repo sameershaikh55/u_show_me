@@ -5,7 +5,7 @@ import WHOMobile from "./WHOMobile";
 
 const WHO = ({ dataHome }) => {
 	const {
-		who1,
+		who1under,
 		slide1T,
 		slide1T2,
 		slide1D,
@@ -19,8 +19,8 @@ const WHO = ({ dataHome }) => {
 		slide4T2,
 		slide4D,
 		present,
+		present2,
 		send,
-		newLet,
 	} = dataHome;
 
 	const [one, setOne] = useState(false);
@@ -124,9 +124,9 @@ const WHO = ({ dataHome }) => {
 
 	return (
 		<div className="who_container">
-			<div className="page_container2">
+			<div className="w-100">
 				<div className="who_inner">
-					<div className="WHOSlide1">
+					<div className="WHOSlide1 position-relative">
 						{/* ICONS START */}
 						<div className="icons">
 							<FaTimes
@@ -143,18 +143,20 @@ const WHO = ({ dataHome }) => {
 						{/* ICONS END */}
 
 						<div className="text_content h-100">
-							<div className="inner_text">
-								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">{slide1T}</h1>
+							<div className="inner_text w-100">
+								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold w-100">
+									{slide1T}
+								</h1>
 							</div>
 							{one && (
 								<div
 									// style={{ opacity: (one && 1) || 0 }}
 									className="WHO_detail ms-5 text-white"
 								>
-									<h2 className="mb-4">{slide1T2}</h2>
-									<p className="mb-0">{slide1D}</p>
-									<p> {present} </p>
+									<h4 className="mb-4 NeueMachina fw-bold">{slide1T2}</h4>
+									<p className="mb-0 NeueMachina">{slide1D}</p>
+									<p className="fw-bold NeueMachina mt-4">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
@@ -175,7 +177,7 @@ const WHO = ({ dataHome }) => {
 							)}
 						</div>
 					</div>
-					<div className="WHOSlide2">
+					<div className="WHOSlide2 position-relative">
 						{/* ICONS START */}
 						<div className="icons">
 							<FaTimes
@@ -193,14 +195,16 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">{slide2T}</h1>
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide2T}
+								</h1>
 							</div>
 							{two && (
 								<div className="WHO_detail ms-5 text-white">
-									<h2 className="mb-4">{slide2T2}</h2>
-									<p className="mb-0">{slide2D}</p>
-									<p>{present}</p>
+									<h4 className="mb-4 NeueMachina fw-bold">{slide2T2}</h4>
+									<p className="mb-0 NeueMachina">{slide2D}</p>
+									<p className="fw-bold NeueMachina mt-4">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
@@ -221,7 +225,7 @@ const WHO = ({ dataHome }) => {
 							)}
 						</div>
 					</div>
-					<div className="WHOSlide3">
+					<div className="WHOSlide3 position-relative">
 						{/* ICONS START */}
 						<div className="icons">
 							<FaTimes
@@ -239,14 +243,16 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">{slide3T}</h1>
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide3T}
+								</h1>
 							</div>
 							{three && (
 								<div className="WHO_detail ms-5 text-white">
-									<h2 className="mb-4">{slide3T2}</h2>
-									<p className="mb-0">{slide3D}</p>
-									<p>{present}</p>
+									<h4 className="mb-4 NeueMachina fw-bold">{slide3T2}</h4>
+									<p className="mb-0 NeueMachina">{slide3D}</p>
+									<p className="fw-bold NeueMachina mt-4">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
@@ -267,7 +273,7 @@ const WHO = ({ dataHome }) => {
 							)}
 						</div>
 					</div>
-					<div className="WHOSlide4">
+					<div className="WHOSlide4 position-relative">
 						{/* ICONS START */}
 						<div className="icons">
 							<FaTimes
@@ -285,14 +291,16 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white">{who1}</h6>
-								<h1 className="underlineAbout text-white">{slide4T}</h1>
+								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+									{slide4T}
+								</h1>
 							</div>
 							{four && (
 								<div className="WHO_detail ms-5 text-white">
-									<h2 className="mb-4">{slide4T2}</h2>
-									<p className="mb-0">{slide4D}</p>
-									<p>{newLet}</p>
+									<h4 className="mb-4 NeueMachina fw-bold">{slide4T2}</h4>
+									<p className="mb-0 NeueMachina">{slide4D}</p>
+									<p className="fw-bold NeueMachina mt-4">{present2}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">

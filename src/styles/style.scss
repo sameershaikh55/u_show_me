@@ -1,19 +1,58 @@
 @font-face {
-	font-family: NeueMachinLight;
+	font-family: NeueMachina;
+	src: url(../assets/fonts/NeueMachina/NeueMachina-Black.otf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: NeueMachina;
 	src: url(../assets/fonts/NeueMachina/NeueMachina-Light.otf);
 	font-weight: 400;
 }
 
 @font-face {
-	font-family: NeueMachinaReg;
+	font-family: NeueMachina;
 	src: url(../assets/fonts/NeueMachina/NeueMachina-Regular.otf);
 	font-weight: 500;
 }
 
 @font-face {
-	font-family: NeueMachinaBold;
+	font-family: NeueMachina;
 	src: url(../assets/fonts/NeueMachina/NeueMachina-Ultrabold.otf);
 	font-weight: 700;
+}
+
+@font-face {
+	font-family: NeueMachina;
+	src: url(../assets/fonts/NeueMachina/NeueMachina-Ultralight.otf);
+	font-weight: 300;
+}
+
+// SPACE MONO
+@font-face {
+	font-family: spaceMono;
+	src: url(../assets/fonts/Space_Mono/SpaceMono-Bold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: spaceMono;
+	src: url(../assets/fonts/Space_Mono/SpaceMono-BoldItalic.ttf);
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: spaceMono;
+	src: url(../assets/fonts/Space_Mono/SpaceMono-Italic.ttf);
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: spaceMono;
+	src: url(../assets/fonts/Space_Mono/SpaceMono-Regular.ttf);
+	font-weight: 500;
 }
 
 * {
@@ -22,16 +61,12 @@
 	box-sizing: border-box;
 }
 
-.light {
-	font-family: NeueMachinaLight;
+.NeueMachina {
+	font-family: NeueMachina;
 }
 
-.reg {
-	font-family: NeueMachinaReg;
-}
-
-.bold {
-	font-family: NeueMachinaBold;
+.spaceMono {
+	font-family: spaceMono;
 }
 
 // VARIABLES START
@@ -41,6 +76,7 @@ $color3: #e45364;
 $color4: #231f2e;
 $color5: #863bf8;
 $color6: #5525eb;
+$color7: #5e23ec;
 // VARIABLES END
 
 // GLOBAL CLASSES START
@@ -48,6 +84,8 @@ html {
 	font-size: 100%;
 	width: 100%;
 	overflow-x: hidden;
+	scroll-behavior: auto !important;
+
 	body {
 		overflow-x: hidden;
 	}
@@ -227,6 +265,10 @@ input {
 	box-shadow: 1px 1px 1px 2px #3d3d3d4f;
 }
 
+.btnS {
+	box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
+}
+
 .color5 {
 	color: $color5;
 }
@@ -236,7 +278,7 @@ input {
 }
 
 .page_container {
-	max-width: 1150px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -298,31 +340,39 @@ input {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+		button {
+			width: 150px;
+			height: 30px;
+			box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
+		}
 	}
 }
 // FEATURE SLIDER END
 
 // HEADER START
+.select_bg {
+	position: fixed;
+	width: 75px;
+	z-index: -1;
+	right: 0%;
+	background-color: $color7;
+	transition: 0.1s;
+}
+
 .header_container {
-	height: 80px;
+	height: 60px;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
 	left: 0%;
 	transition: 0.6s;
 
-	.menu_dropdown {
-		select {
-			background: rgba(255, 255, 255, 0.2);
-			border: none;
-			color: #cecece;
-			option {
-				color: #000;
-			}
-			&:focus {
-				outline: none;
-			}
-		}
+	.select {
+		width: 35px;
+		margin-top: 1rem;
+		text-align: center;
+		position: relative;
 	}
 	.inp_container {
 		background: rgba(255, 255, 255, 0.1);
@@ -353,8 +403,9 @@ input {
 			}
 		}
 		.icons_container {
-			.icon {
-				background: #fff;
+			img {
+				width: 25px;
+				height: auto;
 			}
 		}
 	}
@@ -372,7 +423,7 @@ input {
 
 // STICKY START
 .header_container.sticky {
-	background-color: $color4;
+	background-color: $color7;
 }
 // HEADER END
 
@@ -392,7 +443,8 @@ input {
 	width: 100%;
 	overflow-y: hidden;
 	overflow-x: hidden;
-	transition: 0.5s;
+	transition: 0.2s;
+	padding-left: 5rem;
 
 	.logo {
 		position: absolute;
@@ -415,8 +467,8 @@ input {
 			}
 		}
 		.icons_container {
-			.icon {
-				background: #fff;
+			img {
+				width: 12px;
 			}
 		}
 	}
@@ -459,15 +511,16 @@ input {
 }
 
 .SideBarContainer.sticky {
-	background-color: $color4;
+	background-color: $color7;
 }
 /* ==================== SideBAR STYLING END ======================== */
 
 // HERO START
 .hero_container {
-	background: rgb(121, 47, 249);
-	background: linear-gradient(90deg, #792ff9 53%, #5324fa 50%);
-	height: 700px;
+	position: absolute;
+	bottom: 12%;
+	left: 33.5%;
+	transform: translate(-50%, -50%);
 
 	h1 {
 		font-size: 5.4rem;
@@ -476,6 +529,12 @@ input {
 		left: -20%;
 		top: 6.5%;
 		max-width: 120px;
+	}
+
+	.hero_btn {
+		min-width: 171px;
+		height: 30px;
+		box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
 	}
 }
 // HERO END
@@ -486,10 +545,21 @@ input {
 	width: 100%;
 	height: 100%;
 	padding: 5rem 0rem 3rem 0rem;
+	margin-top: -6px;
 
 	img {
 		height: 15px;
 		width: auto;
+	}
+
+	.asterik_up {
+		width: 12px;
+		margin-top: -6px;
+		margin-left: 2px;
+	}
+
+	.asterik_up2 {
+		width: 8px;
 	}
 }
 // ABOUT US END
@@ -503,7 +573,7 @@ input {
 	height: 100%;
 
 	.para {
-		max-width: 700px;
+		max-width: 920px;
 	}
 
 	.WHO_cont {
@@ -536,7 +606,7 @@ input {
 		transform: translate(-50%, -50%);
 
 		h1 {
-			max-width: 180px;
+			max-width: 250px;
 		}
 	}
 
@@ -548,8 +618,9 @@ input {
 
 // NEWS START
 .news_container {
+	margin-top: -8px;
 	background-color: $color4;
-	padding: 5rem 0rem 3rem 0rem;
+	padding: 5rem 0rem 5rem 3rem;
 
 	.logo {
 		height: 15px;
@@ -559,6 +630,22 @@ input {
 	.newsSliderContainer {
 		.news_card {
 			width: 200px;
+			outline: -webkit-focus-ring-color none 1px;
+
+			p {
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+			}
+
+			img.thumbnail {
+				width: 100%;
+				min-height: 250px;
+				max-height: 250px;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }
@@ -566,7 +653,21 @@ input {
 
 // PARTNER START
 .partner_container {
-	padding: 5rem 0rem 8rem 0rem;
+	padding: 5rem 0rem 2rem 3rem;
+
+	.partner {
+		.partner_card {
+			outline: -webkit-focus-ring-color none 1px;
+			width: 200px;
+			height: 200px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
 
 	h1 {
 		margin-left: -3px;
@@ -585,12 +686,16 @@ input {
 
 	input {
 		width: 280px;
-		background: rgba(255, 255, 255, 0.1);
+		background: #4b4755;
 		color: #fff;
 		border-radius: 10px;
 		border: none;
 		height: 100;
 		padding: 0.2rem 1rem;
+
+		&::placeholder {
+			color: #fff;
+		}
 	}
 
 	button {
@@ -617,6 +722,8 @@ input {
 	transition: 0.8s;
 
 	.icons {
+		position: absolute;
+		width: 100%;
 		color: #fff;
 		padding: 0.6rem;
 
@@ -636,7 +743,7 @@ input {
 		transition: 0.6s;
 
 		.inner_text {
-			max-width: 200px;
+			max-width: 250px;
 			transition: 0.6s;
 			word-break: break-all;
 		}
@@ -735,15 +842,27 @@ input {
 
 .WHOSlide1 {
 	background: #541dec;
+	.inner_text {
+		padding-left: 2rem;
+	}
 }
 .WHOSlide2 {
 	background: #eb5565;
+	.inner_text {
+		padding-left: 2rem;
+	}
 }
 .WHOSlide3 {
 	background: #ebab54;
+	.inner_text {
+		padding-left: 2rem;
+	}
 }
 .WHOSlide4 {
 	background: #17bb6f;
+	.inner_text {
+		padding-left: 2rem;
+	}
 }
 
 .min_slide {
@@ -769,8 +888,9 @@ input {
 			transition: 0.8s;
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: start;
 			white-space: nowrap;
+			margin-left: -17rem;
 
 			.underlineAbout {
 				transition: 0.8s;
@@ -795,6 +915,16 @@ input {
 	}
 }
 
+// .WHOSlide5.min_slide {
+// 	.inner_text {
+// 		margin-left: -25rem;
+// 	}
+// }
+
+// .WHOSlide5.min_slide .text_content .inner_text {
+// 	margin-left: -25rem;
+// }
+
 .whoMobile {
 	display: none;
 }
@@ -803,7 +933,11 @@ input {
 // FOOTER START
 .footer_container {
 	background: $color6;
-	padding: 5rem 0rem 2.5rem 0rem;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
 }
 // FOOTER END
 
@@ -885,10 +1019,8 @@ input {
 }
 
 @media screen and (max-width: 768px) {
-	.hero_container {
-		background: url(../assets/images/heroM.svg);
-		width: 100%;
-		background-size: cover;
+	.SideBarContainer {
+		padding-left: 0rem;
 	}
 	.hero_container h1 {
 		font-size: 4rem;
