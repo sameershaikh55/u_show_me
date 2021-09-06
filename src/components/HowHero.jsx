@@ -4,28 +4,14 @@ import rightArrow from "../assets/images/rightArrow.svg";
 const HowHero = ({ dataHome, dropdown: { t } }) => {
 	return (
 		<div className="hero position-relative">
-			<div className="d-none d-sm-block">
-				<video
+			<div>
+				<img
 					className="w-100"
-					poster=""
-					autoPlay
-					playsinline
-					loop
-					muted
-					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Landing_How_It_Works_New.mp4"
+					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_How_It_Works_Video_BG.jpg"
+					alt=""
 				/>
 			</div>
-			<div className="d-block d-sm-none">
-				<video
-					className="w-100"
-					poster=""
-					autoPlay
-					playsinline
-					loop
-					muted
-					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Home_Landing_Video_1080x1920.mp4"
-				/>
-			</div>
+
 			<div className="hero_container howHero d-flex justify-content-center align-items-end align-items-sm-center">
 				<div className="page_container">
 					<div className="container-fluid">
@@ -37,7 +23,7 @@ const HowHero = ({ dataHome, dropdown: { t } }) => {
 								<a
 									target="blank"
 									className="text-decoration-none"
-									href="https://app.ushowme.tv/"
+									href="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Landing_How_It_Works_New.mp4"
 								>
 									<button
 										style={{

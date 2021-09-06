@@ -2298,6 +2298,255 @@ export const data = [
 				],
 				// BODY END
 			},
+			faq: {
+				// HERO START
+				hero: "FAQ",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "ABOUT US" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "HOW IT WORKS" },
+					{ t: "WHO ARE U?" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "ABOUT US" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "WHO ARE U?" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HOW IT WORKS" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
+				// FOOTER START
+				footer: [
+					{
+						t: "How it Works",
+						l: "/howItWorks",
+					},
+					{
+						t: "FAQ",
+						l: "/faq",
+					},
+					{
+						t: "Jobs",
+						l: "/jobs",
+					},
+					{
+						t: "Contact Us",
+						l: "",
+					},
+					{
+						t: "Media",
+						l: "",
+					},
+					{
+						t: "Privacy Policy",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "Terms & Conditions",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "View all Shows",
+				// FOOTER END
+
+				// NEWSLETTER START				newsletter1: "Subscribe Newsletter",
+				newsletter1: "Subscribe Newsletter:",
+				newsletterBtn: "Send",
+				// NEWSLETTER END
+
+				// BODY START
+				faq1: {
+					h1: "Artist/Label",
+
+					faqList: [
+						{
+							q: "What is UshowMe?",
+							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
+						},
+						{
+							q: "How can I interact with my digital fans?",
+							a: "We provide you a link for you to view the Top Fans interactions in an expanded way. You must have a Smart TV, computer connected to a screen or Led Wall, with Internet connection with at least 3Mbps download speed to view them.",
+						},
+						{
+							q: "Are the Top Fans always on?",
+							a: ": By default there will be dedicated moments during your show that the Top Fans will be active, but if you prefer we can make them always on. From the feedback gathered by other artists, they prefer having special moments dedicated to them, like dancing along a song chorus.",
+						},
+						{
+							q: "Can I setup my own show and control everything?",
+							a: "To ensure that you deliver the best possible experience to delight and retain your fans, it’s better to have professional equipment and a production crew handling the streaming part and moderation, so you can focus on your gig.",
+						},
+						{
+							q: "Can I play music from other artists?",
+							a: "Yes as long as you have the rights for it. The streams aren’t blocked, but if we receive a copyright claim by a third party, you will have to provide that you own the rights to them.",
+						},
+						{
+							q: "I have a brand sponsoring my show, can I bring it onboard?",
+							a: "Yes and you should, at UshowMe we provide you the tools to make your sponsors stand out, increase awareness and your fans can interact with. Those can be logos, interactive banners, premium videos on the Top Fans and a button for opening your sponsor’s website.Contact us for more information about this.",
+						},
+						{
+							q: "A Venue wants to live stream my show and sell tickets, how do I get revenue from them?",
+							a: "That will be an agreement between you, or your label/agent and the venue.",
+						},
+						{
+							q: "Can I create and monetize my own Augmented Reality Merchandise, for my fans use them on the Top Fans?",
+							a: "Yes, we will provide you a link to a tool dedicated to create virtual merchandise in 3D. It require 3D software knowledge. Feel free to reach on this.",
+						},
+						{
+							q: "Can I do Meet & Greets with my fans?",
+							a: "Yes, that is the ice on top of the cake for your fans as they want to have those special moments with you, and we have a tool just for that.",
+						},
+					],
+				},
+
+				faq2: {
+					h1: "Producers/venues",
+
+					faqList: [
+						{
+							q: " What is UshowMe?",
+							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
+						},
+						{
+							q: "Can I have an end-to-end solution, including video production?",
+							a: "While UshowMe handles the platform and interactions, we have partners that can handle the video production for you. Reach us for more information.",
+						},
+						{
+							q: "Can I sell tickets?",
+							a: "Yes, as we are partning with ticketing solutions, you can sell your tickets with our partners or bring your own ticketing platform and we take care of the integration.",
+						},
+						{
+							q: "What is the limit of viewers I can have on my shows?",
+							a: "We currently have no limits. Our infrastructure is using Cloud servers that auto-scale in real-time when needed",
+						},
+						{
+							q: " Can I share ticketing revenue with artists, labels and agents?",
+							a: "Yes, that agreement is up to you and them.",
+						},
+						{
+							q: "Can I run UshowMe on my website?",
+							p: "Yes, we also have available a whitelabel version with configuration settings, so you can adjust the user interface colors and fonts accordingly. By using UshowMe on your website, you will be in charge of handling login and registrations, as we do not have access to that information.",
+						},
+						{
+							q: "After my show is finished, what information is provided?",
+							a: "We provide a detailed business intelligence report, allowing you to understand and take actions based on facts and real data. All data complies with GDPR.",
+						},
+						{
+							q: "Can I use it for my festival?",
+							a: "Yes and we will be by your side, helping you take your festival to the best experience possible. We can even tailor made some special interactions request, so you can stand out.",
+						},
+						{
+							q: " What are the supported devices?",
+							a: "For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the Top Fans interactions: devices with browsers that run on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat 4.4 + and Safari 12 + on iOS 12 +",
+						},
+					],
+				},
+
+				faq3: {
+					h1: "Producers/venues",
+
+					faqList: [
+						{
+							q: "What is UshowMe?",
+							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
+						},
+						{
+							q: "Can I have an end-to-end solution, including video production?",
+							a: "While UshowMe handles the platform and interactions, we have partners that can handle the video production for you. Reach us for more information.",
+						},
+						{
+							q: "How can my Brand engage with digital fans?",
+							a: "We provide a range of spaces and options for your Brand to get the highlight it needs on our platform and whitelabel version.",
+						},
+						{
+							q: "What is the limit of viewers I can have on my shows?",
+							a: "We currently have no limits. Our infrastructure is using Cloud servers that auto-scale in real-time when needed.",
+						},
+						{
+							q: "Can I have my Brand Augmented Reality filters on Top Fans?",
+							a: "Yes, we can help you build those, or we can build them for you. Contact us for more information about this.",
+						},
+						{
+							q: "Can I run UshowMe on my website?",
+							a: "Yes, we also have available a whitelabel version with configuration settings, so you can adjust the user interface colors and fonts accordingly. By using UshowMe on your website, you will be in charge of handling login and registrations, as we do not have access to that information",
+						},
+						{
+							q: "After my show is finished, what information is provided?",
+							a: "We provide a detailed business intelligence report, allowing you to understand and take actions based on facts and real data. All data complies with GDPR.",
+						},
+						{
+							q: "What are the supported devices?",
+							a: ": For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the Top Fans interactions: devices with browsers that run on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat 4.4 + and Safari 12 + on iOS 12 +.",
+						},
+					],
+				},
+
+				faq4: {
+					h1: "FAQ’s for FANS",
+
+					faqList: [
+						{
+							q: "What is UshowMe?",
+							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
+						},
+						{
+							q: "FAQ’s for FANS",
+							a: "We currently support the most recent versions of Brave, Chrome, Edge, Firefox, Opera and Safari on Mobile, Tablet, Desktop devices and SmartTV’s that allow installing any browser mentioned above. Internet Explorer is not supported",
+						},
+						{
+							q: "What interactions are available?",
+							a: (
+								<p>
+									Currently we have:
+									<br />
+									- The Top Fans, a premium feature, where you as a fan can join
+									in with your smartphone camera and/or webcam, use our
+									Augmented Reality filters for more fun, express your emotions
+									on stage to everybody and interact with artists.
+									<br />
+									- The live chat, to talk with all participants on the show.
+									<br />- Video Meet & Greet with artists at the end of the
+									show, if artists made it available.
+								</p>
+							),
+						},
+						{
+							q: "Are interactions moderated?",
+							a: "Yes. Both Top Fans and Live Chat are moderated to make sure the experience remains positive to all. A code of conduct is displayed when you log in the first time for each show, that needs to be followed",
+						},
+						{
+							q: "Would can I participate on the Top Fans?",
+							a: " Log in or sign up, click the button saying Top Fan and grant camera permission when requested. You should see yourself on the preview and you can choose our Augmented Reality filters for more fun, or use it just with your video. Click or tap on the Finalize Test button to be added to the queue. We will remind you before to prepare and give you a countdown for your participation time in the Top Fans Stage",
+						},
+						{
+							q: "I don’t see myself on the Top Fans Preview?",
+							a: "Make sure that camera permission is granted and browser is up to date. On some older devices running iOS 12 and very old Android versions, there are limitations and sometimes you cannot join. If you experience this issue, try joining in from another device",
+						},
+						{
+							q: "If I get the e-mail to join a Meet & Greet with the artist, what should I do?",
+							a: ": Start by clicking on the link to open a new webpage where we ask you to share your camera and microphone. Please join in as soon as possible, so we can check the quality of your connection and give you instructions when you will be interacting.",
+						},
+						{
+							q: " Does UshowMe comply with GDPR?",
+							a: " Yes, if you want to know more please read our privacy policy and Terms & conditions, or contact us to legal@ushowme.tv",
+						},
+						{
+							q: "What are the supported devices?",
+							a: "For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11",
+						},
+					],
+				},
+				// BODY END
+			},
 			// BODY END
 		},
 		ES: {
@@ -4632,6 +4881,256 @@ export const data = [
 					},
 				],
 			},
+			faq: {
+				// HERO START
+				hero: "Preguntas más frecuentes",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Cómo funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Preguntas más frecuentes",
+						l: "/faq",
+					},
+					{
+						t: "Trabajos",
+						l: "/jobs",
+					},
+					{
+						t: "Contáctenos",
+						l: "",
+					},
+					{
+						t: "medios de comunicación",
+						l: "",
+					},
+					{
+						t: "Política de privacidad",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "Términos & amp; condiciones",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "Ver todos los programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Suscríbete al boletín",
+				newsletterBtn: "Enviar",
+				// PARTNER END
+
+				// BODY START
+				faq1: {
+					h1: "Artista / Sello",
+
+					faqList: [
+						{
+							q: "¿Qué es UshowMe?",
+							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
+						},
+						{
+							q: "¿Cómo puedo interactuar con mis fans digitales?",
+							a: "Te proporcionamos un enlace para que veas las interacciones de Top Fans de forma expandida. Debes tener un Smart TV, computadora conectada a una pantalla o Led Wall, con conexión a Internet con al menos 3Mbps de velocidad de descarga para verlas. ",
+						},
+						{
+							q: "¿Están siempre activos los Top Fans?",
+							a: "De forma predeterminada, habrá momentos dedicados durante tu programa en los que los Fans principales estarán activos, pero si lo prefieres, podemos hacer que estén siempre activos. Según los comentarios recopilados por otros artistas, prefieren tener momentos especiales dedicados a ellos. como bailar a lo largo de un coro de canciones. ",
+						},
+						{
+							q: "¿Puedo configurar mi propio programa y controlar todo?",
+							a: "Para garantizar que ofreces la mejor experiencia posible para deleitar y retener a tus fans, es mejor tener un equipo profesional y un equipo de producción que se encargue de la parte de transmisión y la moderación, para que puedas concentrarte en tu concierto",
+						},
+						{
+							q: "¿Puedo reproducir música de otros artistas?",
+							a: "Sí, siempre que tenga los derechos para ello. Las transmisiones no están bloqueadas, pero si recibimos un reclamo de derechos de autor por parte de un tercero, deberá indicar que posee los derechos sobre ellas",
+						},
+						{
+							P: "Tengo una marca patrocinando mi programa, ¿puedo incorporarlo?",
+							a: "Sí, y deberías, en UshowMe te proporcionamos las herramientas para que tus patrocinadores se destaquen, aumenten la conciencia y tus fans puedan interactuar con ellos. Pueden ser logotipos, banners interactivos, videos premium en los Top Fans y un botón para abrir el sitio web de su patrocinador. Comuníquese con nosotros para obtener más información al respecto. ",
+						},
+						{
+							P: "Un lugar quiere transmitir en vivo mi programa y vender entradas, ¿cómo obtengo ingresos de ellos?",
+							a: "Ese será un acuerdo entre usted, o su sello / agente y el lugar",
+						},
+						{
+							P: "¿Puedo crear y monetizar mi propio merchandising de realidad aumentada, para que mis fans los utilicen en Top Fans?",
+							a: "Sí, le proporcionaremos un enlace a una herramienta dedicada a crear mercancía virtual en 3D. Requiere conocimientos de software 3D. No dude en acceder a esto.",
+						},
+						{
+							q: "¿Puedo hacer Meet & Greets con mis fans?",
+							a: "Sí, ese es el hielo en la parte superior del pastel para tus fanáticos, ya que quieren tener esos momentos especiales contigo, y tenemos una herramienta solo para eso",
+						},
+					],
+				},
+
+				faq2: {
+					h1: "Productores / lugares",
+
+					faqList: [
+						{
+							q: "¿Qué es UshowMe?",
+							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
+						},
+						{
+							P: "¿Puedo tener una solución integral, incluida la producción de video?",
+							a: "Mientras UshowMe maneja la plataforma y las interacciones, tenemos socios que pueden manejar la producción de video por usted. Comuníquese con nosotros para obtener más información",
+						},
+						{
+							q: "¿Puedo vender entradas?",
+							a: "Sí, como nos asociamos con soluciones de venta de entradas, puede vender sus entradas con nuestros socios o traer su propia plataforma de venta de entradas y nosotros nos encargamos de la integración",
+						},
+						{
+							q: "¿Cuál es el límite de espectadores que puedo tener en mis programas?",
+							a: "Actualmente no tenemos límites. Nuestra infraestructura utiliza servidores en la nube que se escalan automáticamente en tiempo real cuando es necesario",
+						},
+						{
+							P: "¿Puedo compartir los ingresos por venta de entradas con artistas, sellos y agentes?",
+							a: "Sí, ese acuerdo depende de ti y de ellos",
+						},
+						{
+							q: "¿Puedo ejecutar UshowMe en mi sitio web?",
+							p: "Sí, también tenemos disponible una versión de etiqueta blanca con ajustes de configuración, por lo que puede ajustar los colores y las fuentes de la interfaz de usuario en consecuencia. Al usar UshowMe en su sitio web, usted estará a cargo de manejar el inicio de sesión y los registros, ya que nosotros no tener acceso a esa información. ",
+						},
+						{
+							q: "Después de que termine mi programa, ¿qué información se proporciona?",
+							a: "Proporcionamos un informe de inteligencia empresarial detallado, que le permite comprender y tomar acciones basadas en hechos y datos reales. Todos los datos cumplen con GDPR.",
+						},
+						{
+							q: "¿Puedo usarlo para mi festival?",
+							a: "Sí, y estaremos a tu lado, ayudándote a llevar tu festival a la mejor experiencia posible. Incluso podemos personalizar algunas solicitudes de interacciones especiales para que puedas destacar",
+						},
+						{
+							q: "¿Cuáles son los dispositivos compatibles?",
+							a: "Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42+, Safari 9 +, Microsoft Edge, 10+, Opera17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para las interacciones de Top Fans: dispositivos con navegadores que se ejecutan en: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 + ",
+						},
+					],
+				},
+
+				faq3: {
+					h1: "Productores / lugares",
+
+					faqList: [
+						{
+							q: "¿Qué es UshowMe?",
+							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
+						},
+						{
+							P: "¿Puedo tener una solución integral, incluida la producción de video?",
+							a: "Mientras UshowMe maneja la plataforma y las interacciones, tenemos socios que pueden manejar la producción de video por usted. Comuníquese con nosotros para obtener más información",
+						},
+						{
+							P: "¿Cómo puede mi marca interactuar con los fans digitales?",
+							a: "Ofrecemos una gama de espacios y opciones para que su marca obtenga lo más destacado que necesita en nuestra plataforma y versión de etiqueta blanca",
+						},
+						{
+							q: "¿Cuál es el límite de espectadores que puedo tener en mis programas?",
+							a: "Actualmente no tenemos límites. Nuestra infraestructura utiliza servidores en la nube que se escalan automáticamente en tiempo real cuando es necesario",
+						},
+						{
+							P: "¿Puedo tener mis filtros de Realidad Aumentada de Marca en los Fans Principales?",
+							a: "Sí, podemos ayudarlo a construirlos, o podemos hacerlo por usted. Contáctenos para obtener más información al respecto",
+						},
+						{
+							q: "¿Puedo ejecutar UshowMe en mi sitio web?",
+							a: "Sí, también tenemos disponible una versión de etiqueta blanca con ajustes de configuración, por lo que puede ajustar los colores y las fuentes de la interfaz de usuario en consecuencia. Al usar UshowMe en su sitio web, usted estará a cargo de manejar el inicio de sesión y los registros, ya que nosotros no tener acceso a esa información ",
+						},
+						{
+							q: "Después de que termine mi programa, ¿qué información se proporciona?",
+							a: "Proporcionamos un informe de inteligencia empresarial detallado, que le permite comprender y tomar acciones basadas en hechos y datos reales. Todos los datos cumplen con GDPR.",
+						},
+						{
+							q: "¿Cuáles son los dispositivos compatibles?",
+							a: ": Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para las interacciones de los principales fanáticos: dispositivos con navegadores que se ejecutan en: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 +. ",
+						},
+					],
+				},
+
+				faq4: {
+					h1: "Preguntas frecuentes para FANS",
+
+					faqList: [
+						{
+							q: "¿Qué es UshowMe?",
+							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
+						},
+						{
+							q: "Preguntas frecuentes para FANS",
+							a: "Actualmente admitimos las versiones más recientes de Brave, Chrome, Edge, Firefox, Opera y Safari en dispositivos móviles, tabletas, computadoras de escritorio y SmartTV que permiten instalar cualquier navegador mencionado anteriormente. Internet Explorer no es compatible",
+						},
+						{
+							q: "¿Qué interacciones están disponibles?",
+							a: (
+								<p>
+									Actualmente contamos con:
+									<br />
+									- The Top Fans, una función premium, a la que tú, como fan,
+									puedes unirte con la cámara de su teléfono inteligente y / o
+									cámara web, use nuestro Filtros de realidad aumentada para más
+									diversión, expresa tus emociones en el escenario para todos e
+									interactuar con los artistas.
+									<br />
+									- El chat en vivo, para hablar con todos los participantes del
+									programa.
+									<br /> - Video Meet & Greet con artistas al final de la
+									espectáculo, si los artistas lo pusieron a disposición.
+								</p>
+							),
+						},
+						{
+							q: "¿Se moderan las interacciones?",
+							a: "Sí. Tanto los Fans principales como el Chat en vivo están moderados para garantizar que la experiencia sea positiva para todos. Se muestra un código de conducta cuando inicias sesión por primera vez para cada programa, que debes seguir",
+						},
+						{
+							q: "¿Puedo participar en Top Fans?",
+							a: "Inicie sesión o regístrese, haga clic en el botón que dice Top Fan y otorgue permiso a la cámara cuando se le solicite. Debería verse en la vista previa y puede elegir nuestros filtros de Realidad Aumentada para divertirse más, o usarlo solo con su video. Haga clic en o toque el botón Finalizar prueba para agregarlo a la cola. Le recordaremos antes de prepararse y le daremos una cuenta regresiva para su tiempo de participación en la etapa de los mejores fanáticos ",
+						},
+						{
+							q: "¿No me veo en la vista previa de Top Fans?",
+							a: "Asegúrese de que se otorgue el permiso de la cámara y que el navegador esté actualizado. En algunos dispositivos más antiguos con iOS 12 y muy antiguosVersiones de Android, existen limitaciones y en ocasiones no puedes unirte. Si experimenta este problema, intente unirse desde otro dispositivo ",
+						},
+						{
+							q: "Si recibo el correo electrónico para unirme a un Meet & Greet con el artista, ¿qué debo hacer?",
+							a: ": Comience haciendo clic en el enlace para abrir una nueva página web donde le pedimos que comparta su cámara y micrófono. Únase lo antes posible, para que podamos verificar la calidad de su conexión y darle instrucciones cuando lo haga estar interactuando. ",
+						},
+						{
+							q: "¿UshowMe cumple con el RGPD?",
+							a: "Sí, si desea obtener más información, lea nuestra política de privacidad y los Términos y condiciones, o contáctenos a legal@ushowme.tv",
+						},
+						{
+							q: "¿Cuáles son los dispositivos compatibles?",
+							a: "Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 + , Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 ",
+						},
+					],
+				},
+				// BODY END
+			},
 		},
 		PT: {
 			home: {
@@ -6930,6 +7429,256 @@ export const data = [
 						),
 					},
 				],
+			},
+			faq: {
+				// HERO START
+				hero: "Perguntas frequentes",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NÓS" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NÓS" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Como funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Perguntas frequentes",
+						l: "/faq",
+					},
+					{
+						t: "Empregos",
+						l: "/jobs",
+					},
+					{
+						t: "Entre em contato conosco",
+						l: "",
+					},
+					{
+						t: "meios de comunicação",
+						l: "",
+					},
+					{
+						t: "Política de Privacidade",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "termos e Condições",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "Ver todos os programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Assine o Newsletter",
+				newsletterBtn: "Mandar",
+				// PARTNER END
+
+				// BODY START
+				faq1: {
+					h1: "Artista / gravadora",
+
+					faqList: [
+						{
+							q: "O que é UshowMe?",
+							a: "UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda criada para ajudar a transformar shows ao vivo em programas híbridos, fornecendo novas formas de envolvimento entre públicos, artistas e marcas, e vários fluxos de receita para os criadores do programa",
+						},
+						{
+							q: "Como posso interagir com meus fãs digitais?",
+							a: "Disponibilizamos um link para que você possa ver as interações dos Top Fans de forma ampliada. Você deve ter uma Smart TV, computador conectado a uma tela ou Led Wall, com conexão à Internet com no mínimo 3Mbps de download velocidade para vê-los. ",
+						},
+						{
+							q: "Os principais fãs estão sempre ativos?",
+							a: "Por padrão, haverá momentos dedicados durante seu show em que os principais fãs estarão ativos, mas se você preferir, podemos torná-los sempre ativos. Com base no feedback de outros artistas, eles preferem ter momentos especiais dedicados a eles . como dançar ao som de um coro de músicas. ",
+						},
+						{
+							q: "Posso configurar meu próprio programa e controlar tudo?",
+							a: "Para garantir que você ofereça a melhor experiência possível para encantar e reter seus fãs, é melhor ter uma equipe profissional e uma equipe de produção que cuide da parte da transmissão e da moderação, para que você possa se concentrar no seu show . ",
+						},
+						{
+							q: "Posso tocar música de outros artistas?",
+							a: "Sim, contanto que você tenha os direitos sobre elas. As transmissões não são bloqueadas, mas se recebermos uma reivindicação de direitos autorais de terceiros, você deve indicar que possui os direitos sobre elas",
+						},
+						{
+							P: "Tenho uma marca patrocinando meu programa, posso incorporá-la?",
+							a: "Sim, e você deve, no UshowMe nós fornecemos as ferramentas para seus patrocinadores se destacarem, aumentarem a conscientização e seus fãs podem interagir com eles. Podem ser logotipos, banners interativos, vídeos premium nos principais fãs e um botão para abrir o site do seu patrocinador. Entre em contato para mais informações. ",
+						},
+						{
+							q: "Um local deseja transmitir meu show ao vivo e vender ingressos, como obtenho receita com eles?",
+							a: "Esse será um acordo entre você, ou sua gravadora / agente e o local",
+						},
+						{
+							P: "Posso criar e monetizar meus próprios produtos de realidade aumentada para meus fãs usarem nos fãs principais?",
+							a: "Sim, forneceremos um link para uma ferramenta dedicada à criação de mercadoria virtual 3D. Requer conhecimento de software 3D. Sinta-se à vontade para acessá-lo.",
+						},
+						{
+							q: "Posso fazer Meet & Greets com meus fãs?",
+							a: "Sim, esse é o gelo no topo do bolo para seus fãs, pois eles querem ter aqueles momentos especiais com você, e temos uma ferramenta exatamente para isso",
+						},
+					],
+				},
+
+				faq2: {
+					h1: "Produtores / locais",
+
+					faqList: [
+						{
+							q: "O que é UshowMe?",
+							a: "UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda criada para ajudar a transformar shows ao vivo em programas híbridos, fornecendo novas formas de envolvimento entre públicos, artistas e marcas, e vários fluxos de receita para os criadores do programa",
+						},
+						{
+							q: "Posso ter uma solução abrangente, incluindo produção de vídeo?",
+							a: "Enquanto o UshowMe gerencia a plataforma e as interações, temos parceiros que podem cuidar da produção de vídeo para você. Entre em contato conosco para obter mais informações",
+						},
+						{
+							q: "Posso vender ingressos?",
+							a: "Sim, como fazemos parceria com soluções de bilhetagem, você pode vender suas passagens com nossos parceiros ou trazer sua própria plataforma de bilhetagem e nós cuidamos da integração",
+						},
+						{
+							q: "Qual é o limite de visualizadores que posso ter em meus programas?",
+							a: "Atualmente não temos limites. Nossa infraestrutura usa servidores em nuvem que escalam automaticamente em tempo real quando necessário",
+						},
+						{
+							q: "Posso dividir a receita dos ingressos com artistas, gravadoras e agentes?",
+							a: "Sim, esse acordo é com você e eles",
+						},
+						{
+							q: "Posso executar o UshowMe no meu site?",
+							P: "Sim, também temos uma versão com etiqueta em branco disponível com as definições de configuração, para que você possa ajustar as cores e fontes da IU de acordo. Ao usar o UshowMe em seu site, você será responsável por gerenciar o login e os registros, pois não têm acesso a essas informações. ",
+						},
+						{
+							q: "Depois que meu programa termina, o queQue informações são fornecidas? ",
+							a: "Fornecemos um relatório detalhado de business intelligence, permitindo que você entenda e tome medidas com base em dados e fatos reais. Todos os dados são compatíveis com o GDPR.",
+						},
+						{
+							q: "Posso usar no meu festival?",
+							a: "Sim, e estaremos ao seu lado, ajudando você a trazer o seu festival para a melhor experiência possível. Podemos até customizar alguns pedidos de interação especiais para que você se destaque.",
+						},
+						{
+							q: "Quais são os dispositivos suportados?",
+							a: "Para o stream principal (o programa), dispositivos com navegadores em execução: no Chrome 35+, Firefox 42+, Safari 9 +, Microsoft Edge, 10+, Opera17 +, Vivaldi 1.9 +, Brave, IE11 no Windows 8.1+ , Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 Para Interações de Ventilador Principais: Dispositivos com navegadores em: Chrome 37+, Firefox 44+, Safari 11+, Microsoft Edge 12+, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome no Android KitKat 4.4 + e Safari 12 + no iOS 12 + ",
+						},
+					],
+				},
+
+				faq3: {
+					h1: "Produtores / locais",
+
+					faqList: [
+						{
+							q: "O que é UshowMe?",
+							a: "UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda criada para ajudar a transformar shows ao vivo em programas híbridos, fornecendo novas formas de envolvimento entre públicos, artistas e marcas, e vários fluxos de receita para os criadores do programa",
+						},
+						{
+							q: "Posso ter uma solução abrangente, incluindo produção de vídeo?",
+							a: "Enquanto o UshowMe gerencia a plataforma e as interações, temos parceiros que podem cuidar da produção de vídeo para você. Entre em contato conosco para obter mais informações",
+						},
+						{
+							q: "Como minha marca pode interagir com fãs digitais?",
+							a: "Oferecemos uma gama de espaços e opções para sua marca obter os destaques de que precisa em nossa plataforma e versão com etiqueta em branco",
+						},
+						{
+							q: "Qual é o limite de visualizadores que posso ter em meus programas?",
+							a: "Atualmente não temos limites. Nossa infraestrutura usa servidores em nuvem que escalam automaticamente em tempo real quando necessário",
+						},
+						{
+							P: "Posso colocar os filtros de realidade aumentada da minha marca nos fãs principais?",
+							a: "Sim, podemos ajudá-lo a construí-los ou podemos fazer isso por você. Entre em contato conosco para obter mais informações sobre isso",
+						},
+						{
+							q: "Posso executar o UshowMe no meu site?",
+							a: "Sim, também temos uma versão com etiqueta em branco disponível com as definições de configuração, para que você possa ajustar as cores e fontes da IU de acordo. Ao usar o UshowMe em seu site, você será responsável por gerenciar o login e os registros, pois o fazemos não tem acesso a essas informações ",
+						},
+						{
+							q: "Após o término do meu programa, quais informações são fornecidas?",
+							a: "Fornecemos um relatório detalhado de business intelligence, permitindo que você entenda e tome medidas com base em dados e fatos reais. Todos os dados são compatíveis com o GDPR.",
+						},
+						{
+							q: "Quais são os dispositivos suportados?",
+							para: ": Para o stream principal (o programa), dispositivos com navegadores executando: no Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10+, Opera 17+, Vivaldi 1.9+, Brave, IE11 no Windows 8.1+, Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 Para as principais interações dos fãs: Dispositivos com navegadores executados em: Chrome 37+, Firefox 44+, Safari 11+, Microsoft Edge 12+, Opera 19+, Vivaldi 2.0 +, Brave, Chrome no Android KitKat 4.4+ e Safari 12+ no iOS 12+. ",
+						},
+					],
+				},
+
+				faq4: {
+					h1: "FAQ para FANS",
+
+					faqList: [
+						{
+							q: "O que é UshowMe?",
+							a: "UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda criada para ajudar a transformar shows ao vivo em programas híbridos, fornecendo novas formas de envolvimento entre públicos, artistas e marcas, e vários fluxos de receita para os criadores do programa",
+						},
+						{
+							q: "Perguntas mais frequentes para os FÃS",
+							a: "Atualmente, oferecemos suporte às versões mais recentes do Brave, Chrome, Edge, Firefox, Opera e Safari em dispositivos móveis, tablets, desktops e SmartTVs que permitem a instalação de qualquer navegador mencionado acima. O Internet Explorer não é compatível",
+						},
+						{
+							q: "Quais interações estão disponíveis?",
+							a: (
+								<p>
+									Atualmente temos:
+									<br />
+									- Os Principais fãs, um recurso premium, para o qual você,
+									como fã, você pode entrar com a câmera do seu smartphone e /
+									ou Webcam,use nossos filtros de realidade aumentada para mais
+									divertido, expresse suas emoções no palco para todos e
+									interagir com os artistas.
+									<br />
+									- Chat ao vivo, para conversar com todos os participantes do
+									Programa.
+									<br /> - Vídeo Meet & Greet com artistas no final do show, se
+									os artistas o disponibilizaram.
+								</p>
+							),
+						},
+						{
+							q: "As interações são moderadas?",
+							a: "Sim. Tanto os principais fãs quanto o chat ao vivo são moderados para garantir uma experiência positiva para todos. Um código de conduta é exibido quando você faz login pela primeira vez em cada programa, que deve ser seguido.",
+						},
+						{
+							q: "Posso participar dos Principais fãs?",
+							a: "Faça o login ou cadastre-se, clique no botão que diz Ventilador Superior e dê permissão à câmera quando solicitado. Deve ser visto na prévia e você pode escolher nossos filtros de Realidade Aumentada para se divertir mais, ou usá-los apenas com o seu vídeo. Clique ou toque no botão Encerrar teste para adicioná-lo à fila. Vamos lembrá-lo antes de se preparar e fazer uma contagem regressiva do tempo gasto no palco dos melhores fãs.",
+						},
+						{
+							q: "Não consigo me ver na visualização dos principais fãs?",
+							a: "Certifique-se de que a permissão da câmera foi concedida e o navegador está atualizado. Em alguns dispositivos mais antigos com iOS 12 e versões muito antigas do Android, há limitações e às vezes você não pode entrar. Se você tiver esse problema, tente entrar em outro dispositivo ",
+						},
+						{
+							q: "Se eu receber o e-mail para participar de um Meet & Greet com o artista, o que devo fazer?",
+							a: ": Comece clicando no link para abrir uma nova página da web onde pedimos que você compartilhe sua câmera e microfone. Junte-se o mais rápido possível, para que possamos verificar a qualidade de sua conexão e fornecer instruções quando você interagir . ",
+						},
+						{
+							q: "O UshowMe é compatível com GDPR?",
+							a: "Sim, se você quiser mais informações, leia nossa política de privacidade e Termos e Condições, ou entre em contato conosco pelo e-mail legal@ushowme.tv",
+						},
+						{
+							q: "Quais são os dispositivos suportados?",
+							a: "Para o stream principal (o programa), dispositivos com navegadores em execução: no Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10+, Opera 17+, Vivaldi 1.9+, Brave, IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 para transmissão principal (o programa), dispositivos com navegadores em execução: Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10 +, Opera 17 + , Vivaldi 1.9 +, Brave, IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4 + e Safari Mobile no iOS 11 ",
+						},
+					],
+				},
+				// BODY END
 			},
 		},
 	},

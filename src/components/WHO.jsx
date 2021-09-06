@@ -147,7 +147,10 @@ const WHO = ({ dataHome }) => {
 								<h6 className="text-white NeueMachina w-100">
 									{who1under + "n"}
 								</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold w-100">
+								<h1
+									style={{ wordBreak: "break-word" }}
+									className="underlineAbout text-white NeueMachina fw-bold w-100"
+								>
 									{slide1T}
 								</h1>
 							</div>

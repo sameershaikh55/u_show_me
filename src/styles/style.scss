@@ -345,21 +345,36 @@ input {
 // FEATURE SLIDER START
 .feature_slider_container {
 	background-color: $color4;
-	min-width: 100%;
-	overflow-x: auto;
 
 	.news_card {
-		width: 350px;
+		position: relative;
 
-		img {
-			width: 350px;
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: 0.5s ease;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+
+		&:hover .overlay {
+			opacity: 1;
 		}
 	}
 
 	.text_content {
-		top: 50%;
+		bottom: 3%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+
+		h2 {
+			line-height: 35px;
+		}
 
 		button {
 			width: 150px;
@@ -624,7 +639,7 @@ input {
 
 // ABOUT FUN START
 .its_all_container {
-	margin-top: -6px;
+	// margin-top: -6px;
 
 	.its_all_abs {
 		position: absolute;
@@ -634,6 +649,7 @@ input {
 
 		h1 {
 			max-width: 250px;
+			font-size: 4rem;
 		}
 	}
 
@@ -656,7 +672,7 @@ input {
 
 	.newsSliderContainer {
 		.news_card {
-			// width: 200px;
+			position: relative;
 			outline: -webkit-focus-ring-color none 1px;
 
 			p {
@@ -1024,6 +1040,63 @@ input {
 	background-color: $color8;
 }
 // VACANCY END
+
+// FAQ START
+.faq_body_container {
+	padding: 5rem 0rem;
+
+	.MuiAccordion-root {
+		box-shadow: none !important;
+
+		.NeueMachina {
+			font-family: NeueMachina;
+			font-weight: 600;
+		}
+		.spaceMono {
+			font-family: spaceMono1;
+			font-size: 18px;
+		}
+	}
+
+	.MuiPaper-root {
+		// color: #fff;
+	}
+
+	.MuiSvgIcon-root {
+		// color: #fff;
+	}
+
+	.MuiAccordionSummary-root {
+		min-height: 60px;
+	}
+
+	.MuiAccordion-rounded {
+		border-radius: 0px !important;
+	}
+}
+
+.faq_btns {
+	button {
+		border: none;
+	}
+	button:nth-child(1) {
+		background-color: #541dec;
+	}
+	button:nth-child(2) {
+		background-color: #eb5565;
+	}
+	button:nth-child(3) {
+		background-color: #ebab54;
+	}
+	button:nth-child(4) {
+		background-color: #17bb6f;
+	}
+}
+
+.faq_btns_cont {
+	margin-top: -40px;
+}
+// FAQ END
 
 // MEDIA QUERIES START
 @media screen and (min-width: 1500px) {

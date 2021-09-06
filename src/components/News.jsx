@@ -1,39 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import eye from "../assets/images/eye.svg";
-import HorizontalScroll from "react-scroll-horizontal";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const News = ({ dataHome }) => {
 	const { news } = dataHome;
-
-	var settings = {
-		centerMode: true,
-		dots: false,
-		infinite: false,
-		arrows: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		initialSlide: 0,
-		centerPadding: 50,
-		responsive: [
-			{
-				breakpoint: 900,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					infinite: false,
-				},
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: false,
-				},
-			},
-		],
-	};
 
 	const data = [
 		{
@@ -97,64 +68,56 @@ const News = ({ dataHome }) => {
 		},
 	];
 
-	const child = { width: `356px`, height: `100%` };
-	const parent = { width: `100%`, height: `26rem` };
-
 	return (
-		<div className="news_container">
+		<div className="news_container ps-4 ps-md-5">
 			<div className="w-100">
-				<div className="container-fluid px-0">
+				{/* <div className="container-fluid px-0">
 					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
-							<p className="text-white f18 mb-0 NeueMachina">
-								U<span className="color3">SHOW</span>ME
-							</p>
-							<h1 className="text-white NeueMachina fw-bold f50 underlineAbout pb-4 mt-2">
-								{news}
-							</h1>
+						<div className="col-11 col-md-12 mx-auto"> */}
+				<p className="text-white f18 mb-0 NeueMachina">
+					U<span className="color3">SHOW</span>ME
+				</p>
+				<h1 className="text-white NeueMachina fw-bold f50 underlineAbout pb-4 mt-2">
+					{news}
+				</h1>
 
-							{/* DESKTOP SCREEN START */}
-							<div className="newsSliderContainer d-none d-md-block">
-								<div className="w-100">
-									<div style={parent}>
-										<HorizontalScroll>
-											{data.map((prev, ind) => {
-												const { i, t, l } = prev;
-												return (
-													<div
-														style={child}
-														className="news_card mt-5 pe-3"
-														key={ind}
-													>
-														<img className="thumbnail w-100" src={i} alt="" />
-														<div className="mt-3">
-															<span className="spaceMono">{t}</span>
-															<a
-																target="blank"
-																className="text-decoration-none"
-																href={l}
-															>
-																<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex align-items-center border-0 f16 py-1 px-3 mt-3">
-																	<img src={eye} alt="" className="me-2" /> Read
-																	the Full Article
-																</button>
-															</a>
-														</div>
-													</div>
-												);
-											})}
-										</HorizontalScroll>
-									</div>
-								</div>
-							</div>
-							{/* DESKTOP SCREEN END */}
-
-							{/* MOBILE SCREEN START */}
-							<div className="newsSliderContainer d-block d-md-none">
-								<Slider {...settings}>
-									{data.map((prev, ind) => {
-										const { i, t, l } = prev;
-										return (
+				{/* DESKTOP SCREEN START */}
+				<div className="newsSliderContainer">
+					<div className="w-100">
+						<div>
+							<Swiper
+								breakpoints={{
+									1800: {
+										slidesPerView: 4.2,
+									},
+									1400: {
+										slidesPerView: 4,
+									},
+									1200: {
+										slidesPerView: 3.3,
+									},
+									1000: {
+										slidesPerView: 2.8,
+									},
+									700: {
+										slidesPerView: 2.1,
+									},
+									500: {
+										slidesPerView: 1.8,
+									},
+									300: {
+										slidesPerView: 1.2,
+									},
+								}}
+								slidesPerView={4}
+								spaceBetween={1}
+								freeMode={true}
+								className="mySwiper"
+							>
+								{data.map((prev, ind) => {
+									const { i, t, l } = prev;
+									return (
+										<SwiperSlide>
 											<div className="news_card mt-5 pe-3" key={ind}>
 												<img className="thumbnail w-100" src={i} alt="" />
 												<div className="mt-3">
@@ -171,14 +134,17 @@ const News = ({ dataHome }) => {
 													</a>
 												</div>
 											</div>
-										);
-									})}
-								</Slider>
-							</div>
-							{/* MOBILE SCREEN END */}
+										</SwiperSlide>
+									);
+								})}
+							</Swiper>
 						</div>
 					</div>
 				</div>
+				{/* DESKTOP SCREEN END */}
+				{/* </div>
+					</div>
+				</div> */}
 			</div>
 		</div>
 	);

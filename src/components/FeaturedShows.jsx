@@ -1,40 +1,13 @@
 import React, { useEffect, useState } from "react";
 import rightArrow from "../assets/images/rightArrow.svg";
-import Slider from "react-slick";
-import HorizontalScroll from "react-scroll-horizontal";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/swiper.min.css";
 
 const FeaturedShows = ({ dataHome }) => {
 	const { feature1, feature2 } = dataHome;
 	const [data, setData] = useState([]);
-
-	var settings = {
-		centerMode: true,
-		dots: false,
-		infinite: false,
-		arrows: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		initialSlide: 0,
-		centerPadding: 50,
-		responsive: [
-			{
-				breakpoint: 900,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					infinite: false,
-				},
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: false,
-				},
-			},
-		],
-	};
 
 	useEffect(() => {
 		const fetchData = () => {
@@ -46,9 +19,6 @@ const FeaturedShows = ({ dataHome }) => {
 		};
 		fetchData();
 	}, []);
-
-	const child = { width: `356px`, height: `100%` };
-	const parent = { width: `100%`, height: `39rem` };
 
 	return (
 		<>
@@ -107,80 +77,102 @@ const FeaturedShows = ({ dataHome }) => {
 			</div>
 			{/* MOBILE SCREEN END */}
 
-			{/* DESKTOP SCREEN START */}
-			<div className="feature_slider_container d-none d-md-block">
-				<div className="w-100">
-					<div style={parent}>
-						<HorizontalScroll>
-							{data.map((prev, ind) => {
-								const { imgUrl, title, subtitle, startEventDate, id } = prev;
+			<div className="feature_slider_container">
+				{data.length > 0 && (
+					<Swiper
+						breakpoints={{
+							1600: {
+								slidesPerView: 4.5,
+							},
+							1400: {
+								slidesPerView: 4.2,
+							},
+							1200: {
+								slidesPerView: 3.3,
+							},
+							1000: {
+								slidesPerView: 2.8,
+							},
+							700: {
+								slidesPerView: 2.1,
+							},
+							500: {
+								slidesPerView: 1.8,
+							},
+							300: {
+								slidesPerView: 1.2,
+							},
+						}}
+						spaceBetween={1}
+						freeMode={true}
+						className="mySwiper"
+					>
+						{data.map((prev, ind) => {
+							const { imgUrl, title, subtitle, startEventDate, id } = prev;
+							// const dayDate = new Date(startEventDate);
+							const dayDate = new Date(startEventDate);
+							const dayDateString = new Date(startEventDate)
+								.toString()
+								.split(" ");
 
+							const monthNames = [
+								"January",
+								"February",
+								"March",
+								"April",
+								"May",
+								"June",
+								"July",
+								"August",
+								"September",
+								"October",
+								"November",
+								"December",
+							];
+							function dateOrdinal(d) {
 								return (
-									<div
-										style={child}
-										className="news_card position-relative pe-2"
-										key={ind}
-									>
+									d +
+									(31 == d || 21 == d || 1 == d
+										? "st"
+										: 22 == d || 2 == d
+										? "nd"
+										: 23 == d || 3 == d
+										? "rd"
+										: "th")
+								);
+							}
+							return (
+								<SwiperSlide key={ind}>
+									<div className="news_card position-relative pe-2">
 										<img className="w-100" src={imgUrl} alt="" />
+										<div className="overlay"></div>
 										{/* INNER START */}
 										<div className="d-flex flex-column justify-content-end text_content position-absolute text-white text-center">
-											<h1 className="NeueMachina fw-bold">{title}</h1>
-											<h5 className="NeueMachina mt-4">{subtitle}</h5>
-											<h5 className="NeueMachina fw400 mt-3">
-												{startEventDate}
-											</h5>
-											<h5 className="fw400">21:30 GMT + 1</h5>
+											<h2 className="NeueMachina fw-bold mb-0">{title}</h2>
+											<h6 className="NeueMachina mb-4">{subtitle}</h6>
+											<h6 className="NeueMachina fw600 mb-0">
+												{dateOrdinal(dayDateString[2])}{" "}
+												{monthNames[dayDate.getMonth()]}
+											</h6>
+											<h6 className="fw400 NeueMachina mt-0">
+												{dayDateString[4]} {dayDateString[5]}
+											</h6>
 											<a
 												target="blank"
 												href={`https://qua-app.ushowme.tv/show?id=${id}`}
 											>
-												<button className="NeueMachina fw500 bg3 text-white border-0 py-1 px-3 mt-4">
+												<button className="NeueMachina fw500 bg3 text-white border-0 py-1 px-3 mt-5">
 													Show Details
 												</button>
 											</a>
 										</div>
 										{/* INNER END */}
 									</div>
-								);
-							})}
-						</HorizontalScroll>
-					</div>
-				</div>
-			</div>
-			{/* DESKTOP SCREEN END */}
-
-			{/* MOBILE SCREEN START */}
-			<div className="feature_slider_container d-block d-md-none">
-				<div className="w-100">
-					<Slider {...settings}>
-						{data.map((prev, ind) => {
-							const { imgUrl, title, subtitle, startEventDate, id } = prev;
-
-							return (
-								<div className="news_card position-relative pe-2" key={ind}>
-									<img className="w-100" src={imgUrl} alt="" />
-
-									{/* INNER START */}
-									<div className="d-flex flex-column justify-content-end text_content position-absolute text-white text-center">
-										<h1 className="NeueMachina fw-bold">{title}</h1>
-										<h5 className="NeueMachina mt-4">{subtitle}</h5>
-										<h5 className="NeueMachina fw400 mt-3">{startEventDate}</h5>
-										<h5 className="fw400">21:30 GMT + 1</h5>
-										<a
-											target="blank"
-											href={`https://qua-app.ushowme.tv/show?id=${id}`}
-										>
-											<button className="NeueMachina bg3 text-white border-0 py-1 px-3 mt-4">
-												Show Details
-											</button>
-										</a>
-									</div>
-									{/* INNER END */}
-								</div>
+								</SwiperSlide>
 							);
 						})}
-					</Slider>
-				</div>
+					</Swiper>
+				)}
 			</div>
 			{/* MOBILE SCREEN END */}
 		</>

@@ -1,4 +1,5 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 import "./styles/style.css";
 
 // IMPORTING LOADER
@@ -18,6 +19,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 import TermsConditions from "./pages/TermsConditions";
 import Jobs from "./pages/Jobs";
+import FAQ from "./pages/FAQ";
 
 function App() {
 	useEffect(() => {
@@ -47,6 +49,7 @@ function App() {
 				<Route exact path="/privacyPolicy" component={PrivacyPolicy} />
 				<Route exact path="/termsConditions" component={TermsConditions} />
 				<Route exact path="/jobs" component={Jobs} />
+				<Route exact path="/fAQ" component={FAQ} />
 			</Switch>
 		</GlobalProvider>
 	);
