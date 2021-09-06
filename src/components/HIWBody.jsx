@@ -19,7 +19,7 @@ const HIWBody = ({ dataHome }) => {
 								{hwiData.map((prev, i) => {
 									const { t, d } = prev;
 									return (
-										<div className="col-6 text-white mt-5 pt-3">
+										<div className="col-md-6 text-white mt-5 pt-3">
 											<h2 className="NeueMachina fw-bold">
 												{i + 1}. {t}
 											</h2>

@@ -14,6 +14,8 @@ import Home from "./pages/Home";
 import { Route, Switch } from "react-router-dom";
 import { useEffect } from "react";
 import HowItWorks from "./pages/HowItWorks";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	useEffect(() => {
@@ -36,9 +38,11 @@ function App() {
 			</div>
 
 			<div id="top"></div>
+			<ScrollToTop />
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route exact path="/howItWorks" component={HowItWorks} />
+				<Route exact path="/privacyPolicy" component={PrivacyPolicy} />
 			</Switch>
 		</GlobalProvider>
 	);

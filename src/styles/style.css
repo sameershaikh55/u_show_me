@@ -239,6 +239,10 @@ input:focus {
   color: #e45364;
 }
 
+.color8 {
+  color: #541dec;
+}
+
 .bg1 {
   background: #792ff9;
 }
@@ -1140,6 +1144,15 @@ input:focus {
   padding: 4rem 0rem;
 }
 
+.commonHero_container {
+  background: #231f2e;
+  padding: 12rem 0rem 6rem;
+}
+
+.privacyBody_container {
+  padding: 5rem 0rem;
+}
+
 @media screen and (min-width: 1500px) {
   .page_container2 {
     max-width: 1130px;
@@ -1289,6 +1302,10 @@ input:focus {
   }
   .hybrid_container {
     padding: 5rem 0rem 2rem 0rem;
+  }
+  .commonHero_container {
+    background: #231f2e;
+    padding: 10rem 0rem 4rem;
   }
 }
 
