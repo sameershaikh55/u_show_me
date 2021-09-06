@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import HowItWorks from "./pages/HowItWorks";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ScrollToTop from "./components/ScrollToTop";
+import TermsConditions from "./pages/TermsConditions";
 
 function App() {
 	useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/howItWorks" component={HowItWorks} />
 				<Route exact path="/privacyPolicy" component={PrivacyPolicy} />
+				<Route exact path="/termsConditions" component={TermsConditions} />
 			</Switch>
 		</GlobalProvider>
 	);
