@@ -78,6 +78,7 @@ $color5: #863bf8;
 $color6: #5525eb;
 $color7: #5e23ec;
 $color8: #541dec;
+$color9: #eb5565;
 // VARIABLES END
 
 // GLOBAL CLASSES START
@@ -252,6 +253,10 @@ input {
 
 .color8 {
 	color: $color8;
+}
+
+.color9 {
+	color: $color9;
 }
 
 .bg1 {
@@ -1013,6 +1018,12 @@ input {
 	padding: 5rem 0rem;
 }
 // PRIVACY BODY END
+
+// VACANCY START
+.vacancy_container {
+	background-color: $color8;
+}
+// VACANCY END
 
 // MEDIA QUERIES START
 @media screen and (min-width: 1500px) {

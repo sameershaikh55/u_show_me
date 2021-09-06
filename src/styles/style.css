@@ -243,6 +243,10 @@ input:focus {
   color: #541dec;
 }
 
+.color9 {
+  color: #eb5565;
+}
+
 .bg1 {
   background: #792ff9;
 }
@@ -1151,6 +1155,10 @@ input:focus {
 
 .privacyBody_container {
   padding: 5rem 0rem;
+}
+
+.vacancy_container {
+  background-color: #541dec;
 }
 
 @media screen and (min-width: 1500px) {

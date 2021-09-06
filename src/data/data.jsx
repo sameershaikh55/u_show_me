@@ -2190,6 +2190,114 @@ export const data = [
 					},
 				],
 			},
+			jobs: {
+				// HERO START
+				hero: "Jobs",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "ABOUT US" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "HOW IT WORKS" },
+					{ t: "WHO ARE U?" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "ABOUT US" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "WHO ARE U?" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HOW IT WORKS" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
+				// FOOTER START
+				footer: [
+					{
+						t: "How it Works",
+						l: "/howItWorks",
+					},
+					{
+						t: "FAQ",
+						l: "/faq",
+					},
+					{
+						t: "Jobs",
+						l: "/jobs",
+					},
+					{
+						t: "Contact Us",
+						l: "",
+					},
+					{
+						t: "Media",
+						l: "",
+					},
+					{
+						t: "Privacy Policy",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "Terms & Conditions",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "View all Shows",
+				// FOOTER END
+
+				// NEWSLETTER START				newsletter1: "Subscribe Newsletter",
+				newsletter1: "Subscribe Newsletter:",
+				newsletterBtn: "Send",
+				// NEWSLETTER END
+
+				// BODY START
+				h1: (
+					<h1 className="color8 fw-bold display-4">
+						<span className="color9">Join</span> our growing{" "}
+						<span className="color9">team</span> and{" "}
+						<span className="color9">let’s build </span> the future of shows
+						<span className="color9"> together. </span>
+					</h1>
+				),
+
+				h2: <h1 className="color8 fw-bold">Positions open:</h1>,
+
+				paras: [
+					{
+						p: (
+							<p>
+								We are a tech startup with a fully remote team focused on
+								solving problems related with the ShowBiz Industry thru
+								innovation and creativity. We care about delivering the best
+								interactive and engaging experiences and multiple revenue
+								streams for ShowBiz professionals.
+							</p>
+						),
+					},
+					{
+						p: (
+							<p>
+								If you are passionate about music shows and feel that you can
+								bring value, come speak with us at:{" "}
+								<a
+									target="blank"
+									className="text-decoration-none text-white purpleBg"
+									href="mailto:jobs@ushowme.tv"
+								>
+									jobs@ushowme.tv
+								</a>
+							</p>
+						),
+					},
+				],
+				// BODY END
+			},
 			// BODY END
 		},
 		ES: {
@@ -4417,6 +4525,113 @@ export const data = [
 
 				// BODY END
 			},
+			jobs: {
+				// HERO START
+				hero: "Trabajos",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Cómo funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Preguntas más frecuentes",
+						l: "/faq",
+					},
+					{
+						t: "Trabajos",
+						l: "/jobs",
+					},
+					{
+						t: "Contáctenos",
+						l: "",
+					},
+					{
+						t: "medios de comunicación",
+						l: "",
+					},
+					{
+						t: "Política de privacidad",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "Términos & amp; condiciones",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "Ver todos los programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Suscríbete al boletín",
+				newsletterBtn: "Enviar",
+				// PARTNER END
+
+				h1: (
+					<h1 className="color8 fw-bold display-4">
+						<span className="color9"> Únase </span> a nuestro crecimiento {""}
+						<span className="color9"> equipo </span> y {""}
+						<span className="color9">Vamos a compilemos {""}</span> {""}
+						el futuro de los espectáculos
+						<span className="color9"> juntos. </span>
+					</h1>
+				),
+
+				h2: <h1 className="color8 fw-bold"> Posiciones abiertas: </h1>,
+
+				paras: [
+					{
+						p: (
+							<p>
+								Somos una startup tecnológica con un equipo totalmente remoto
+								enfocado en resolver problemas relacionados con la industria
+								ShowBiz a través de la innovación y la creatividad. Nos
+								preocupamos por entregar lo mejor experiencias interactivas y
+								atractivas y múltiples ingresos streams para profesionales de
+								ShowBiz.
+							</p>
+						),
+					},
+					{
+						p: (
+							<p>
+								Si eres un apasionado de los programas musicales y sientes que
+								puedes aporta valor, ven a hablar con nosotros en: {""}
+								<a
+									target="en blanco"
+									className="text-decoration-none text-white purpleBg px-2"
+									href="mailto: jobs@ushowme.tv"
+								>
+									jobs@ushowme.tv
+								</a>
+							</p>
+						),
+					},
+				],
+			},
 		},
 		PT: {
 			home: {
@@ -6609,6 +6824,112 @@ export const data = [
 					},
 				],
 				// BODY END
+			},
+			jobs: {
+				// HERO START
+				hero: "Empregos",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NÓS" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NÓS" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Como funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Perguntas frequentes",
+						l: "/faq",
+					},
+					{
+						t: "Empregos",
+						l: "/jobs",
+					},
+					{
+						t: "Entre em contato conosco",
+						l: "",
+					},
+					{
+						t: "meios de comunicação",
+						l: "",
+					},
+					{
+						t: "Política de Privacidade",
+						l: "/privacyPolicy",
+					},
+					{
+						t: "termos e Condições",
+						l: "/termsConditions",
+					},
+				],
+				footerBtn: "Ver todos os programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Assine o Newsletter",
+				newsletterBtn: "Mandar",
+				// PARTNER END
+
+				h1: (
+					<h1 className="color8 fw-bold display-4">
+						<span className="color9"> Junte-se </span> ao nosso crescimento {""}
+						<span className="color9"> equipe </span> e {""}
+						<span className="color9">vamos construir {""}</span> {""}o futuro
+						dos shows
+						<span className="color9"> juntos. </span>
+					</h1>
+				),
+
+				h2: <h1 className="color8 fw-bold"> Posições abertas: </h1>,
+
+				paras: [
+					{
+						p: (
+							<p>
+								Somos uma startup de tecnologia com uma equipe totalmente remota
+								focada em resolvendo problemas relacionados com a Indústria
+								ShowBiz através inovação e criatividade. Nos preocupamos em
+								oferecer o melhor experiências interativas e envolventes e
+								múltiplas receitas streams para profissionais do ShowBiz.
+							</p>
+						),
+					},
+					{
+						p: (
+							<p>
+								Se você é apaixonado por shows de música e sente que pode traga
+								valor, venha falar conosco em: {""}
+								<a
+									target="em branco"
+									className="text-decoration-none text-white purpleBg px-2"
+									href="mailto: jobs@ushowme.tv"
+								>
+									jobs@ushowme.tv
+								</a>
+							</p>
+						),
+					},
+				],
 			},
 		},
 	},
