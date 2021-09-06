@@ -13,6 +13,7 @@ import { GlobalProvider } from "./data/Context";
 import Home from "./pages/Home";
 import { Route, Switch } from "react-router-dom";
 import { useEffect } from "react";
+import HowItWorks from "./pages/HowItWorks";
 
 function App() {
 	useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
 			<div id="top"></div>
 			<Switch>
 				<Route exact path="/" component={Home} />
+				<Route exact path="/howItWorks" component={HowItWorks} />
 			</Switch>
 		</GlobalProvider>
 	);

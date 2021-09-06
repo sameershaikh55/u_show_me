@@ -8,7 +8,7 @@ const Hybrid = ({ dataHome }) => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
+					<div className="col-12 mx-auto">
 							<h1 className="text-white f50 underlineAbout NeueMachina fw600 pb-4">
 								{hybH}
 							</h1>

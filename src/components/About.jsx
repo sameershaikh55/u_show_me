@@ -9,7 +9,7 @@ const About = ({ dataHome }) => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-md-12 mx-auto">
+						<div className="col-12 mx-auto">
 							<p className="text-white f18 mb-0 NeueMachina">
 								U<span className="color3">SHOW</span>ME
 							</p>

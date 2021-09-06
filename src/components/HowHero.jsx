@@ -1,7 +1,7 @@
 import React from "react";
 import rightArrow from "../assets/images/rightArrow.svg";
 
-const Hero = ({ dataHome }) => {
+const HowHero = ({ dataHome, dropdown: { t } }) => {
 	return (
 		<div className="hero position-relative">
 			<div className="d-none d-sm-block">
@@ -12,7 +12,7 @@ const Hero = ({ dataHome }) => {
 					playsinline
 					loop
 					muted
-					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Home_Landing_Video_1920x1080.mp4"
+					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Landing_How_It_Works_New.mp4"
 				/>
 			</div>
 			<div className="d-block d-sm-none">
@@ -26,7 +26,7 @@ const Hero = ({ dataHome }) => {
 					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Home_Landing_Video_1080x1920.mp4"
 				/>
 			</div>
-			<div className="hero_container d-flex justify-content-center align-items-end align-items-sm-center">
+			<div className="hero_container howHero d-flex justify-content-center align-items-end align-items-sm-center">
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
@@ -39,7 +39,15 @@ const Hero = ({ dataHome }) => {
 									className="text-decoration-none"
 									href="https://app.ushowme.tv/"
 								>
-									<button className="hero_btn d-flex align-items-center bg3 text-white border-0 ps-1 pe-1 mt-4 py-1 NeueMachina fw500">
+									<button
+										style={{
+											width:
+												(t === "EN" && "250px") ||
+												(t === "ES" && "330px") ||
+												(t === "PT" && "280px"),
+										}}
+										className="hero_btn d-flex align-items-center purpleBg text-white border-0 ps-1 pe-1 mt-4 py-1 NeueMachina fw500"
+									>
 										<img src={rightArrow} alt="arrow" className="ms-2 me-2" />{" "}
 										{dataHome.heroBtn}
 									</button>
@@ -53,4 +61,4 @@ const Hero = ({ dataHome }) => {
 	);
 };
 
-export default Hero;
+export default HowHero;

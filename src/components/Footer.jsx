@@ -1,7 +1,6 @@
 import React from "react";
 import rightArrow from "../assets/images/rightArrow.svg";
 import { NavLink } from "react-router-dom";
-import logo2 from "../assets/images/logo2.svg";
 
 const Footer = ({ dataHome }) => {
 	const { footer, footerBtn } = dataHome;
@@ -14,7 +13,10 @@ const Footer = ({ dataHome }) => {
 						<div className="col-11 col-md-12 mx-auto w-100">
 							<div className="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
 								<div>
-									<img src={logo2} alt="" />
+									<img
+										src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/logo.svg"
+										alt=""
+									/>
 								</div>
 								<div className="d-flex align-items-center flex-wrap justify-content-center gap-2 gap-lg-0 mt-4 mt-lg-0">
 									{footer.map((prev, i) => {

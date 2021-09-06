@@ -326,6 +326,16 @@ input:focus {
 
 .feature_slider_container {
   background-color: #231f2e;
+  min-width: 100%;
+  overflow-x: auto;
+}
+
+.feature_slider_container .news_card {
+  width: 350px;
+}
+
+.feature_slider_container .news_card img {
+  width: 350px;
 }
 
 .feature_slider_container .text_content {
@@ -538,10 +548,18 @@ input:focus {
 }
 
 .hero_container .hero_btn {
-  min-width: 171px;
+  min-width: 195px;
   height: 30px;
   -webkit-box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
           box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
+}
+
+.hero_container.howHero {
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .about_container {
@@ -626,7 +644,6 @@ input:focus {
 }
 
 .news_container .newsSliderContainer .news_card {
-  width: 200px;
   outline: -webkit-focus-ring-color none 1px;
 }
 
@@ -644,6 +661,10 @@ input:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.scrollToTop {
+  margin-top: 5rem;
 }
 
 .partner_container {
@@ -858,11 +879,10 @@ input:focus {
 }
 
 .WHO_detail button {
-  background: rgba(255, 255, 255, 0.2);
+  background: #863bf8;
   color: #fff;
   padding: 0.5rem 0.8rem;
   border: none;
-  border-radius: 10px;
 }
 
 .WHO_detail.mobile {
@@ -905,11 +925,10 @@ input:focus {
 }
 
 .WHO_detail.mobile button {
-  background: rgba(255, 255, 255, 0.2);
+  background: #863bf8;
   color: #fff;
   padding: 0.5rem 0.8rem;
   border: none;
-  border-radius: 10px;
 }
 
 .WHOSlide1 {
@@ -1115,6 +1134,12 @@ input:focus {
           justify-content: space-between;
 }
 
+.hiw_body_container {
+  margin-top: -6px;
+  background: #5525eb;
+  padding: 4rem 0rem;
+}
+
 @media screen and (min-width: 1500px) {
   .page_container2 {
     max-width: 1130px;
@@ -1149,7 +1174,8 @@ input:focus {
     font-size: 4rem;
   }
   .footer_container {
-    padding: 3rem 0rem 2.5rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
+    height: auto;
   }
   .who_container .who_inner {
     display: none;
@@ -1189,6 +1215,10 @@ input:focus {
 @media screen and (max-width: 768px) {
   .SideBarContainer {
     padding-left: 0rem;
+    height: 100vh;
+  }
+  .SideBarContainer .sideMobile .secondHalf .icons_container img {
+    width: 36px;
   }
   .hero_container h1 {
     font-size: 4rem;
@@ -1227,17 +1257,51 @@ input:focus {
     width: 100%;
     text-align: center;
   }
+  .news_container {
+    padding: 5rem 0rem 5rem 0.5rem;
+  }
+  .news_container .newsSliderContainer .news_card img.thumbnail {
+    min-height: 160px;
+    max-height: 160px;
+  }
+  .partner_container .partner .partner_card {
+    width: auto;
+    height: auto;
+  }
+  .scrollToTop {
+    margin-top: 2rem;
+  }
+  .hero video {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero_container {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .feature_container {
+    background-image: none;
+    background-color: #792ff9;
+  }
+  .hybrid_container {
+    padding: 5rem 0rem 2rem 0rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
-  .hero_container {
-    height: 75vh;
+  .hero_container .hero_btn {
+    height: 35px;
   }
   .hero_container button {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 5rem;
     width: 150px;
     margin-left: -50px;
+    font-weight: 600;
   }
   .hero_container h1 {
     font-size: 4rem;
@@ -1247,11 +1311,11 @@ input:focus {
     font-size: 2.5rem;
   }
   .SideBarContainer {
-    height: 500px;
+    height: 100vh;
     padding-top: 2.5rem;
   }
   .SideBarContainer h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   .header_container {
     height: 65px;

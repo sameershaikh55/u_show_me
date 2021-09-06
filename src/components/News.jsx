@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import newsCard from "../assets/images/newsCard.svg";
 import eye from "../assets/images/eye.svg";
+import HorizontalScroll from "react-scroll-horizontal";
 
 const News = ({ dataHome }) => {
 	const { news } = dataHome;
@@ -21,7 +21,7 @@ const News = ({ dataHome }) => {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
-					infinite: true,
+					infinite: false,
 				},
 			},
 			{
@@ -29,7 +29,7 @@ const News = ({ dataHome }) => {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					infinite: true,
+					infinite: false,
 				},
 			},
 		],
@@ -97,6 +97,9 @@ const News = ({ dataHome }) => {
 		},
 	];
 
+	const child = { width: `356px`, height: `100%` };
+	const parent = { width: `100%`, height: `26rem` };
+
 	return (
 		<div className="news_container">
 			<div className="w-100">
@@ -110,12 +113,49 @@ const News = ({ dataHome }) => {
 								{news}
 							</h1>
 
-							<div className="newsSliderContainer">
+							{/* DESKTOP SCREEN START */}
+							<div className="newsSliderContainer d-none d-md-block">
+								<div className="w-100">
+									<div style={parent}>
+										<HorizontalScroll>
+											{data.map((prev, ind) => {
+												const { i, t, l } = prev;
+												return (
+													<div
+														style={child}
+														className="news_card mt-5 pe-3"
+														key={ind}
+													>
+														<img className="thumbnail w-100" src={i} alt="" />
+														<div className="mt-3">
+															<span className="spaceMono">{t}</span>
+															<a
+																target="blank"
+																className="text-decoration-none"
+																href={l}
+															>
+																<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex align-items-center border-0 f16 py-1 px-3 mt-3">
+																	<img src={eye} alt="" className="me-2" /> Read
+																	the Full Article
+																</button>
+															</a>
+														</div>
+													</div>
+												);
+											})}
+										</HorizontalScroll>
+									</div>
+								</div>
+							</div>
+							{/* DESKTOP SCREEN END */}
+
+							{/* MOBILE SCREEN START */}
+							<div className="newsSliderContainer d-block d-md-none">
 								<Slider {...settings}>
 									{data.map((prev, ind) => {
 										const { i, t, l } = prev;
 										return (
-											<div className="news_card mt-5 px-2" key={ind}>
+											<div className="news_card mt-5 pe-3" key={ind}>
 												<img className="thumbnail w-100" src={i} alt="" />
 												<div className="mt-3">
 													<span className="spaceMono">{t}</span>
@@ -135,6 +175,7 @@ const News = ({ dataHome }) => {
 									})}
 								</Slider>
 							</div>
+							{/* MOBILE SCREEN END */}
 						</div>
 					</div>
 				</div>

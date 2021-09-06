@@ -3,11 +3,11 @@ import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { FiPlus } from "react-icons/fi";
 
 const WHOMobile = ({ dataHome }) => {
 	const {
-		who1,
+		who1under,
 		slide1T,
 		slide1T2,
 		slide1D,
@@ -22,21 +22,23 @@ const WHOMobile = ({ dataHome }) => {
 		slide4D,
 		present,
 		send,
-		newLet,
+		present2,
 	} = dataHome;
 
 	return (
 		<div>
 			<Accordion>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon color="#fff" />}
+					expandIcon={
+						<FiPlus className="icon1 pointer" fontSize="2rem" color="#fff" />
+					}
 					aria-controls="panel1a-content"
 					id="panel1a-header"
 				>
-					<Typography className="d-flex align-items-center justify-content-center w-100">
-						<div className="d-flex align-items-center justify-content-center w-100">
-							<h6 className="mb-0">{who1}</h6>
-							<h3 className="ms-4 mb-0">{slide1T}</h3>
+					<Typography className="d-flex align-items-center justify-content-start w-100">
+						<div className="d-flex align-items-center justify-content-start w-100">
+							<h4 className="mb-0 NeueMachina">{who1under + "n"}</h4>
+							<h3 className="fw-bold ms-4 mb-0 NeueMachina">{slide1T}</h3>
 						</div>
 					</Typography>
 				</AccordionSummary>
@@ -59,7 +61,7 @@ const WHOMobile = ({ dataHome }) => {
 									/>
 								</div>
 								<div className="ms-3 mt-3">
-									<button>{send}</button>
+									<button className="btnS NeueMachina fw600">{send}</button>
 								</div>
 							</div>
 						</div>
@@ -68,14 +70,16 @@ const WHOMobile = ({ dataHome }) => {
 			</Accordion>
 			<Accordion>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon color="#fff" />}
+					expandIcon={
+						<FiPlus className="icon1 pointer" fontSize="2rem" color="#fff" />
+					}
 					aria-controls="panel2a-content"
 					id="panel2a-header"
 				>
-					<Typography className="d-flex align-items-center justify-content-center w-100">
-						<div className="d-flex align-items-center justify-content-center w-100">
-							<h6 className="mb-0">{who1}</h6>
-							<h3 className="ms-4 mb-0">{slide2T}</h3>
+					<Typography className="d-flex align-items-center justify-content-start w-100">
+						<div className="d-flex align-items-center justify-content-start w-100">
+							<h4 className="mb-0 NeueMachina">{who1under}</h4>
+							<h3 className="fw-bold ms-4 mb-0 NeueMachina">{slide2T}</h3>
 						</div>
 					</Typography>
 				</AccordionSummary>
@@ -98,7 +102,7 @@ const WHOMobile = ({ dataHome }) => {
 									/>
 								</div>
 								<div className="ms-3 mt-3">
-									<button>{send}</button>
+									<button className="btnS NeueMachina fw600">{send}</button>
 								</div>
 							</div>
 						</div>
@@ -107,14 +111,16 @@ const WHOMobile = ({ dataHome }) => {
 			</Accordion>
 			<Accordion>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon color="#fff" />}
+					expandIcon={
+						<FiPlus className="icon1 pointer" fontSize="2rem" color="#fff" />
+					}
 					aria-controls="panel2a-content"
 					id="panel2a-header"
 				>
-					<Typography className="d-flex align-items-center justify-content-center w-100">
-						<div className="d-flex align-items-center justify-content-center w-100">
-							<h6 className="mb-0">{who1}</h6>
-							<h3 className="ms-4 mb-0">{slide3T}</h3>
+					<Typography className="d-flex align-items-center justify-content-start w-100">
+						<div className="d-flex align-items-center justify-content-start w-100">
+							<h4 className="mb-0 NeueMachina">{who1under}</h4>
+							<h3 className="fw-bold ms-4 mb-0 NeueMachina">{slide3T}</h3>
 						</div>
 					</Typography>
 				</AccordionSummary>
@@ -137,7 +143,7 @@ const WHOMobile = ({ dataHome }) => {
 									/>
 								</div>
 								<div className="ms-3 mt-3">
-									<button>{send}</button>
+									<button className="btnS NeueMachina fw600">{send}</button>
 								</div>
 							</div>
 						</div>
@@ -146,14 +152,16 @@ const WHOMobile = ({ dataHome }) => {
 			</Accordion>
 			<Accordion>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon color="#fff" />}
+					expandIcon={
+						<FiPlus className="icon1 pointer" fontSize="2rem" color="#fff" />
+					}
 					aria-controls="panel2a-content"
 					id="panel2a-header"
 				>
-					<Typography className="d-flex align-items-center justify-content-center w-100">
-						<div className="d-flex align-items-center justify-content-center w-100">
-							<h6 className="mb-0">{who1}</h6>
-							<h3 className="ms-4 mb-0">{slide4T}</h3>
+					<Typography className="d-flex align-items-center justify-content-start w-100">
+						<div className="d-flex align-items-center justify-content-start w-100">
+							<h4 className="mb-0 NeueMachina">{who1under}</h4>
+							<h3 className="fw-bold ms-4 mb-0 NeueMachina">{slide4T}</h3>
 						</div>
 					</Typography>
 				</AccordionSummary>
@@ -162,7 +170,7 @@ const WHOMobile = ({ dataHome }) => {
 						<div className="WHO_detail mobile px-2 text-white">
 							<h2 className="mb-4">{slide4T2}</h2>
 							<p className="mb-4">{slide4D}</p>
-							<p>{newLet}</p>
+							<p>{present2}</p>
 
 							<div className="d-flex flex-column align-items-end mt-4">
 								<div className="d-flex flex-column w-100">
@@ -176,7 +184,7 @@ const WHOMobile = ({ dataHome }) => {
 									/>
 								</div>
 								<div className="ms-3 mt-3">
-									<button>{send}</button>
+									<button className="btnS NeueMachina fw600">{send}</button>
 								</div>
 							</div>
 						</div>

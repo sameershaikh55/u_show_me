@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/images/logo.svg";
 import down from "../assets/images/down.svg";
 import up from "../assets/images/up.svg";
 import hamburger from "../assets/images/hamburger.svg";
 import cross from "../assets/images/cross.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 // IMPORTING ICONS
 import i1 from "../assets/images/shareIcons/i1.svg";
@@ -70,13 +70,7 @@ const Header = ({
 							<div className="d-flex justify-content-between w-100">
 								<div className="d-flex align-items-center">
 									<div className="logo_container2">
-										<Link
-											smooth={true}
-											duration={600}
-											spy={true}
-											offset={-100}
-											to="top"
-										>
+										<Link to="/">
 											<img
 												className="pointer d-block d-sm-none"
 												src={logo}
@@ -101,16 +95,10 @@ const Header = ({
 												onClick={() => setIsOpen(true)}
 											/>
 										)}
-										<Link
-											smooth={true}
-											duration={600}
-											spy={true}
-											offset={-100}
-											to="top"
-										>
+										<Link to="/">
 											<img
 												className="pointer ps-4 d-none d-sm-block"
-												src={logo}
+												src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/logo.svg"
 												alt=""
 											/>
 										</Link>

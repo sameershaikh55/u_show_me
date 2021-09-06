@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import HorizontalScroll from "react-scroll-horizontal";
 import Slider from "react-slick";
 import top from "../assets/images/top.svg";
 
@@ -20,7 +21,7 @@ const Partner = ({ dataHome }) => {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-					infinite: true,
+					infinite: false,
 				},
 			},
 			{
@@ -28,7 +29,7 @@ const Partner = ({ dataHome }) => {
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
-					infinite: true,
+					infinite: false,
 				},
 			},
 		],
@@ -41,7 +42,11 @@ const Partner = ({ dataHome }) => {
 		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/IdeaSpaces_Logo.png",
 		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/Demium_Logo.jpg",
 		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/BackStage_Logo.jpg",
+		"https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/Partners/BackStage_Logo.jpg",
 	];
+
+	const child = { width: `200px`, height: `100%` };
+	const parent = { width: `100%`, height: `200px` };
 
 	return (
 		<div className="partner_container">
@@ -55,7 +60,30 @@ const Partner = ({ dataHome }) => {
 								{partner3}
 							</p>
 
-							<div className="partner">
+							{/* DESKTOP SCREEN START */}
+							<div className="partner d-none d-md-block">
+								<div className="w-100">
+									<div style={parent}>
+										<HorizontalScroll>
+											{data.map((prev, ind) => {
+												return (
+													<div
+														style={child}
+														className="partner_card mt-4 px-2"
+														key={ind}
+													>
+														<img src={prev} alt="" />
+													</div>
+												);
+											})}
+										</HorizontalScroll>
+									</div>
+								</div>
+							</div>
+							{/* DESKTOP SCREEN END */}
+
+							{/* MOBILE SCREEN START */}
+							<div className="partner d-block d-md-none">
 								<Slider {...settings}>
 									{data.map((prev, ind) => {
 										return (
@@ -66,8 +94,9 @@ const Partner = ({ dataHome }) => {
 									})}
 								</Slider>
 							</div>
+							{/* MOBILE SCREEN END */}
 
-							<div className="text-center">
+							<div className="scrollToTop text-center">
 								<Link
 									smooth={true}
 									duration={600}

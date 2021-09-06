@@ -1,23 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import { GlobalContext } from "../data/Context";
-import homeIm from "../assets/images/homeIm.svg";
-
-// IMPORTING COMPONENTS
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Hybrid from "../components/Hybrid";
-import FeaturedShows from "../components/FeaturedShows";
-import AboutFun from "../components/AboutFun";
-import News from "../components/News";
-import Partner from "../components/Partner";
-import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-import { useHooks } from "../hooks/useHooks.jsx";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import WHO from "../components/WHO";
+import HowHero from "../components/HowHero";
+import { GlobalContext } from "../data/Context";
+import { useHooks } from "../hooks/useHooks";
+import HIWBody from "../components/HIWBody";
+import Newsletter from "../components/Newsletter";
 
-const Home = () => {
+const HowItWorks = () => {
 	const { isOpen, setIsOpen } = useHooks();
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
@@ -31,7 +22,7 @@ const Home = () => {
 		t: "ES",
 	});
 	const [url, setUrl] = useState(dropdown.t);
-	const [dataHome, setDataHome] = useState(data[0].EN.home);
+	const [dataHome, setDataHome] = useState(data[0].EN.hiw);
 
 	const second = () => {
 		setDropdown({
@@ -59,19 +50,19 @@ const Home = () => {
 
 	useEffect(() => {
 		if (url === "EN") {
-			let dataEN = data[0].EN.home;
+			let dataEN = data[0].EN.hiw;
 			setDataHome(dataEN);
 		} else if (url === "ES") {
-			let dataDE = data[0].ES.home;
+			let dataDE = data[0].ES.hiw;
 			setDataHome(dataDE);
 		} else if (url === "PT") {
-			let dataPT = data[0].PT.home;
+			let dataPT = data[0].PT.hiw;
 			setDataHome(dataPT);
 		}
 	}, [dropdown, dropdown2, dropdown3]);
 
 	return (
-		<>
+		<div>
 			<Header
 				isOpen={isOpen}
 				setIsOpen={setIsOpen}
@@ -96,25 +87,12 @@ const Home = () => {
 				on={on}
 				setOn={setOn}
 			/>
-			<Hero dataHome={dataHome} />
-			<About dataHome={dataHome} />
-
-			{/* IMAGE START */}
-			<div id="hiw" className="w-100">
-				<img className="w-100" src={homeIm} alt="" />
-			</div>
-			{/* IMAGE END */}
-
-			<Hybrid dataHome={dataHome} />
-			<WHO dataHome={dataHome} />
-			<FeaturedShows dataHome={dataHome} />
-			<AboutFun dataHome={dataHome} />
-			<News dataHome={dataHome} />
-			<Partner dataHome={dataHome} />
+			<HowHero dataHome={dataHome} dropdown={dropdown} />
+			<HIWBody dataHome={dataHome} />
 			<Newsletter dataHome={dataHome} />
 			<Footer dataHome={dataHome} />
-		</>
+		</div>
 	);
 };
 
-export default Home;
+export default HowItWorks;

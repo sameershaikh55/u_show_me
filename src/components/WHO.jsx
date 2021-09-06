@@ -144,7 +144,9 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text w-100">
-								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
+								<h6 className="text-white NeueMachina w-100">
+									{who1under + "n"}
+								</h6>
 								<h1 className="underlineAbout text-white NeueMachina fw-bold w-100">
 									{slide1T}
 								</h1>
@@ -176,7 +178,7 @@ const WHO = ({ dataHome }) => {
 											/>
 										</div>
 										<div className="ms-3">
-											<button>{send}</button>
+											<button className="btnS NeueMachina fw600">{send}</button>
 										</div>
 									</div>
 								</div>
@@ -230,7 +232,7 @@ const WHO = ({ dataHome }) => {
 											/>
 										</div>
 										<div className="ms-3">
-											<button>{send}</button>
+											<button className="btnS NeueMachina fw600">{send}</button>
 										</div>
 									</div>
 								</div>
@@ -284,7 +286,7 @@ const WHO = ({ dataHome }) => {
 											/>
 										</div>
 										<div className="ms-3">
-											<button>{send}</button>
+											<button className="btnS NeueMachina fw600">{send}</button>
 										</div>
 									</div>
 								</div>
@@ -338,7 +340,7 @@ const WHO = ({ dataHome }) => {
 											/>
 										</div>
 										<div className="ms-3">
-											<button>{send}</button>
+											<button className="btnS NeueMachina fw600">{send}</button>
 										</div>
 									</div>
 								</div>

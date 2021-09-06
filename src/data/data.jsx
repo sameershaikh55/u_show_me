@@ -52,6 +52,17 @@ export const data = [
 				],
 				// SIDEBAR END
 
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "ABOUT US" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "WHO ARE U?" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HOW IT WORKS" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
+
 				// WHO START
 				who1: "START BY SELECTING",
 				who2: "Who are U?",
@@ -77,10 +88,10 @@ export const data = [
 				partner3: "Lead the future for hybrid shows.",
 				// PARTNER END
 
-				// PARTNER START
-				newsletter1: "Subscribe Newsletter",
+				// NEWSLETTER START				newsletter1: "Subscribe Newsletter",
+				newsletter1: "Subscribe Newsletter:",
 				newsletterBtn: "Send",
-				// PARTNER END
+				// NEWSLETTER END
 
 				// WHO END
 				who1under: "I’m a",
@@ -110,7 +121,7 @@ export const data = [
 				footer: [
 					{
 						t: "How it Works",
-						l: "hiw",
+						l: "/howItWorks",
 					},
 					{
 						t: "FAQ",
@@ -140,146 +151,364 @@ export const data = [
 				footerBtn: "View all Shows",
 				// FOOTER END
 			},
-		},
-		DE: {
-			home: {
+			hiw: {
 				// HERO START
-				hero: "Es geht nur um deine erfahrung",
-				hero2: "VOLLBILD-VIDEO ALLGEMEIN KURZ AUTOPLAY KEIN TON",
-				heroBtn: "Gehe zu Shows",
+				heroBtn: "Engage & Control Video",
 				// HERO END
-
-				// ABOUT START
-				aboutH: "Über uns",
-				aboutL:
-					"UshowMe ist eine interaktive Live-Stream- und Video-on-Demand-Plattform, die Künstlern, Veranstaltungsproduzenten wie Veranstaltungsorten und Festivals dabei hilft, sich zu hybriden Shows mit globaler Reichweite zu entwickeln, neue Erlebnisse, mehrere Einnahmequellen zu bieten und Marken und digitales Publikum neue Möglichkeiten der Interaktion zu bieten .",
-				aboutR1: "GEBÄUDE FÜR JEDE MODERNE GERÄTE",
-				aboutR2: (
-					<p>
-						Das reaktionsschnelle Design von UshowMe ist darauf zugeschnitten,
-						Ihrem Publikum die besten Erfahrungen und Interaktionen zu bieten,
-						unabhängig davon, welches moderne Gerät es verwendet
-						<img src={asterik} alt="" className="asterik_up" />.
-					</p>
-				),
-				aboutR3: (
-					<p className="text-white mb-0 spaceMono">
-						siehe Liste der unterstützten Geräte auf der{" "}
-						<span className="purpleBg px-1">FAQ</span>-Seite.
-					</p>
-				),
-				// ABOUT END
-
-				// HYBRID START
-				hybH: "Warum Hybrid die Zukunft ist?",
-				hybP: [
-					"Bei Shows geht es nicht nur darum, mit deinem „Tribe“ diese Lieblingssongs zu singen und mit den Künstlern zu interagieren, sondern darum, gemeinsame Erfahrungen zu leben und unsere Emotionen auszudrücken, um lang anhaltende Erinnerungen an eine großartige Zeit zusammen zu schaffen.",
-					"Hybrid verstärkt diese und beseitigt die üblichen Einschränkungen, die viele Fans auslassen, während es mehr Einnahmequellen und neues messbares Engagement hinzufügt.",
-					"UshowMe ist modular aufgebaut, um Ihre spezifischen Anforderungen zu maximieren.",
-					"Beginnen Sie, indem Sie unten auswählen, wer U ist.",
-				],
-				// HYBRID END
 
 				// SIDEBAR START
 				sideBar: [
-					{ t: "ÜBER UNS" },
-					{ t: "AUSGEWÄHLTE SHOWS" },
-					{ t: "HYBRID IST DIE ZUKUNFT" },
-					{ t: "WIE ES FUNKTIONIERT" },
-					{ t: "WER BIST DU?" },
+					{ t: "ABOUT US" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "HOW IT WORKS" },
+					{ t: "WHO ARE U?" },
 					{ t: "FAQ" },
 				],
 				// SIDEBAR END
 
-				// WHO START
-				who1: "BEGINNEN SIE MIT DER AUSWAHL",
-				who2: "Wer bist du?",
-				// WHO END
-
-				// FEATURE START
-				feature1: "Angesagte Shows",
-				feature2: "Alle Shows anzeigen",
-				// FEATURE END
-
-				// FEATURE START
-				itsAll1: "Alles dreht sich um SPASS!",
-				itsAll2: "Vollständiges Video anzeigen",
-				// FEATURE END
-
-				// NEWS START
-				news: "In den Nachrichten",
-				// NEWS END
-
-				// PARTNER START
-				partner1: "PARTNER",
-				partner2: "Ein Partner werden",
-				partner3: "Führen Sie die Zukunft für Hybridshows.",
-				// PARTNER END
-
-				// PARTNER START
-				newsletter1: "Abonniere den Newsletter",
-				newsletterBtn: "Senden",
-				// PARTNER END
-
-				// WHO END
-				who1under: "ich bin ein",
-				present: "Holen Sie sich die Präsentation:",
-				present2: "Assine o Newsletter:",
-				send: "Senden",
-				slide1T: "Künstler/ Label",
-				slide1T2:
-					"Erreichen Sie ein globales Publikum und interagieren Sie mit ihm",
-				slide1D:
-					"Sie müssen Ihre Fans nie wieder draußen lassen. Mit UshowMe können Sie sich darauf verlassen, dass Sie alle einbeziehen und mit ihnen interagieren, den Umsatz über mehrere Streams sowohl für die Live-Stream- als auch für die Video-on-Demand-Version steigern und auch Ihre eigenen Sponsoren an Bord holen.",
-				slide2T: "Produzent/ Veranstaltungsort",
-				slide2T2:
-					"Skalieren Sie Shows über Ihren Veranstaltungsort/Standort hinaus",
-				slide2D:
-					"Mit UshowMe können Sie sich als Produzent und/oder Veranstaltungsort zu einem Hybrid entwickeln und Ihr Publikum über physische Grenzen hinaus erreichen, mit mehreren Streams Geld verdienen und bereits auf Ihrem physischen Veranstaltungsort/Festival präsente Sponsoren digitalisieren.",
-				slide3T: "Marke",
-				slide3T2: "Sponsern Sie Shows und messen Sie Engagements",
-				slide3D:
-					"Ihre Marke hat endlich die Macht, die Bekanntheit zu maximieren und neue Wege der Interaktion mit dem digitalen Publikum zu eröffnen. UshowMe bietet Ihnen Tools für Ihre Marke, um mit messbaren Ergebnissen das Highlight zu erzielen, das sie verdient. UshowMe bietet vollständige Integrationsmöglichkeiten.",
-				slide4T: "Fan",
-				slide4T2: "Viel Spaß mit neuen Interaktionen",
-				slide4D:
-					"Mit UshowMe haben Sie mehr Zugang zu Ihren Lieblingskünstlern, als wenn Sie persönlich vor Ort wären. Schließen Sie Ihre Kamera an, drücken Sie Emotionen und Ihre besten Moves auf der Top Fans Stage aus. Sprechen Sie mit allen im Chat und tauschen Sie sich mit Künstlern bei aufregenden Meet & Greets aus.",
-				newLet: "Abonniere den Newsletter:",
-				// WHO END
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "ABOUT US" },
+					{ t: "HYBRID IS THE FUTURE" },
+					{ t: "WHO ARE U?" },
+					{ t: "FEATURED SHOWS" },
+					{ t: "HOW IT WORKS" },
+					{ t: "FAQ" },
+				],
+				// SIDEBAR END
 
 				// FOOTER START
 				footer: [
 					{
-						t: "Wie es funktioniert",
-						l: "hiw",
+						t: "How it Works",
+						l: "/howItWorks",
 					},
 					{
 						t: "FAQ",
 						l: "faq",
 					},
 					{
-						t: "Arbeitsplätze",
+						t: "Jobs",
 						l: "",
 					},
 					{
-						t: "Kontaktiere uns",
+						t: "Contact Us",
 						l: "",
 					},
 					{
-						t: "Medien",
+						t: "Media",
 						l: "",
 					},
 					{
-						t: "Datenschutz-Bestimmungen",
+						t: "Privacy Policy",
 						l: "",
 					},
 					{
-						t: "Terms & amp; Bedingungen",
+						t: "Terms & Conditions",
 						l: "",
 					},
 				],
-				footerBtn: "Alle Shows anzeigen",
+				footerBtn: "View all Shows",
 				// FOOTER END
+
+				// NEWSLETTER START				newsletter1: "Subscribe Newsletter",
+				newsletter1: "Subscribe Newsletter:",
+				newsletterBtn: "Send",
+				// NEWSLETTER END
+
+				// HIW BODY START
+				h1: "How it Works",
+				h2: "From Pre-production to Analysis",
+				hwiData: [
+					{
+						t: "Create & Costumise",
+						d: [
+							"Create your show through our platform, module by module. Start with show details. ",
+							"Then, select the revenue streams you want to make available for your audience. ",
+							"Insert the overlayed banners and logos, CTA’s, videos and invite your moderation team, and you’re good to go.",
+						],
+					},
+					{
+						t: "Engage & Control",
+						d: [
+							"While the show is happening, engage with your audience on the live chat and Q & A. Artists can also view and interact with digital audiences during the show on stage.",
+							"Finish on top with excitants Meet & Greets.",
+							"By using our powerful Moderation Tools available,you can ensure that the experience remains positive to all at all times.",
+						],
+					},
+					{
+						t: "Keep monetizing",
+						d: [
+							"Activate the VOD (video-on-demand) option on setup, to keep monetizing the same content over and over.",
+							"Fans that missed the Live Stream or want to re-watch their interactions will love you for thinking about them.",
+						],
+					},
+					{
+						t: "Measure & Analyse",
+						d: [
+							"You will have access to a detailed report, where you measure and analyse the Quality of Delivered Experience (QoDE).",
+							"These powerful insights enable you to know exactly who your audience is and what they want.",
+						],
+					},
+				],
+				cBtn: "Contact us to access",
+				// HIW BODY END
+			},
+		},
+		ES: {
+			home: {
+				// HERO START
+				hero: "Se trata de tu experiencia",
+				hero2:
+					"VIDEO EN PANTALLA COMPLETA GENERAL CORTO REPRODUCCIÓN AUTOMÁTICA SIN SONIDO",
+				heroBtn: "Ir a espectáculos",
+				// HERO END
+
+				// ABOUT START
+				aboutH: "sobre nosotros",
+				aboutL:
+					"UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido que ayuda a artistas, productores de eventos como lugares y festivales a evolucionar hacia espectáculos híbridos con alcance global, nuevas experiencias, múltiples fuentes de ingresos y marcas y audiencias digitales para ofrecer nuevas posibilidades para Interacción.",
+				aboutR1: "EDIFICIO PARA CADA DISPOSITIVO MODERNO",
+				aboutR2: (
+					<p>
+						El diseño receptivo de UshowMe está diseñado para Entregue las
+						mejores experiencias e interacciones a su audiencia,
+						independientemente del dispositivo moderno que esté usando
+						<img src={asterik} alt="" className="asterik_up" />.
+					</p>
+				),
+				aboutR3: (
+					<p className="text-white mb-0 spaceMono">
+						consulte la lista de dispositivos compatibles en el{" "}
+						<span className="purpleBg px-1">Preguntas más frecuentes</span>
+						-Página.
+					</p>
+				),
+				// ABOUT END
+
+				// HYBRID START
+				hybH: "¿Por qué es híbrido el futuro?",
+				hybP: [
+					"Los espectáculos no se tratan solo de cantar esas canciones favoritas con tu 'tribu' e interactuar con los artistas, sino de compartir experiencias y expresar nuestras emociones para crear recuerdos duraderos de un gran momento juntos.",
+					"Hybrid amplifica estos y elimina las limitaciones habituales que muchos fanáticos dejan fuera al tiempo que agrega más fuentes de ingresos y un nuevo compromiso medible.",
+					"UshowMe es modular para maximizar sus necesidades específicas.",
+					"Comience seleccionando quién es U a continuación.",
+				],
+				// HYBRID END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+
+				// WHO START
+				who1: "EMPEZAR CON LA SELECCIÓN",
+				who2: "¿Quién eres tú?",
+				// WHO END
+
+				// FEATURE START
+				feature1: "Espectáculos de cadera",
+				feature2: "Ver todos los programas",
+				// FEATURE END
+
+				// FEATURE START
+				itsAll1: "¡Se trata de DIVERSIÓN!",
+				itsAll2: "Ver video completo",
+				// FEATURE END
+
+				// NEWS START
+				news: "En las noticias",
+				// NEWS END
+
+				// PARTNER START
+				partner1: "PAREJA",
+				partner2: "Conviértete en un compañero",
+				partner3: "Lidere el futuro de los espectáculos híbridos.",
+				// PARTNER END
+
+				// PARTNER START
+				newsletter1: "Suscríbete al boletín",
+				newsletterBtn: "Enviar",
+				// PARTNER END
+
+				// WHO END
+				who1under: "soy un",
+				present: "Obtén la presentación:",
+				present2: "Assine o Newsletter:",
+				send: "Enviar",
+				slide1T: "Artista / sello",
+				slide1T2: "Llegue e interactúe con una audiencia global",
+				slide1D:
+					"Nunca más tendrás que dejar a tus fans afuera. Con UshowMe, puede estar seguro de que está participando e interactuando con todos, aumentando las ventas en múltiples transmisiones tanto para la transmisión en vivo como para las versiones de video a pedido, y también incorporando a sus propios patrocinadores.",
+				slide2T: "Productor / lugar",
+				slide2T2: "Escale espectáculos más allá de su lugar / ubicación",
+				slide2D:
+					"Con UshowMe puede convertirse en un híbrido como productor y / o lugar y llegar a su audiencia más allá de los límites físicos, ganar dinero con múltiples transmisiones y digitalizar patrocinadores que ya están presentes en su lugar / festival físico.",
+				slide3T: "marca",
+				slide3T2: "Patrocinar espectáculos y medir interacciones",
+				slide3D:
+					"Su marca finalmente tiene el poder de maximizar el conocimiento y crear nuevas formas de interactuar con las audiencias digitales. UshowMe le brinda herramientas para que su marca logre lo más destacado que se merece con resultados medibles. UshowMe ofrece opciones de integración completas.",
+				slide4T: "admirador",
+				slide4T2: "Diviértete con nuevas interacciones",
+				slide4D:
+					"Con UshowMe tienes más acceso a tus artistas favoritos que si estuvieras allí en persona. Conecta tu cámara, expresa tus emociones y tus mejores movimientos en el escenario Top Fans. Habla con todos en el chat e intercambia ideas con artistas en emocionantes Meet & Greets.",
+				newLet: "Suscríbete a la newsletter:",
+				// WHO END
+
+				// FOOTER START
+				footer: [
+					{
+						t: "Cómo funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Preguntas más frecuentes",
+						l: "faq",
+					},
+					{
+						t: "Trabajos",
+						l: "",
+					},
+					{
+						t: "Contáctenos",
+						l: "",
+					},
+					{
+						t: "medios de comunicación",
+						l: "",
+					},
+					{
+						t: "Política de privacidad",
+						l: "",
+					},
+					{
+						t: "Términos & amp; condiciones",
+						l: "",
+					},
+				],
+				footerBtn: "Ver todos los programas",
+				// FOOTER END
+			},
+			hiw: {
+				// HERO START
+				heroBtn: "Vídeo de participación y control",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NOSOTROS" },
+					{ t: "HÍBRIDO ES EL FUTURO" },
+					{ t: "¿QUIÉN ERES TÚ?" },
+					{ t: "ESPECTÁCULOS SELECCIONADOS" },
+					{ t: "CÓMO FUNCIONA" },
+					{ t: "Preguntas más frecuentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Cómo funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Preguntas más frecuentes",
+						l: "faq",
+					},
+					{
+						t: "Trabajos",
+						l: "",
+					},
+					{
+						t: "Contáctenos",
+						l: "",
+					},
+					{
+						t: "medios de comunicación",
+						l: "",
+					},
+					{
+						t: "Política de privacidad",
+						l: "",
+					},
+					{
+						t: "Términos & amp; condiciones",
+						l: "",
+					},
+				],
+				footerBtn: "Ver todos los programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Suscríbete al boletín",
+				newsletterBtn: "Enviar",
+				// PARTNER END
+
+				// HIW BODY START
+				h1: "Cómo funciona",
+				h2: "De la preproducción al análisis",
+				hwiData: [
+					{
+						t: "Crear y personalizar",
+						d: [
+							"Crea tu espectáculo a través de nuestra plataforma, módulo a módulo. Comience con los detalles del programa. ",
+							"Luego, seleccione las fuentes de ingresos que desea poner a disposición de su audiencia. ",
+							"Inserte los banners y logotipos superpuestos, CTA, videos e invite a su equipo de moderación, y listo.",
+						],
+					},
+					{
+						t: "Participar y controlar",
+						d: [
+							"Mientras se desarrolla el espectáculo, interactúe con su audiencia en el chat en vivo y en las preguntas y respuestas. Los artistas también pueden ver e interactuar con audiencias digitales durante el espectáculo en el escenario.",
+							"Termine en la parte superior con emocionantes Meet & Greets.",
+							"Al utilizar nuestras potentes herramientas de moderación disponibles, puede asegurarse de que la experiencia sea positiva para todos en todo momento.",
+						],
+					},
+					{
+						t: "Sigue monetizando",
+						d: [
+							"Active la opción VOD (video a pedido) en la configuración, para seguir monetizando el mismo contenido una y otra vez.",
+							"A los fanáticos que se perdieron la transmisión en vivo o que quieran volver a ver sus interacciones, les encantará que pienses en ellos.",
+						],
+					},
+					{
+						t: "Medir y analizar",
+						d: [
+							"Tendrá acceso a un informe detallado, donde podrá medir y analizar la Calidad de la Experiencia Entregada (QoDE).",
+							"Esta poderosa información le permite saber exactamente quién es su audiencia y qué es lo que quiere.",
+						],
+					},
+				],
+				cBtn: "Contacta con nosotras para acceder",
+				// HIW BODY END
 			},
 		},
 		PT: {
@@ -328,6 +557,17 @@ export const data = [
 					{ t: "HÍBRIDO É O FUTURO" },
 					{ t: "COMO FUNCIONA" },
 					{ t: "QUEM É VOCÊ?" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NÓS" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "COMO FUNCIONA" },
 					{ t: "Perguntas frequentes" },
 				],
 				// SIDEBAR END
@@ -390,7 +630,7 @@ export const data = [
 				footer: [
 					{
 						t: "Como funciona",
-						l: "hiw",
+						l: "/howItWorks",
 					},
 					{
 						t: "Perguntas frequentes",
@@ -419,6 +659,109 @@ export const data = [
 				],
 				footerBtn: "Ver todos os programas",
 				// FOOTER END
+			},
+			hiw: {
+				// HERO START
+				heroBtn: "Envolva e controle o vídeo",
+				// HERO END
+
+				// SIDEBAR START
+				sideBar: [
+					{ t: "SOBRE NÓS" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+
+				// SIDEBAR START
+				sideBar2: [
+					{ t: "SOBRE NÓS" },
+					{ t: "HÍBRIDO É O FUTURO" },
+					{ t: "MOSTRA EM DESTAQUE" },
+					{ t: "QUEM É VOCÊ?" },
+					{ t: "COMO FUNCIONA" },
+					{ t: "Perguntas frequentes" },
+				],
+				// SIDEBAR END
+				// FOOTER START
+				footer: [
+					{
+						t: "Como funciona",
+						l: "/howItWorks",
+					},
+					{
+						t: "Perguntas frequentes",
+						l: "faq",
+					},
+					{
+						t: "Empregos",
+						l: "",
+					},
+					{
+						t: "Entre em contato conosco",
+						l: "",
+					},
+					{
+						t: "meios de comunicação",
+						l: "",
+					},
+					{
+						t: "Política de Privacidade",
+						l: "",
+					},
+					{
+						t: "termos e Condições",
+						l: "",
+					},
+				],
+				footerBtn: "Ver todos os programas",
+				// FOOTER END
+
+				// PARTNER START
+				newsletter1: "Assine o Newsletter",
+				newsletterBtn: "Mandar",
+				// PARTNER END
+
+				// HIW BODY START
+				h1: "Cómo funciona",
+				h2: "De la preproducción al analisis",
+				hwiData: [
+					{
+						t: "Criar e personalizar",
+						d: [
+							"Crea tu espectáculo a través de nuestra plataforma, módulo a módulo. Comience com os detalhes do programa. ",
+							"Luego, selecione as fontes de alimentação que desejam uma disposição de sua audiencia.",
+							"Inserte los banners y logotipos superpuestos, CTA, videos e convide a su equipo de moderación, y listo.",
+						],
+					},
+					{
+						t: "Participar e controlar",
+						d: [
+							"Mientras se desarrolla el espectáculo, interactúe con su audiencia en el chat en vivo y en las preguntas y respuestas. Los artistas também podem ver e interagir com audiências digitais durante o espectáculo no cenário.",
+							"Termine en la parte superior com emocionantes Meet & Greets.",
+							"Al use nuestras potentes herramientas de moderación disponibles, puede assegurarse de que la experiencia sea positiva para todos en todo momento.",
+						],
+					},
+					{
+						t: "Sigue monetizando",
+						d: [
+							"Ative a opção VOD (vídeo a pedido) na configuração, para seguir monetizando o mismo contido uma vez.",
+							"A los fanáticos que se perdem a transmisión en vivo o que quieran volver a ver sus interacciones, les encantará que pienses en ellos.",
+						],
+					},
+					{
+						t: "Medir y analizar",
+						d: [
+							"Tendrá acesse um informe detalhado, faça a avaliação e analise a Calidad de la Experiencia Entregada (QoDE).",
+							"Esta poderosa informação permite saber exatamente qual é a sua audiencia y qué es lo que quiere.",
+						],
+					},
+				],
+				cBtn: "Contate-nos para acesso",
+				// HIW BODY END
 			},
 		},
 	},
