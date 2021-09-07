@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
 
 // IMPORTING ICONS
 import i1 from "../assets/images/shareIcons/i1.svg";
@@ -78,58 +79,50 @@ const Sidebar = ({
 											key={i}
 											className="col-12 col-sm-6 text-center text-sm-start"
 										>
-											<h2>
-												<Link
-													to={
-														(i === 0 && "about") ||
-														(i === 1 && "feature") ||
-														(i === 2 && "hybrid") ||
-														(i === 3 && "hiw") ||
-														(i === 4 && "wru") ||
-														(i === 5 && "faq")
-													}
-													smooth={true}
-													duration={600}
-													spy={true}
-													offset={-100}
-													onClick={() => ClickEvent(false)}
-													className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
-												>
-													{prev.t}
-												</Link>
-											</h2>
+											{(i === 3 && (
+												<h2>
+													<LinkR
+														to="/howItWorks"
+														onClick={() => ClickEvent(false)}
+														className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+													>
+														{prev.t}
+													</LinkR>
+												</h2>
+											)) ||
+												(i === 5 && (
+													<h2>
+														<LinkR
+															to="/fAQ"
+															onClick={() => ClickEvent(false)}
+															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+														>
+															{prev.t}
+														</LinkR>
+													</h2>
+												)) || (
+													<h2>
+														<Link
+															to={
+																(i === 0 && "about") ||
+																(i === 1 && "feature") ||
+																(i === 2 && "hybrid") ||
+																(i === 4 && "wru")
+															}
+															smooth={true}
+															duration={600}
+															spy={true}
+															offset={-100}
+															onClick={() => ClickEvent(false)}
+															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+														>
+															{prev.t}
+														</Link>
+													</h2>
+												)}
 										</div>
 									);
 								})}
-								{/* <div className="secondHalf d-flex flex-column mt-4 d-sm-none align-items-center">
-									<div className="icons_container">
-										{data.map((prev, ind) => {
-											return (
-												<a
-													key={ind}
-													href={prev.link}
-													target="blank"
-													className="text-decoration-none text-dark ms-2"
-												>
-													<img src={prev.img} alt="" />
-												</a>
-											);
-										})}
-									</div>
-									<div className="ms-4 mt-3">
-										<select
-											name=""
-											id=""
-											className="text-white border-0 bg-transparent pointer"
-											value={language}
-											onChange={handleChange}
-										>
-											<option value="EN">EN</option>
-											<option value="PT">PT</option>
-											<option value="DE">DE</option>
-										</select>
-									</div>
-								</div> */}
 							</div>
 						</div>
 					</div>
@@ -149,26 +142,47 @@ const Sidebar = ({
 											key={i}
 											className="col-12 col-sm-6 text-center text-sm-start mb-4"
 										>
-											<h2>
-												<Link
-													to={
-														(i === 0 && "about") ||
-														(i === 1 && "feature") ||
-														(i === 2 && "hybrid") ||
-														(i === 3 && "hiw") ||
-														(i === 4 && "wru") ||
-														(i === 5 && "faq")
-													}
-													smooth={true}
-													duration={600}
-													spy={true}
-													offset={-100}
-													onClick={() => ClickEvent(false)}
-													className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
-												>
-													{prev.t}
-												</Link>
-											</h2>
+											{(i === 3 && (
+												<h2>
+													<LinkR
+														to="/howItWorks"
+														onClick={() => ClickEvent(false)}
+														className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+													>
+														{prev.t}
+													</LinkR>
+												</h2>
+											)) ||
+												(i === 5 && (
+													<h2>
+														<LinkR
+															to="/fAQ"
+															onClick={() => ClickEvent(false)}
+															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+														>
+															{prev.t}
+														</LinkR>
+													</h2>
+												)) || (
+													<h2>
+														<Link
+															to={
+																(i === 0 && "about") ||
+																(i === 1 && "feature") ||
+																(i === 2 && "hybrid") ||
+																(i === 4 && "wru")
+															}
+															smooth={true}
+															duration={600}
+															spy={true}
+															offset={-100}
+															onClick={() => ClickEvent(false)}
+															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
+														>
+															{prev.t}
+														</Link>
+													</h2>
+												)}
 										</div>
 									);
 								})}

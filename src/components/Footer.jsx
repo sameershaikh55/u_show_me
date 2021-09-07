@@ -20,15 +20,28 @@ const Footer = ({ dataHome }) => {
 								</div>
 								<div className="d-flex align-items-center flex-wrap justify-content-center gap-2 gap-lg-0 mt-4 mt-lg-0">
 									{footer.map((prev, i) => {
-										const { t, l } = prev;
+										const { t, l, el } = prev;
+										console.log(el)
 										return (
-											<NavLink
-												className="text-white text-decoration-none NeueMachina mx-3 f14"
-												key={i}
-												to={l}
-											>
-												{t}
-											</NavLink>
+											<>
+												{(el && (
+													<a
+														target="blank"
+														className="text-white text-decoration-none NeueMachina mx-3 f14"
+														href={el}
+													>
+														{t}
+													</a>
+												)) || (
+													<NavLink
+														className="text-white text-decoration-none NeueMachina mx-3 f14"
+														key={i}
+														to={l}
+													>
+														{t}
+													</NavLink>
+												)}
+											</>
 										);
 									})}
 								</div>
