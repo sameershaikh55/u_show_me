@@ -11,20 +11,30 @@ import Footer from "../components/Footer";
 import FaqBody from "../components/FaqBody";
 
 const FAQ = () => {
+	let Lang = localStorage.getItem("Lang");
 	const { isOpen, setIsOpen } = useHooks();
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
 	const [dropdown, setDropdown] = useState({
-		t: "EN",
+		t: Lang,
 	});
 	const [dropdown2, setDropdown2] = useState({
-		t: "PT",
+		t: Lang === "PT" && "EN" || "PT",
 	});
 	const [dropdown3, setDropdown3] = useState({
 		t: "ES",
 	});
-	const [url, setUrl] = useState(dropdown.t);
 	const [dataHome, setDataHome] = useState(data[0].EN.faq);
+
+	useEffect(() => {
+		if (Lang === "EN") {
+			setDataHome(data[0].EN.faq);
+		} else if (Lang === "ES") {
+			setDataHome(data[0].ES.faq);
+		} else if (Lang === "PT") {
+			setDataHome(data[0].PT.faq);
+		}
+	}, [dataHome, Lang]);
 
 	const second = () => {
 		setDropdown({
@@ -33,7 +43,7 @@ const FAQ = () => {
 		setDropdown2({
 			t: dropdown.t,
 		});
-		setUrl(dropdown2.t);
+		localStorage.setItem("Lang", dropdown2.t);
 		setOn(false);
 		setIsOpen(false);
 	};
@@ -45,23 +55,10 @@ const FAQ = () => {
 		setDropdown3({
 			t: dropdown.t,
 		});
-		setUrl(dropdown3.t);
+		localStorage.setItem("Lang", dropdown3.t);
 		setOn(false);
 		setIsOpen(false);
 	};
-
-	useEffect(() => {
-		if (url === "EN") {
-			let dataEN = data[0].EN.faq;
-			setDataHome(dataEN);
-		} else if (url === "ES") {
-			let dataDE = data[0].ES.faq;
-			setDataHome(dataDE);
-		} else if (url === "PT") {
-			let dataPT = data[0].PT.faq;
-			setDataHome(dataPT);
-		}
-	}, [dropdown, dropdown2, dropdown3]);
 
 	const [faq, setFaq] = useState({
 		one: true,
@@ -129,7 +126,7 @@ const FAQ = () => {
 				on={on}
 				setOn={setOn}
 			/>
-			<CommonHero hero={dataHome.hero} />
+			<CommonHero hero={dataHome.hero} faq />
 
 			<div className="page_container faq_btns_cont">
 				<div className="container-fluid px-0 px-md-4">
@@ -141,7 +138,7 @@ const FAQ = () => {
 								onClick={funcOne}
 								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
-								Artist/Label
+								{dataHome.faq1.h1}
 							</button>
 						</div>
 						<div className="col-6 col-md-3 faq_btns_inner">
@@ -150,7 +147,7 @@ const FAQ = () => {
 								onClick={funcTwo}
 								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
-								Producer/Venue
+								{dataHome.faq2.h1}
 							</button>
 						</div>
 						<div className="col-6 col-md-3 faq_btns_inner">
@@ -159,7 +156,7 @@ const FAQ = () => {
 								onClick={funcThree}
 								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
-								Brand
+								{dataHome.faq3.h1}
 							</button>
 						</div>
 						<div className="col-6 col-md-3 faq_btns_inner">
@@ -168,7 +165,7 @@ const FAQ = () => {
 								onClick={funcFourth}
 								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
-								Fan
+								{dataHome.faq3.h1}
 							</button>
 						</div>
 					</div>

@@ -1081,6 +1081,10 @@ input {
 	width: 100%;
 	justify-content: space-between;
 }
+
+.MuiAccordionSummary-expandIcon.Mui-expanded {
+	transform: rotate(45deg) !important;
+}
 // FOOTER END
 
 // HOW IT WORKS START

@@ -2409,11 +2409,11 @@ export const data = [
 				},
 
 				faq2: {
-					h1: "Producers/venues",
+					h1: "Producer/Venue",
 
 					faqList: [
 						{
-							q: " What is UshowMe?",
+							q: "What is UshowMe?",
 							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
 						},
 						{
@@ -2429,7 +2429,7 @@ export const data = [
 							a: "We currently have no limits. Our infrastructure is using Cloud servers that auto-scale in real-time when needed",
 						},
 						{
-							q: " Can I share ticketing revenue with artists, labels and agents?",
+							q: "Can I share ticketing revenue with artists, labels and agents?",
 							a: "Yes, that agreement is up to you and them.",
 						},
 						{
@@ -2445,14 +2445,28 @@ export const data = [
 							a: "Yes and we will be by your side, helping you take your festival to the best experience possible. We can even tailor made some special interactions request, so you can stand out.",
 						},
 						{
-							q: " What are the supported devices?",
-							a: "For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the Top Fans interactions: devices with browsers that run on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat 4.4 + and Safari 12 + on iOS 12 +",
+							q: "What are the supported devices?",
+							a: (
+								<p>
+									For the main stream (The show), devices with browsers that
+									run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge,
+									10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +,
+									Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS
+									11.
+									<br />
+									<br />
+									For the Top Fans interactions: devices with browsers that run
+									on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12
+									+, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat
+									4.4 + and Safari 12 + on iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq3: {
-					h1: "Producers/venues",
+					h1: "Brand",
 
 					faqList: [
 						{
@@ -2485,13 +2499,27 @@ export const data = [
 						},
 						{
 							q: "What are the supported devices?",
-							a: ": For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the Top Fans interactions: devices with browsers that run on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat 4.4 + and Safari 12 + on iOS 12 +.",
+							a: (
+								<p>
+									For the main stream (The show), devices with browsers that
+									run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge,
+									10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +,
+									Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS
+									11.
+									<br />
+									<br />
+									For the Top Fans interactions: devices with browsers that run
+									on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12
+									+, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat
+									4.4 + and Safari 12 + on iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq4: {
-					h1: "FAQ’s for FANS",
+					h1: "FANS",
 
 					faqList: [
 						{
@@ -2520,7 +2548,7 @@ export const data = [
 						},
 						{
 							q: "If I get the e-mail to join a Meet & Greet with the artist, what should I do?",
-							a: ": Start by clicking on the link to open a new webpage where we ask you to share your camera and microphone. Please join in as soon as possible, so we can check the quality of your connection and give you instructions when you will be interacting.",
+							a: "Start by clicking on the link to open a new webpage where we ask you to share your camera and microphone. Please join in as soon as possible, so we can check the quality of your connection and give you instructions when you will be interacting.",
 						},
 						{
 							q: " Does UshowMe comply with GDPR?",
@@ -2528,7 +2556,21 @@ export const data = [
 						},
 						{
 							q: "What are the supported devices?",
-							a: "For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11 For the main stream (The show), devices with browsers that run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +, Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS 11",
+							a: (
+								<p>
+									For the main stream (The show), devices with browsers that
+									run: on Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge,
+									10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 on Windows 8.1 +,
+									Chrome 35 on Android Kitkat 4.4 +, and Safari Mobile on iOS
+									11.
+									<br />
+									<br />
+									For the Top Fans interactions: devices with browsers that run
+									on: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12
+									+, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome on Android KitKat
+									4.4 + and Safari 12 + on iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
@@ -4959,15 +5001,15 @@ export const data = [
 							a: "Sí, siempre que tenga los derechos para ello. Las transmisiones no están bloqueadas, pero si recibimos un reclamo de derechos de autor por parte de un tercero, deberá indicar que posee los derechos sobre ellas",
 						},
 						{
-							P: "Tengo una marca patrocinando mi programa, ¿puedo incorporarlo?",
+							q: "Tengo una marca patrocinando mi programa, ¿puedo incorporarlo?",
 							a: "Sí, y deberías, en UshowMe te proporcionamos las herramientas para que tus patrocinadores se destaquen, aumenten la conciencia y tus fans puedan interactuar con ellos. Pueden ser logotipos, banners interactivos, videos premium en los Top Fans y un botón para abrir el sitio web de su patrocinador. Comuníquese con nosotros para obtener más información al respecto. ",
 						},
 						{
-							P: "Un lugar quiere transmitir en vivo mi programa y vender entradas, ¿cómo obtengo ingresos de ellos?",
+							q: "Un lugar quiere transmitir en vivo mi programa y vender entradas, ¿cómo obtengo ingresos de ellos?",
 							a: "Ese será un acuerdo entre usted, o su sello / agente y el lugar",
 						},
 						{
-							P: "¿Puedo crear y monetizar mi propio merchandising de realidad aumentada, para que mis fans los utilicen en Top Fans?",
+							q: "¿Puedo crear y monetizar mi propio merchandising de realidad aumentada, para que mis fans los utilicen en Top Fans?",
 							a: "Sí, le proporcionaremos un enlace a una herramienta dedicada a crear mercancía virtual en 3D. Requiere conocimientos de software 3D. No dude en acceder a esto.",
 						},
 						{
@@ -4978,7 +5020,7 @@ export const data = [
 				},
 
 				faq2: {
-					h1: "Productores / lugares",
+					h1: "Productora/Lugar",
 
 					faqList: [
 						{
@@ -4986,7 +5028,7 @@ export const data = [
 							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
 						},
 						{
-							P: "¿Puedo tener una solución integral, incluida la producción de video?",
+							q: "¿Puedo tener una solución integral, incluida la producción de video?",
 							a: "Mientras UshowMe maneja la plataforma y las interacciones, tenemos socios que pueden manejar la producción de video por usted. Comuníquese con nosotros para obtener más información",
 						},
 						{
@@ -4998,12 +5040,12 @@ export const data = [
 							a: "Actualmente no tenemos límites. Nuestra infraestructura utiliza servidores en la nube que se escalan automáticamente en tiempo real cuando es necesario",
 						},
 						{
-							P: "¿Puedo compartir los ingresos por venta de entradas con artistas, sellos y agentes?",
+							q: "¿Puedo compartir los ingresos por venta de entradas con artistas, sellos y agentes?",
 							a: "Sí, ese acuerdo depende de ti y de ellos",
 						},
 						{
 							q: "¿Puedo ejecutar UshowMe en mi sitio web?",
-							p: "Sí, también tenemos disponible una versión de etiqueta blanca con ajustes de configuración, por lo que puede ajustar los colores y las fuentes de la interfaz de usuario en consecuencia. Al usar UshowMe en su sitio web, usted estará a cargo de manejar el inicio de sesión y los registros, ya que nosotros no tener acceso a esa información. ",
+							a: "Sí, también tenemos disponible una versión de etiqueta blanca con ajustes de configuración, por lo que puede ajustar los colores y las fuentes de la interfaz de usuario en consecuencia. Al usar UshowMe en su sitio web, usted estará a cargo de manejar el inicio de sesión y los registros, ya que nosotros no tener acceso a esa información. ",
 						},
 						{
 							q: "Después de que termine mi programa, ¿qué información se proporciona?",
@@ -5015,13 +5057,27 @@ export const data = [
 						},
 						{
 							q: "¿Cuáles son los dispositivos compatibles?",
-							a: "Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42+, Safari 9 +, Microsoft Edge, 10+, Opera17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para las interacciones de Top Fans: dispositivos con navegadores que se ejecutan en: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 + ",
+							a: (
+								<p>
+									Para la transmisión principal (The show), los dispositivos con
+									navegadores que ejecutar: en Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y
+									Safari Mobile en iOS 11.
+									<br />
+									<br />
+									Para las interacciones de Top Fans: dispositivos con
+									navegadores que ejecutan en: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq3: {
-					h1: "Productores / lugares",
+					h1: "Marca",
 
 					faqList: [
 						{
@@ -5029,11 +5085,11 @@ export const data = [
 							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
 						},
 						{
-							P: "¿Puedo tener una solución integral, incluida la producción de video?",
+							q: "¿Puedo tener una solución integral, incluida la producción de video?",
 							a: "Mientras UshowMe maneja la plataforma y las interacciones, tenemos socios que pueden manejar la producción de video por usted. Comuníquese con nosotros para obtener más información",
 						},
 						{
-							P: "¿Cómo puede mi marca interactuar con los fans digitales?",
+							q: "¿Cómo puede mi marca interactuar con los fans digitales?",
 							a: "Ofrecemos una gama de espacios y opciones para que su marca obtenga lo más destacado que necesita en nuestra plataforma y versión de etiqueta blanca",
 						},
 						{
@@ -5041,7 +5097,7 @@ export const data = [
 							a: "Actualmente no tenemos límites. Nuestra infraestructura utiliza servidores en la nube que se escalan automáticamente en tiempo real cuando es necesario",
 						},
 						{
-							P: "¿Puedo tener mis filtros de Realidad Aumentada de Marca en los Fans Principales?",
+							q: "¿Puedo tener mis filtros de Realidad Aumentada de Marca en los Fans Principales?",
 							a: "Sí, podemos ayudarlo a construirlos, o podemos hacerlo por usted. Contáctenos para obtener más información al respecto",
 						},
 						{
@@ -5054,13 +5110,27 @@ export const data = [
 						},
 						{
 							q: "¿Cuáles son los dispositivos compatibles?",
-							a: ": Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para las interacciones de los principales fanáticos: dispositivos con navegadores que se ejecutan en: Chrome 37 +, Firefox 44 +, Safari 11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 +. ",
+							a: (
+								<p>
+									Para la transmisión principal (The show), los dispositivos con
+									navegadores que ejecutar: en Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y
+									Safari Mobile en iOS 11.
+									<br />
+									<br />
+									Para las interacciones de Top Fans: dispositivos con
+									navegadores que ejecutan en: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq4: {
-					h1: "Preguntas frecuentes para FANS",
+					h1: "ADMIRADORA",
 
 					faqList: [
 						{
@@ -5104,7 +5174,7 @@ export const data = [
 						},
 						{
 							q: "Si recibo el correo electrónico para unirme a un Meet & Greet con el artista, ¿qué debo hacer?",
-							a: ": Comience haciendo clic en el enlace para abrir una nueva página web donde le pedimos que comparta su cámara y micrófono. Únase lo antes posible, para que podamos verificar la calidad de su conexión y darle instrucciones cuando lo haga estar interactuando. ",
+							a: "Comience haciendo clic en el enlace para abrir una nueva página web donde le pedimos que comparta su cámara y micrófono. Únase lo antes posible, para que podamos verificar la calidad de su conexión y darle instrucciones cuando lo haga estar interactuando. ",
 						},
 						{
 							q: "¿UshowMe cumple con el RGPD?",
@@ -5112,7 +5182,21 @@ export const data = [
 						},
 						{
 							q: "¿Cuáles son los dispositivos compatibles?",
-							a: "Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 Para la transmisión principal (El programa), dispositivos con navegadores que se ejecutan: en Chrome 35+, Firefox 42 +, Safari 9 +, Microsoft Edge, 10 + , Opera 17 +, Vivaldi 1.9 +, Brave, IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y Safari Mobile en iOS 11 ",
+							a: (
+								<p>
+									Para la transmisión principal (The show), los dispositivos con
+									navegadores que ejecutar: en Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 en Windows 8.1 +, Chrome 35 en Android Kitkat 4.4 + y
+									Safari Mobile en iOS 11.
+									<br />
+									<br />
+									Para las interacciones de Top Fans: dispositivos con
+									navegadores que ejecutan en: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome en Android KitKat 4.4 + y Safari 12 + en iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
@@ -7508,7 +7592,7 @@ export const data = [
 							a: "Sim, contanto que você tenha os direitos sobre elas. As transmissões não são bloqueadas, mas se recebermos uma reivindicação de direitos autorais de terceiros, você deve indicar que possui os direitos sobre elas",
 						},
 						{
-							P: "Tenho uma marca patrocinando meu programa, posso incorporá-la?",
+							q: "Tenho uma marca patrocinando meu programa, posso incorporá-la?",
 							a: "Sim, e você deve, no UshowMe nós fornecemos as ferramentas para seus patrocinadores se destacarem, aumentarem a conscientização e seus fãs podem interagir com eles. Podem ser logotipos, banners interativos, vídeos premium nos principais fãs e um botão para abrir o site do seu patrocinador. Entre em contato para mais informações. ",
 						},
 						{
@@ -7516,7 +7600,7 @@ export const data = [
 							a: "Esse será um acordo entre você, ou sua gravadora / agente e o local",
 						},
 						{
-							P: "Posso criar e monetizar meus próprios produtos de realidade aumentada para meus fãs usarem nos fãs principais?",
+							q: "Posso criar e monetizar meus próprios produtos de realidade aumentada para meus fãs usarem nos fãs principais?",
 							a: "Sim, forneceremos um link para uma ferramenta dedicada à criação de mercadoria virtual 3D. Requer conhecimento de software 3D. Sinta-se à vontade para acessá-lo.",
 						},
 						{
@@ -7527,7 +7611,7 @@ export const data = [
 				},
 
 				faq2: {
-					h1: "Produtores / locais",
+					h1: "Produtor/Local",
 
 					faqList: [
 						{
@@ -7552,7 +7636,7 @@ export const data = [
 						},
 						{
 							q: "Posso executar o UshowMe no meu site?",
-							P: "Sim, também temos uma versão com etiqueta em branco disponível com as definições de configuração, para que você possa ajustar as cores e fontes da IU de acordo. Ao usar o UshowMe em seu site, você será responsável por gerenciar o login e os registros, pois não têm acesso a essas informações. ",
+							a: "Sim, também temos uma versão com etiqueta em branco disponível com as definições de configuração, para que você possa ajustar as cores e fontes da IU de acordo. Ao usar o UshowMe em seu site, você será responsável por gerenciar o login e os registros, pois não têm acesso a essas informações. ",
 						},
 						{
 							q: "Depois que meu programa termina, o queQue informações são fornecidas? ",
@@ -7564,13 +7648,27 @@ export const data = [
 						},
 						{
 							q: "Quais são os dispositivos suportados?",
-							a: "Para o stream principal (o programa), dispositivos com navegadores em execução: no Chrome 35+, Firefox 42+, Safari 9 +, Microsoft Edge, 10+, Opera17 +, Vivaldi 1.9 +, Brave, IE11 no Windows 8.1+ , Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 Para Interações de Ventilador Principais: Dispositivos com navegadores em: Chrome 37+, Firefox 44+, Safari 11+, Microsoft Edge 12+, Opera 19 +, Vivaldi 2.0 +, Brave, Chrome no Android KitKat 4.4 + e Safari 12 + no iOS 12 + ",
+							a: (
+								<p>
+									Para o stream principal (The show), dispositivos com
+									navegadores que executar: no Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4 + e
+									Safari Mobile no iOS 11
+									<br />
+									<br />
+									Para as interações dos principais fãs: dispositivos com
+									navegadores que executam em: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome no Android KitKat 4.4 + e Safari 12 + no iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq3: {
-					h1: "Produtores / locais",
+					h1: "Marca",
 
 					faqList: [
 						{
@@ -7603,13 +7701,27 @@ export const data = [
 						},
 						{
 							q: "Quais são os dispositivos suportados?",
-							para: ": Para o stream principal (o programa), dispositivos com navegadores executando: no Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10+, Opera 17+, Vivaldi 1.9+, Brave, IE11 no Windows 8.1+, Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 Para as principais interações dos fãs: Dispositivos com navegadores executados em: Chrome 37+, Firefox 44+, Safari 11+, Microsoft Edge 12+, Opera 19+, Vivaldi 2.0 +, Brave, Chrome no Android KitKat 4.4+ e Safari 12+ no iOS 12+. ",
+							a: (
+								<p>
+									Para o stream principal (The show), dispositivos com
+									navegadores que executar: no Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4 + e
+									Safari Mobile no iOS 11
+									<br />
+									<br />
+									Para as interações dos principais fãs: dispositivos com
+									navegadores que executam em: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome no Android KitKat 4.4 + e Safari 12 + no iOS 12 +
+								</p>
+							),
 						},
 					],
 				},
 
 				faq4: {
-					h1: "FAQ para FANS",
+					h1: "FÃ",
 
 					faqList: [
 						{
@@ -7653,7 +7765,7 @@ export const data = [
 						},
 						{
 							q: "Se eu receber o e-mail para participar de um Meet & Greet com o artista, o que devo fazer?",
-							a: ": Comece clicando no link para abrir uma nova página da web onde pedimos que você compartilhe sua câmera e microfone. Junte-se o mais rápido possível, para que possamos verificar a qualidade de sua conexão e fornecer instruções quando você interagir . ",
+							a: "Comece clicando no link para abrir uma nova página da web onde pedimos que você compartilhe sua câmera e microfone. Junte-se o mais rápido possível, para que possamos verificar a qualidade de sua conexão e fornecer instruções quando você interagir . ",
 						},
 						{
 							q: "O UshowMe é compatível com GDPR?",
@@ -7661,7 +7773,21 @@ export const data = [
 						},
 						{
 							q: "Quais são os dispositivos suportados?",
-							a: "Para o stream principal (o programa), dispositivos com navegadores em execução: no Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10+, Opera 17+, Vivaldi 1.9+, Brave, IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4+ e Safari Mobile no iOS 11 para transmissão principal (o programa), dispositivos com navegadores em execução: Chrome 35+, Firefox 42+, Safari 9+, Microsoft Edge, 10 +, Opera 17 + , Vivaldi 1.9 +, Brave, IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4 + e Safari Mobile no iOS 11 ",
+							a: (
+								<p>
+									Para o stream principal (The show), dispositivos com
+									navegadores que executar: no Chrome 35+, Firefox 42 +, Safari
+									9 +, Microsoft Edge, 10 +, Opera 17 +, Vivaldi 1.9 +, Brave,
+									IE11 no Windows 8.1 +, Chrome 35 no Android Kitkat 4.4 + e
+									Safari Mobile no iOS 11
+									<br />
+									<br />
+									Para as interações dos principais fãs: dispositivos com
+									navegadores que executam em: Chrome 37 +, Firefox 44 +, Safari
+									11 +, Microsoft Edge 12 +, Opera 19 +, Vivaldi 2.0 +, Brave,
+									Chrome no Android KitKat 4.4 + e Safari 12 + no iOS 12 +
+								</p>
+							),
 						},
 					],
 				},

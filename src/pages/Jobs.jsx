@@ -6,24 +6,33 @@ import { GlobalContext } from "../data/Context";
 import { useHooks } from "../hooks/useHooks";
 import Newsletter from "../components/Newsletter";
 import CommonHero from "../components/CommonHero";
-import TermsBody from "../components/TermsBody";
 import JobsBody from "../components/JobsBody";
 
 const Jobs = () => {
+	let Lang = localStorage.getItem("Lang");
 	const { isOpen, setIsOpen } = useHooks();
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
 	const [dropdown, setDropdown] = useState({
-		t: "EN",
+		t: Lang,
 	});
 	const [dropdown2, setDropdown2] = useState({
-		t: "PT",
+		t: Lang === "PT" && "EN" || "PT",
 	});
 	const [dropdown3, setDropdown3] = useState({
 		t: "ES",
 	});
-	const [url, setUrl] = useState(dropdown.t);
 	const [dataHome, setDataHome] = useState(data[0].EN.jobs);
+
+	useEffect(() => {
+		if (Lang === "EN") {
+			setDataHome(data[0].EN.jobs);
+		} else if (Lang === "ES") {
+			setDataHome(data[0].ES.jobs);
+		} else if (Lang === "PT") {
+			setDataHome(data[0].PT.jobs);
+		}
+	}, [dataHome, Lang]);
 
 	const second = () => {
 		setDropdown({
@@ -32,7 +41,7 @@ const Jobs = () => {
 		setDropdown2({
 			t: dropdown.t,
 		});
-		setUrl(dropdown2.t);
+		localStorage.setItem("Lang", dropdown2.t);
 		setOn(false);
 		setIsOpen(false);
 	};
@@ -44,23 +53,10 @@ const Jobs = () => {
 		setDropdown3({
 			t: dropdown.t,
 		});
-		setUrl(dropdown3.t);
+		localStorage.setItem("Lang", dropdown3.t);
 		setOn(false);
 		setIsOpen(false);
 	};
-
-	useEffect(() => {
-		if (url === "EN") {
-			let dataEN = data[0].EN.jobs;
-			setDataHome(dataEN);
-		} else if (url === "ES") {
-			let dataDE = data[0].ES.jobs;
-			setDataHome(dataDE);
-		} else if (url === "PT") {
-			let dataPT = data[0].PT.jobs;
-			setDataHome(dataPT);
-		}
-	}, [dropdown, dropdown2, dropdown3]);
 
 	return (
 		<div>

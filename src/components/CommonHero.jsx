@@ -1,8 +1,8 @@
 import React from "react";
 
-const CommonHero = ({ hero }) => {
+const CommonHero = ({ hero, faq }) => {
 	return (
-		<div className={`commonHero_container ${(hero === "FAQ" && hero) || ""}`}>
+		<div className={`commonHero_container ${(faq && "faq") || ""}`}>
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">

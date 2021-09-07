@@ -23,6 +23,14 @@ import FAQ from "./pages/FAQ";
 
 function App() {
 	useEffect(() => {
+		let Lang = localStorage.getItem("Lang");
+
+		if (Lang === null) {
+			localStorage.setItem("Lang", "EN");
+		}
+	}, []);
+
+	useEffect(() => {
 		document.body.style.overflow = "hidden";
 
 		window.addEventListener("load", (event) => {

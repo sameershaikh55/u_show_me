@@ -1254,6 +1254,11 @@ input:focus {
           justify-content: space-between;
 }
 
+.MuiAccordionSummary-expandIcon.Mui-expanded {
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
 .hiw_body_container {
   margin-top: -6px;
   background: #5525eb;

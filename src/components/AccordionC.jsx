@@ -46,7 +46,7 @@ const AccordionC = ({ prev, colorr }) => {
 							transitionDelay: collapsed && "0.8s",
 							transition: collapsed && "0.8s",
 						}}
-						className="spaceMono fw600 py-4 mb-0"
+						className="spaceMono fw500 py-4 mb-0"
 					>
 						{prev.a}
 					</p>

@@ -9,20 +9,30 @@ import CommonHero from "../components/CommonHero";
 import PrivacyBody from "../components/PrivacyBody";
 
 const PrivacyPolicy = () => {
+	let Lang = localStorage.getItem("Lang");
 	const { isOpen, setIsOpen } = useHooks();
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
 	const [dropdown, setDropdown] = useState({
-		t: "EN",
+		t: Lang,
 	});
 	const [dropdown2, setDropdown2] = useState({
-		t: "PT",
+		t: Lang === "PT" && "EN" || "PT",
 	});
 	const [dropdown3, setDropdown3] = useState({
 		t: "ES",
 	});
-	const [url, setUrl] = useState(dropdown.t);
 	const [dataHome, setDataHome] = useState(data[0].EN.privacyPolicy);
+
+	useEffect(() => {
+		if (Lang === "EN") {
+			setDataHome(data[0].EN.privacyPolicy);
+		} else if (Lang === "ES") {
+			setDataHome(data[0].ES.privacyPolicy);
+		} else if (Lang === "PT") {
+			setDataHome(data[0].PT.privacyPolicy);
+		}
+	}, [dataHome, Lang]);
 
 	const second = () => {
 		setDropdown({
@@ -31,7 +41,7 @@ const PrivacyPolicy = () => {
 		setDropdown2({
 			t: dropdown.t,
 		});
-		setUrl(dropdown2.t);
+		localStorage.setItem("Lang", dropdown2.t);
 		setOn(false);
 		setIsOpen(false);
 	};
@@ -43,23 +53,10 @@ const PrivacyPolicy = () => {
 		setDropdown3({
 			t: dropdown.t,
 		});
-		setUrl(dropdown3.t);
+		localStorage.setItem("Lang", dropdown3.t);
 		setOn(false);
 		setIsOpen(false);
 	};
-
-	useEffect(() => {
-		if (url === "EN") {
-			let dataEN = data[0].EN.privacyPolicy;
-			setDataHome(dataEN);
-		} else if (url === "ES") {
-			let dataDE = data[0].ES.privacyPolicy;
-			setDataHome(dataDE);
-		} else if (url === "PT") {
-			let dataPT = data[0].PT.privacyPolicy;
-			setDataHome(dataPT);
-		}
-	}, [dropdown, dropdown2, dropdown3]);
 
 	return (
 		<div>
