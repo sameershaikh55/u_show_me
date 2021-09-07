@@ -21,7 +21,7 @@ const FeaturedShows = ({ dataHome }) => {
 				"https://virtserver.swaggerhub.com/ushowmetv/api/1.0.0/events"
 			)
 				.then((response) => response.json())
-				.then((data) => setData(data));
+				.then((data) => setData([...data, ...data]));
 		};
 		fetchData();
 	}, [data]);
@@ -84,6 +84,75 @@ const FeaturedShows = ({ dataHome }) => {
 			{/* MOBILE SCREEN END */}
 
 			<div className="feature_slider_container">
+				<div className="upp">
+					{data.map((prev, ind) => {
+						const { imgUrl, title, subtitle, startEventDate, id } = prev;
+						// const dayDate = new Date(startEventDate);
+						const dayDate = new Date(startEventDate);
+						const dayDateString = new Date(startEventDate)
+							.toString()
+							.split(" ");
+
+						const monthNames = [
+							"January",
+							"February",
+							"March",
+							"April",
+							"May",
+							"June",
+							"July",
+							"August",
+							"September",
+							"October",
+							"November",
+							"December",
+						];
+						function dateOrdinal(d) {
+							return (
+								d +
+								(31 === d || 21 === d || 1 === d
+									? "st"
+									: 22 === d || 2 === d
+									? "nd"
+									: 23 === d || 3 === d
+									? "rd"
+									: "th")
+							);
+						}
+						return (
+							<div className="upperfeatureCard" key={ind}>
+								<div className="news_card position-relative pe-2">
+									<img className="w-100" src={imgUrl} alt="" />
+									<div className="overlay"></div>
+									{/* INNER START */}
+									<div className="d-flex flex-column justify-content-end text_content position-absolute text-white text-center">
+										<h2 className="NeueMachina fw-bold mb-0">{title}</h2>
+										<h6 className="NeueMachina mb-4">{subtitle}</h6>
+										<h6 className="NeueMachina fw600 mb-0">
+											{dateOrdinal(dayDateString[2])}{" "}
+											{monthNames[dayDate.getMonth()]}
+										</h6>
+										<h6 className="fw400 NeueMachina mt-0">
+											{dayDateString[4]} {dayDateString[5]}
+										</h6>
+										<a
+											target="blank"
+											href={`https://qua-app.ushowme.tv/show?id=${id}`}
+										>
+											<button className="NeueMachina fw500 bg3 text-white border-0 py-1 px-3 mt-5">
+												Show Details
+											</button>
+										</a>
+									</div>
+									{/* INNER END */}
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+
+			<div className="feature_slider_container d-none">
 				{data.length > 0 && (
 					<Swiper
 						direction={"horizontal"}

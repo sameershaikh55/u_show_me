@@ -349,8 +349,29 @@ input {
 // FEATURE SLIDER START
 .feature_slider_container {
 	background-color: $color4;
+	min-width: 100%;
+	display: flex;
+	overflow: auto;
+	margin-bottom: -18px;
+
+	&::-webkit-scrollbar {
+		visibility: hidden;
+	}
+
+	.upp {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+
+		.upperfeatureCard {
+			width: 390px;
+			margin-right: 2px;
+		}
+	}
 
 	.news_card {
+		// width: 100%;
 		position: relative;
 
 		.overlay {
@@ -1100,6 +1121,10 @@ input {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	// FEATURE SLIDER START
+	.feature_slider_container {
+		margin-bottom: -26px;
+	}
 }
 
 @media screen and (max-width: 1100px) {
@@ -1277,6 +1302,9 @@ input {
 		padding: 4rem 0rem;
 	}
 	// COMMON HEADERS END
+	.feature_slider_container .upp .upperfeatureCard {
+		width: 295px;
+	}
 }
 
 @media screen and (max-width: 575px) {
