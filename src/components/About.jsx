@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/logo2.svg";
 import asterik from "../assets/images/asterik.svg";
 
 const About = ({ dataHome }) => {

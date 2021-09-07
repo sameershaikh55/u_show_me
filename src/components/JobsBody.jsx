@@ -13,8 +13,8 @@ const JobsBody = ({ dataHome }) => {
 
 							<div className="px-3">
 								<div className="NeueMachina mt-4 fw500">
-									{paras.map((prev) => {
-										return <> {prev.p} </>;
+									{paras.map((prev, ind) => {
+										return <div key={ind}> {prev.p} </div>;
 									})}
 								</div>
 							</div>

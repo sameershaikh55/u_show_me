@@ -5,6 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper.min.css";
 
+// import Swiper core and required modules
+import SwiperCore, { Mousewheel } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Mousewheel]);
+
 const FeaturedShows = ({ dataHome }) => {
 	const { feature1, feature2 } = dataHome;
 	const [data, setData] = useState([]);
@@ -18,7 +24,7 @@ const FeaturedShows = ({ dataHome }) => {
 				.then((data) => setData(data));
 		};
 		fetchData();
-	}, []);
+	}, [data]);
 
 	return (
 		<>
@@ -80,6 +86,8 @@ const FeaturedShows = ({ dataHome }) => {
 			<div className="feature_slider_container">
 				{data.length > 0 && (
 					<Swiper
+						direction={"horizontal"}
+						mousewheel={true}
 						breakpoints={{
 							1600: {
 								slidesPerView: 4.5,
@@ -132,11 +140,11 @@ const FeaturedShows = ({ dataHome }) => {
 							function dateOrdinal(d) {
 								return (
 									d +
-									(31 == d || 21 == d || 1 == d
+									(31 === d || 21 === d || 1 === d
 										? "st"
-										: 22 == d || 2 == d
+										: 22 === d || 2 === d
 										? "nd"
-										: 23 == d || 3 == d
+										: 23 === d || 3 === d
 										? "rd"
 										: "th")
 								);

@@ -3,6 +3,12 @@ import { Link } from "react-scroll";
 import top from "../assets/images/top.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// import Swiper core and required modules
+import SwiperCore, { Mousewheel } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Mousewheel]);
+
 const Partner = ({ dataHome }) => {
 	const { partner1, partner2, partner3 } = dataHome;
 
@@ -27,6 +33,7 @@ const Partner = ({ dataHome }) => {
 
 				<div>
 					<Swiper
+						mousewheel={true}
 						breakpoints={{
 							1800: {
 								slidesPerView: 6.2,
@@ -57,8 +64,8 @@ const Partner = ({ dataHome }) => {
 					>
 						{data.map((prev, ind) => {
 							return (
-								<SwiperSlide>
-									<div className="partner_card mt-4 px-2" key={ind}>
+								<SwiperSlide key={ind}>
+									<div className="partner_card mt-4 px-2">
 										<img src={prev} alt="" />
 									</div>
 								</SwiperSlide>

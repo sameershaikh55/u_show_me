@@ -17,9 +17,6 @@ const HowHero = ({ dataHome, dropdown: { t } }) => {
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-10 col-lg-6 mx-auto">
-								{/* <h1 className="bold text-white underline pb-4">
-									{dataHome.hero}
-								</h1> */}
 								<a
 									target="blank"
 									className="text-decoration-none"

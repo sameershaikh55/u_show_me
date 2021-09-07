@@ -81,6 +81,10 @@ $color8: #541dec;
 $color9: #eb5565;
 // VARIABLES END
 
+.swiper-wrapper {
+	transition-duration: 0.3s !important;
+}
+
 // GLOBAL CLASSES START
 html {
 	font-size: 100%;
@@ -1076,25 +1080,16 @@ input {
 }
 
 .faq_btns {
-	button {
-		border: none;
-	}
-	button:nth-child(1) {
-		background-color: #541dec;
-	}
-	button:nth-child(2) {
-		background-color: #eb5565;
-	}
-	button:nth-child(3) {
-		background-color: #ebab54;
-	}
-	button:nth-child(4) {
-		background-color: #17bb6f;
+	button:focus {
+		outline: none;
 	}
 }
 
 .faq_btns_cont {
 	margin-top: -40px;
+}
+.custom_accordion {
+	transition: 0.4s;
 }
 // FAQ END
 
@@ -1270,6 +1265,16 @@ input {
 	.commonHero_container {
 		background: #231f2e;
 		padding: 10rem 0rem 4rem;
+	}
+	.commonHero_container.faq {
+		background: #231f2e;
+		padding: 10rem 0rem 9rem;
+	}
+	.faq_btns_cont {
+		margin-top: -60px;
+	}
+	.faq_body_container {
+		padding: 4rem 0rem;
 	}
 	// COMMON HEADERS END
 }

@@ -2379,7 +2379,7 @@ export const data = [
 						},
 						{
 							q: "Are the Top Fans always on?",
-							a: ": By default there will be dedicated moments during your show that the Top Fans will be active, but if you prefer we can make them always on. From the feedback gathered by other artists, they prefer having special moments dedicated to them, like dancing along a song chorus.",
+							a: "By default there will be dedicated moments during your show that the Top Fans will be active, but if you prefer we can make them always on. From the feedback gathered by other artists, they prefer having special moments dedicated to them, like dancing along a song chorus.",
 						},
 						{
 							q: "Can I setup my own show and control everything?",
@@ -2434,7 +2434,7 @@ export const data = [
 						},
 						{
 							q: "Can I run UshowMe on my website?",
-							p: "Yes, we also have available a whitelabel version with configuration settings, so you can adjust the user interface colors and fonts accordingly. By using UshowMe on your website, you will be in charge of handling login and registrations, as we do not have access to that information.",
+							a: "Yes, we also have available a whitelabel version with configuration settings, so you can adjust the user interface colors and fonts accordingly. By using UshowMe on your website, you will be in charge of handling login and registrations, as we do not have access to that information.",
 						},
 						{
 							q: "After my show is finished, what information is provided?",
@@ -2504,20 +2504,7 @@ export const data = [
 						},
 						{
 							q: "What interactions are available?",
-							a: (
-								<p>
-									Currently we have:
-									<br />
-									- The Top Fans, a premium feature, where you as a fan can join
-									in with your smartphone camera and/or webcam, use our
-									Augmented Reality filters for more fun, express your emotions
-									on stage to everybody and interact with artists.
-									<br />
-									- The live chat, to talk with all participants on the show.
-									<br />- Video Meet & Greet with artists at the end of the
-									show, if artists made it available.
-								</p>
-							),
+							a: "Currently we have: - The Top Fans, a premium feature, where you as a fan can join in with your smartphone camera and/or webcam, use our Augmented Reality filters for more fun, express your emotions on stage to everybody and interact with artists. \n - The live chat, to talk with all participants on the show. - Video Meet & Greet with artists at the end of the show, if artists made it available.",
 						},
 						{
 							q: "Are interactions moderated?",

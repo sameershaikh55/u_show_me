@@ -2,7 +2,7 @@ import React from "react";
 
 const CommonHero = ({ hero }) => {
 	return (
-		<div className="commonHero_container">
+		<div className={`commonHero_container ${(hero === "FAQ" && hero) || ""}`}>
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">

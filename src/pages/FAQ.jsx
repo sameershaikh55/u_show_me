@@ -132,37 +132,47 @@ const FAQ = () => {
 			<CommonHero hero={dataHome.hero} />
 
 			<div className="page_container faq_btns_cont">
-				<div className="container-fluid">
-					<div className="row">
-						{/* FAQ START */}
-						<div className="d-flex faq_btns">
+				<div className="container-fluid px-0 px-md-4">
+					{/* FAQ START */}
+					<div className="row gx-0 faq_btns">
+						<div className="col-6 col-md-3 faq_btns_inner">
 							<button
+								style={{ background: "#541dec" }}
 								onClick={funcOne}
-								className="w-100 py-2 text-white fw-bold NeueMachina"
+								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
 								Artist/Label
 							</button>
+						</div>
+						<div className="col-6 col-md-3 faq_btns_inner">
 							<button
+								style={{ background: "#eb5565" }}
 								onClick={funcTwo}
-								className="w-100 py-2 text-white fw-bold NeueMachina"
+								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
 								Producer/Venue
 							</button>
+						</div>
+						<div className="col-6 col-md-3 faq_btns_inner">
 							<button
+								style={{ background: "#ebab54" }}
 								onClick={funcThree}
-								className="w-100 py-2 text-white fw-bold NeueMachina"
+								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
 								Brand
 							</button>
+						</div>
+						<div className="col-6 col-md-3 faq_btns_inner">
 							<button
+								style={{ background: "#17bb6f" }}
 								onClick={funcFourth}
-								className="w-100 py-2 text-white fw-bold NeueMachina"
+								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
 								Fan
 							</button>
 						</div>
-						{/* FAQ END */}
 					</div>
+					{/* FAQ END */}
 				</div>
 			</div>
 

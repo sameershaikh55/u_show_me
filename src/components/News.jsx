@@ -1,7 +1,12 @@
 import React from "react";
-import Slider from "react-slick";
 import eye from "../assets/images/eye.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// import Swiper core and required modules
+import SwiperCore, { Mousewheel } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Mousewheel]);
 
 const News = ({ dataHome }) => {
 	const { news } = dataHome;
@@ -71,9 +76,6 @@ const News = ({ dataHome }) => {
 	return (
 		<div className="news_container ps-4 ps-md-5">
 			<div className="w-100">
-				{/* <div className="container-fluid px-0">
-					<div className="row">
-						<div className="col-11 col-md-12 mx-auto"> */}
 				<p className="text-white f18 mb-0 NeueMachina">
 					U<span className="color3">SHOW</span>ME
 				</p>
@@ -86,6 +88,7 @@ const News = ({ dataHome }) => {
 					<div className="w-100">
 						<div>
 							<Swiper
+								mousewheel={true}
 								breakpoints={{
 									1800: {
 										slidesPerView: 4.2,
@@ -117,8 +120,8 @@ const News = ({ dataHome }) => {
 								{data.map((prev, ind) => {
 									const { i, t, l } = prev;
 									return (
-										<SwiperSlide>
-											<div className="news_card mt-5 pe-3" key={ind}>
+										<SwiperSlide key={ind}>
+											<div className="news_card mt-5 pe-3">
 												<img className="thumbnail w-100" src={i} alt="" />
 												<div className="mt-3">
 													<span className="spaceMono">{t}</span>
@@ -142,9 +145,6 @@ const News = ({ dataHome }) => {
 					</div>
 				</div>
 				{/* DESKTOP SCREEN END */}
-				{/* </div>
-					</div>
-				</div> */}
 			</div>
 		</div>
 	);
