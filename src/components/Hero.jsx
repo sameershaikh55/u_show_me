@@ -18,10 +18,11 @@ const Hero = ({ dataHome }) => {
 					ref={v1}
 					className="w-100"
 					poster=""
-					autoPlay
-					playsInline
+					autoPlay={true}
+					playsInline={true}
 					loop
 					muted
+					controls={false}
 					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Home_Landing_Video_1920x1080.mp4"
 				/>
 			</div>
@@ -30,10 +31,11 @@ const Hero = ({ dataHome }) => {
 					ref={v2}
 					className="w-100"
 					poster=""
-					autoPlay
-					playsInline
+					autoPlay={true}
+					playsInline={true}
 					loop
 					muted
+					controls={false}
 					src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Home_Landing_Video_1080x1920.mp4"
 				/>
 			</div>
