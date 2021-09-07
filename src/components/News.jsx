@@ -1,12 +1,5 @@
 import React from "react";
 import eye from "../assets/images/eye.svg";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// import Swiper core and required modules
-import SwiperCore, { Mousewheel } from "swiper";
-
-// install Swiper modules
-SwiperCore.use([Mousewheel]);
 
 const News = ({ dataHome }) => {
 	const { news } = dataHome;
@@ -85,63 +78,30 @@ const News = ({ dataHome }) => {
 
 				{/* DESKTOP SCREEN START */}
 				<div className="newsSliderContainer">
-					<div className="w-100">
-						<div>
-							<Swiper
-								mousewheel={true}
-								breakpoints={{
-									1800: {
-										slidesPerView: 4.2,
-									},
-									1400: {
-										slidesPerView: 4,
-									},
-									1200: {
-										slidesPerView: 3.3,
-									},
-									1000: {
-										slidesPerView: 2.8,
-									},
-									700: {
-										slidesPerView: 2.1,
-									},
-									500: {
-										slidesPerView: 1.8,
-									},
-									300: {
-										slidesPerView: 1.2,
-									},
-								}}
-								slidesPerView={4}
-								spaceBetween={1}
-								freeMode={true}
-								className="mySwiper"
-							>
-								{data.map((prev, ind) => {
-									const { i, t, l } = prev;
-									return (
-										<SwiperSlide key={ind}>
-											<div className="news_card mt-5 pe-3">
-												<img className="thumbnail w-100" src={i} alt="" />
-												<div className="mt-3">
-													<span className="spaceMono">{t}</span>
-													<a
-														target="blank"
-														className="text-decoration-none"
-														href={l}
-													>
-														<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex align-items-center border-0 f16 py-1 px-3 mt-3">
-															<img src={eye} alt="" className="me-2" /> Read the
-															Full Article
-														</button>
-													</a>
-												</div>
-											</div>
-										</SwiperSlide>
-									);
-								})}
-							</Swiper>
-						</div>
+					<div className="innerNews">
+						{data.map((prev, ind) => {
+							const { i, t, l } = prev;
+							return (
+								<div className="news_card" key={ind}>
+									<div className="mt-5 pe-3">
+										<img className="thumbnail w-100" src={i} alt="" />
+										<div className="mt-3">
+											<span className="spaceMono">{t}</span>
+											<a
+												target="blank"
+												className="text-decoration-none"
+												href={l}
+											>
+												<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex justify-content-center justify-content-md-start align-items-center border-0 f16 py-2 py-md-1 px-3 mt-3">
+													<img src={eye} alt="" className="me-2" /> Read the
+													Full Article
+												</button>
+											</a>
+										</div>
+									</div>
+								</div>
+							);
+						})}
 					</div>
 				</div>
 				{/* DESKTOP SCREEN END */}

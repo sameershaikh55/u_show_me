@@ -20,7 +20,7 @@ const FaqBody = ({ dataHome, colorr }) => {
 									{dataHome.faqList.map((prev, i) => {
 										return (
 											<div key={i}>
-												<AccordionC prev={prev} colorr={colorr} />;
+												<AccordionC prev={prev} colorr={colorr} />
 											</div>
 										);
 									})}
