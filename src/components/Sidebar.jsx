@@ -186,7 +186,7 @@ const Sidebar = ({
 										</div>
 									);
 								})}
-								<div className="secondHalf d-flex flex-column mt-4 d-sm-none align-items-center">
+								<div className="secondHalf d-flex flex-column d-sm-none align-items-center">
 									<div className="icons_container d-flex justify-content-evenly w-100">
 										{data.map((prev, ind) => {
 											return (
@@ -228,13 +228,13 @@ const Sidebar = ({
 												<div className="position-absolute">
 													<li
 														onClick={second}
-														className="spaceMono fw-bold d-flex align-items-center pointer"
+														className="spaceMono fw500 d-flex align-items-center pointer"
 													>
 														{dropdown2.t} <div></div>
 													</li>
 													<li
 														onClick={third}
-														className="spaceMono fw-bold d-flex align-items-center pointer"
+														className="spaceMono fw500 d-flex align-items-center pointer"
 													>
 														{dropdown3.t} <div></div>
 													</li>

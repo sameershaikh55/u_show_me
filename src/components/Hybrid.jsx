@@ -8,8 +8,8 @@ const Hybrid = ({ dataHome }) => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-					<div className="col-12 mx-auto">
-							<h1 className="text-white f50 underlineAbout NeueMachina fw600 pb-4">
+						<div className="col-12 mx-auto">
+							<h1 className="text-white f54 underlineAbout NeueMachina fw600 pb-4">
 								{hybH}
 							</h1>
 
@@ -17,7 +17,9 @@ const Hybrid = ({ dataHome }) => {
 								{hybP.map((prev, i) => {
 									return (
 										<p
-											className={`text-white ${(i === 2 && "mb-0") || "mb-4"}`}
+											className={`text-white f18 ${
+												(i === 2 && "mb-0") || "mb-4"
+											}`}
 											key={i}
 										>
 											{prev}
@@ -27,8 +29,8 @@ const Hybrid = ({ dataHome }) => {
 							</div>
 
 							<div id="wru" className="WHO_cont">
-								<p className="color5 mb-0 spaceMono">{who1}</p>
-								<h1 className="text-white f50 underlineAbout NeueMachina d-flex pb-5 fw600">
+								<p className="color5 mb-0 f19 spaceMono">{who1}</p>
+								<h1 className="text-white f54 underlineAbout NeueMachina d-flex pb-5 fw600">
 									{who2}{" "}
 									<AiOutlineArrowDown className="d-none d-sm-block ms-5 color5 h1" />
 								</h1>

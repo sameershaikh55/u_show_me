@@ -2,7 +2,7 @@ import React from "react";
 import eye from "../assets/images/eye.svg";
 
 const News = ({ dataHome }) => {
-	const { news } = dataHome;
+	const { news, newsBtn } = dataHome;
 
 	const data = [
 		{
@@ -93,8 +93,7 @@ const News = ({ dataHome }) => {
 												href={l}
 											>
 												<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex justify-content-center justify-content-md-start align-items-center border-0 f16 py-2 py-md-1 px-3 mt-3">
-													<img src={eye} alt="" className="me-2" /> Read the
-													Full Article
+													<img src={eye} alt="" className="me-2" /> {newsBtn}
 												</button>
 											</a>
 										</div>

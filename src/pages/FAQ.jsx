@@ -19,10 +19,10 @@ const FAQ = () => {
 		t: Lang,
 	});
 	const [dropdown2, setDropdown2] = useState({
-		t: Lang === "PT" && "EN" || "PT",
+		t: (Lang === "ES" && "EN") || "ES",
 	});
 	const [dropdown3, setDropdown3] = useState({
-		t: "ES",
+		t: (Lang === "PT" && "EN") || "PT",
 	});
 	const [dataHome, setDataHome] = useState(data[0].EN.faq);
 

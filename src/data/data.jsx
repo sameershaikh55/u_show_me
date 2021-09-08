@@ -72,6 +72,7 @@ export const data = [
 				// FEATURE START
 				feature1: "Featured Shows",
 				feature2: "View all Shows",
+				featureCardBtn: "Show Details",
 				// FEATURE END
 
 				// FEATURE START
@@ -81,6 +82,7 @@ export const data = [
 
 				// NEWS START
 				news: "On the News",
+				newsBtn: "Read the Full Article",
 				// NEWS END
 
 				// PARTNER START
@@ -2296,6 +2298,19 @@ export const data = [
 						),
 					},
 				],
+
+				job: [
+					{
+						h1: "WebRTC Streaming Architect (remote)",
+						p: [
+							"We are hiring a WebRTC Streaming Architect with vast experience on building, scaling and improving WebRTC infrastructures.",
+							"Knowledge of cloud service’s infrastructure and A.I. is preferred.",
+						],
+					},
+				],
+
+				jobBtn: "View Job Application Details",
+
 				// BODY END
 			},
 			faq: {
@@ -2649,6 +2664,7 @@ export const data = [
 				// FEATURE START
 				feature1: "Espectáculos de cadera",
 				feature2: "Ver todos los programas",
+				featureCardBtn: "Mostrar detalles",
 				// FEATURE END
 
 				// FEATURE START
@@ -2658,6 +2674,7 @@ export const data = [
 
 				// NEWS START
 				news: "En las noticias",
+				newsBtn: "Leer el artículo completo",
 				// NEWS END
 
 				// PARTNER START
@@ -2673,8 +2690,8 @@ export const data = [
 
 				// WHO END
 				who1under: "soy un",
-				present: "Obtén la presentación:",
-				present2: "Assine o Newsletter:",
+				present: "Ponte en contacto:",
+				present2: "Suscríbete al boletín de noticias:",
 				send: "Enviar",
 				slide1T: "Artista / sello",
 				slide1T2: "Llegue e interactúe con una audiencia global",
@@ -2714,7 +2731,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -2774,7 +2791,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -2877,7 +2894,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -3608,7 +3625,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -4848,7 +4865,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -4909,6 +4926,18 @@ export const data = [
 						),
 					},
 				],
+
+				job: [
+					{
+						h1: "WebRTC Streaming Architect (remoto)",
+						p: [
+							"Estamos contratando a un arquitecto de transmisión de WebRTC con vasta experiencia en la construcción, escalado y mejora de las infraestructuras de WebRTC",
+							"Se prefiere el conocimiento de la infraestructura y la inteligencia artificial del servicio en la nube",
+						],
+					},
+				],
+
+				jobBtn: "Ver detalles de la solicitud de empleo",
 			},
 			faq: {
 				// HERO START
@@ -4955,7 +4984,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "medios de comunicación",
+						t: "Medios de comunicación",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -5272,6 +5301,7 @@ export const data = [
 				// FEATURE START
 				feature1: "Programas em Destaque",
 				feature2: "Ver todos os programas",
+				featureCardBtn: "Mostrar detalhes",
 				// FEATURE END
 
 				// FEATURE START
@@ -5281,6 +5311,7 @@ export const data = [
 
 				// NEWS START
 				news: "Nas notícias",
+				newsBtn: "Leia o artigo completo",
 				// NEWS END
 
 				// PARTNER START
@@ -5296,8 +5327,8 @@ export const data = [
 
 				// WHO END
 				who1under: "Eu sou um",
-				present: "Obtenha a apresentação:",
-				present2: "Abonniere den Newsletter:",
+				present: "Entre em contato:",
+				present2: "Inscrever-se no boletim informativo:",
 				send: "Mandar",
 				slide1T: "Artista / gravadora",
 				slide1T2: "Alcance e interaja com públicos globais",
@@ -5337,7 +5368,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -5345,7 +5376,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],
@@ -5397,7 +5428,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -5405,7 +5436,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],
@@ -5418,41 +5449,41 @@ export const data = [
 				// PARTNER END
 
 				// HIW BODY START
-				h1: "Cómo funciona",
-				h2: "De la preproducción al analisis",
+				h1: "Como funciona",
+				h2: "Da pré-produção à análise",
 				hwiData: [
 					{
 						t: "Criar e personalizar",
 						d: [
-							"Crea tu espectáculo a través de nuestra plataforma, módulo a módulo. Comience com os detalhes do programa. ",
-							"Luego, selecione as fontes de alimentação que desejam uma disposição de sua audiencia.",
-							"Inserte los banners y logotipos superpuestos, CTA, videos e convide a su equipo de moderación, y listo.",
+							"Crie o seu show através de nossa plataforma, módulo por módulo. Comece com os detalhes do show.",
+							"Em seguida, selecione os fluxos de receita que deseja disponibilizar para o seu público.",
+							"Insira os banners e logotipos sobrepostos, CTAs, vídeos e convide sua equipe de moderação e pronto.",
 						],
 					},
 					{
-						t: "Participar e controlar",
+						t: "Envolver e controlar",
 						d: [
-							"Mientras se desarrolla el espectáculo, interactúe con su audiencia en el chat en vivo y en las preguntas y respuestas. Los artistas também podem ver e interagir com audiências digitais durante o espectáculo no cenário.",
-							"Termine en la parte superior com emocionantes Meet & Greets.",
-							"Al use nuestras potentes herramientas de moderación disponibles, puede assegurarse de que la experiencia sea positiva para todos en todo momento.",
+							"Enquanto o show está acontecendo, envolva seu público no chat ao vivo e nas perguntas e respostas. Os artistas também podem ver e interagir com o público digital durante o show no palco.",
+							"Termine por cima com excitantes Meet & Greets.",
+							"Ao usar nossas poderosas ferramentas de moderação disponíveis, você pode garantir que a experiência permaneça sempre positiva para todos.",
 						],
 					},
 					{
-						t: "Sigue monetizando",
+						t: "Continue monetizando",
 						d: [
-							"Ative a opção VOD (vídeo a pedido) na configuração, para seguir monetizando o mismo contido uma vez.",
-							"A los fanáticos que se perdem a transmisión en vivo o que quieran volver a ver sus interacciones, les encantará que pienses en ellos.",
+							"Ative a opção VOD (vídeo sob demanda) na configuração para continuar monetizando o mesmo conteúdo continuamente.",
+							"Os fãs que perderam a transmissão ao vivo ou querem assistir novamente às suas interações vão adorar você por pensar neles.",
 						],
 					},
 					{
-						t: "Medir y analizar",
+						t: "Medir e analisar",
 						d: [
-							"Tendrá acesse um informe detalhado, faça a avaliação e analise a Calidad de la Experiencia Entregada (QoDE).",
-							"Esta poderosa informação permite saber exatamente qual é a sua audiencia y qué es lo que quiere.",
+							"Você terá acesso a um relatório detalhado, onde mede e analisa a Qualidade da Experiência Entregue (QoDE).",
+							"Esses insights poderosos permitem que você saiba exatamente quem é seu público e o que ele deseja.",
 						],
 					},
 				],
-				cBtn: "Contate-nos para acesso",
+				cBtn: "Entre em contato para acessar",
 				// HIW BODY END
 			},
 			privacyPolicy: {
@@ -5500,7 +5531,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -5508,7 +5539,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],
@@ -6229,7 +6260,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -6237,7 +6268,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],
@@ -7440,7 +7471,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -7448,7 +7479,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],
@@ -7500,6 +7531,18 @@ export const data = [
 						),
 					},
 				],
+
+				job: [
+					{
+						h1: "WebRTC Streaming Architect (remote)",
+						p: [
+							"Estamos contratando um Arquiteto de Streaming WebRTC com vasta experiência na construção, dimensionamento e melhoria de infraestruturas WebRTC.",
+							"O conhecimento da infraestrutura do serviço em nuvem e I.A. é preferível.",
+						],
+					},
+				],
+
+				jobBtn: "Exibir detalhes do formulário de emprego",
 			},
 			faq: {
 				// HERO START
@@ -7546,7 +7589,7 @@ export const data = [
 						l: "",
 					},
 					{
-						t: "meios de comunicação",
+						t: "Meios de comunicação",
 						el: "https://drive.google.com/drive/folders/1ttiFpWxbz-AXt8gMGLjaPL4oUndzo8ax?usp=sharing",
 					},
 					{
@@ -7554,7 +7597,7 @@ export const data = [
 						l: "/privacyPolicy",
 					},
 					{
-						t: "termos e Condições",
+						t: "Termos e Condições",
 						l: "/termsConditions",
 					},
 				],

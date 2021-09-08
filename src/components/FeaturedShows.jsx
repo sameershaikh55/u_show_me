@@ -12,7 +12,7 @@ import SwiperCore, { Mousewheel } from "swiper";
 SwiperCore.use([Mousewheel]);
 
 const FeaturedShows = ({ dataHome }) => {
-	const { feature1, feature2 } = dataHome;
+	const { feature1, feature2, featureCardBtn } = dataHome;
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
@@ -124,6 +124,7 @@ const FeaturedShows = ({ dataHome }) => {
 								<div className="news_card position-relative pe-2">
 									<img className="w-100" src={imgUrl} alt="" />
 									<div className="overlay"></div>
+									<div className="overlay2"></div>
 									{/* INNER START */}
 									<div className="d-flex flex-column justify-content-end text_content position-absolute text-white text-center">
 										<h2 className="NeueMachina fw-bold mb-0">{title}</h2>
@@ -139,8 +140,8 @@ const FeaturedShows = ({ dataHome }) => {
 											target="blank"
 											href={`https://qua-app.ushowme.tv/show?id=${id}`}
 										>
-											<button className="NeueMachina fw500 bg3 text-white border-0 py-1 px-3 mt-5">
-												Show Details
+											<button className="NeueMachina fw500 bg3 text-white border-0 py-1 mt-5">
+												{featureCardBtn}
 											</button>
 										</a>
 									</div>

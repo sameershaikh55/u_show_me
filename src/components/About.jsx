@@ -12,16 +12,16 @@ const About = ({ dataHome }) => {
 							<p className="text-white f18 mb-0 NeueMachina">
 								U<span className="color3">SHOW</span>ME
 							</p>
-							<h1 className="text-white underlineAbout NeueMachina fw600 f50 pb-4 mt-2">
+							<h1 className="text-white underlineAbout NeueMachina fw600 f54 pb-4 mt-2">
 								{aboutH}
 							</h1>
 							<div className="row mt-4">
 								<div className="col-12 col-sm-6">
-									<p className="text-white f18 lh-sm spaceMono">{aboutL}</p>
+									<p className="text-white f21 lh-sm spaceMono">{aboutL}</p>
 								</div>
 								<div className="col-12 col-sm-6 mt-4 mt-sm-0">
-									<p className="color3 f18 lh-sm spaceMono fw600">{aboutR1}</p>
-									<p className="text-white f18 lh-sm spaceMono lh-sm">
+									<p className="color3 f21 lh-sm spaceMono fw600">{aboutR1}</p>
+									<p className="text-white f21 lh-sm spaceMono lh-sm">
 										{aboutR2}
 									</p>
 									<div className="d-flex align-items-center mt-5">

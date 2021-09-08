@@ -207,7 +207,10 @@ const WHO = ({ dataHome }) => {
 						<div className="text_content h-100">
 							<div className="inner_text">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1
+									style={{ wordBreak: "break-word" }}
+									className="underlineAbout text-white NeueMachina fw-bold"
+								>
 									{slide2T}
 								</h1>
 							</div>
@@ -261,7 +264,10 @@ const WHO = ({ dataHome }) => {
 						<div className="text_content h-100">
 							<div className="inner_text">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1
+									style={{ wordBreak: "break-word" }}
+									className="underlineAbout text-white NeueMachina fw-bold"
+								>
 									{slide3T}
 								</h1>
 							</div>
@@ -315,11 +321,19 @@ const WHO = ({ dataHome }) => {
 						<div className="text_content h-100">
 							<div className="inner_text">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1
+									style={{
+										wordBreak: "keep-all",
+									}}
+									className="underlineAbout text-white NeueMachina fw-bold"
+								>
 									{slide4T}
 								</h1>
 							</div>
-							<div className="inner_text two fourthS">
+							<div
+								style={{ marginLeft: slide4T === "admirador" && "-14.5rem" }}
+								className="inner_text two fourthS"
+							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
 								<h1 className="underlineAbout text-white NeueMachina fw-bold">
 									{slide4T}

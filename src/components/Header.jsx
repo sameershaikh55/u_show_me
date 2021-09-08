@@ -69,14 +69,17 @@ const Header = ({
 						<div className="col-11 col-lg-12 mx-auto w-100">
 							<div className="d-flex justify-content-between w-100">
 								<div className="d-flex align-items-center">
-									<div className="logo_container2">
+									<div className="logo_container2 d-flex align-items-center">
 										<Link to="/">
 											<img
 												className="pointer d-block d-sm-none"
-												src={logo}
+												src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/logo.svg"
 												alt=""
 											/>
 										</Link>
+										<div className="d-block d-sm-none text-white spaceMono f14 ms-3 mt-2">
+											Beta
+										</div>
 									</div>
 									<div className="logo_container ms-3 ms-sm-0 d-flex align-items-center">
 										{(isOpen && (
@@ -95,13 +98,19 @@ const Header = ({
 												onClick={() => setIsOpen(true)}
 											/>
 										)}
-										<Link to="/">
-											<img
-												className="pointer ps-4 d-none d-sm-block"
-												src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/logo.svg"
-												alt=""
-											/>
-										</Link>
+										<div className="d-flex align-items-center">
+											<Link to="/">
+												<img
+													style={{ width: "10.85rem" }}
+													className="pointer ps-4 d-none d-sm-block"
+													src="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/logo.svg"
+													alt=""
+												/>
+											</Link>
+											<div className="d-none d-sm-block text-white spaceMono f14 ms-3 mt-2">
+												Beta
+											</div>
+										</div>
 									</div>
 								</div>
 								<div className="secondHalf d-none d-sm-flex align-items-center">
@@ -146,13 +155,13 @@ const Header = ({
 												<div className="position-absolute">
 													<li
 														onClick={second}
-														className="spaceMono fw-bold d-flex align-items-center pointer"
+														className="spaceMono fw500 d-flex align-items-center pointer"
 													>
 														{dropdown2.t} <div></div>
 													</li>
 													<li
 														onClick={third}
-														className="spaceMono fw-bold d-flex align-items-center pointer"
+														className="spaceMono fw500 d-flex align-items-center pointer"
 													>
 														{dropdown3.t} <div></div>
 													</li>
