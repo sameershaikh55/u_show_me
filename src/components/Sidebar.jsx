@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // IMPORTING ICONS
 import i1 from "../assets/images/shareIcons/i1.svg";
@@ -23,6 +24,19 @@ const Sidebar = ({
 	setOn,
 	dataHome,
 }) => {
+	let location = useLocation();
+
+	useEffect(() => {
+		if (location.hash) {
+			let elem = document.getElementById(location.hash.slice(1));
+			if (elem) {
+				elem.scrollIntoView({ behavior: "smooth" });
+			}
+		} else {
+			window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+		}
+	}, [location]);
+
 	const { sideBar, sideBar2 } = dataHome;
 
 	// STICKY FUNCTIONS START
@@ -82,8 +96,10 @@ const Sidebar = ({
 											{(i === 3 && (
 												<h2>
 													<LinkR
+														onClick={() => {
+															ClickEvent(false);
+														}}
 														to="/howItWorks"
-														onClick={() => ClickEvent(false)}
 														className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 													>
 														{prev.t}
@@ -93,8 +109,10 @@ const Sidebar = ({
 												(i === 5 && (
 													<h2>
 														<LinkR
+															onClick={() => {
+																ClickEvent(false);
+															}}
 															to="/fAQ"
-															onClick={() => ClickEvent(false)}
 															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 														>
 															{prev.t}
@@ -102,22 +120,20 @@ const Sidebar = ({
 													</h2>
 												)) || (
 													<h2>
-														<Link
+														<LinkR
+															onClick={() => {
+																ClickEvent(false);
+															}}
 															to={
-																(i === 0 && "about") ||
-																(i === 1 && "feature") ||
-																(i === 2 && "hybrid") ||
-																(i === 4 && "wru")
+																(i === 0 && "/#about") ||
+																(i === 1 && "/#feature") ||
+																(i === 2 && "/#hybrid") ||
+																(i === 4 && "/#wru")
 															}
-															smooth={true}
-															duration={600}
-															spy={true}
-															offset={-100}
-															onClick={() => ClickEvent(false)}
 															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 														>
 															{prev.t}
-														</Link>
+														</LinkR>
 													</h2>
 												)}
 										</div>
@@ -166,17 +182,15 @@ const Sidebar = ({
 												)) || (
 													<h2>
 														<Link
+															onClick={() => {
+																ClickEvent(false);
+															}}
 															to={
-																(i === 0 && "about") ||
-																(i === 1 && "feature") ||
-																(i === 2 && "hybrid") ||
-																(i === 4 && "wru")
+																(i === 0 && "/#about") ||
+																(i === 1 && "/#feature") ||
+																(i === 2 && "/#hybrid") ||
+																(i === 4 && "/#wru")
 															}
-															smooth={true}
-															duration={600}
-															spy={true}
-															offset={-100}
-															onClick={() => ClickEvent(false)}
 															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 														>
 															{prev.t}

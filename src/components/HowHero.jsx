@@ -13,32 +13,16 @@ const HowHero = ({ dataHome, dropdown: { t } }) => {
 			</div>
 
 			<div className="hero_container howHero d-flex justify-content-center align-items-end align-items-sm-center">
-				<div className="page_container">
-					<div className="container-fluid">
-						<div className="row">
-							<div className="col-10 col-lg-6 mx-auto">
-								<a
-									target="blank"
-									className="text-decoration-none"
-									href="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Landing_How_It_Works_New.mp4"
-								>
-									<button
-										style={{
-											width:
-												(t === "EN" && "250px") ||
-												(t === "ES" && "330px") ||
-												(t === "PT" && "280px"),
-										}}
-										className="hero_btn d-flex align-items-center purpleBg text-white border-0 ps-1 pe-1 mt-4 py-1 NeueMachina fw500"
-									>
-										<img src={rightArrow} alt="arrow" className="ms-2 me-2" />{" "}
-										{dataHome.heroBtn}
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				<a
+					target="blank"
+					className="text-decoration-none"
+					href="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/UshowMe_Landing_How_It_Works_New.mp4"
+				>
+					<button className="hero_btn d-flex align-items-center purpleBg text-white border-0 ps-1 pe-3 mt-4 py-2 NeueMachina fw500">
+						<img src={rightArrow} alt="arrow" className="ms-2 me-2" />{" "}
+						{dataHome.heroBtn}
+					</button>
+				</a>
 			</div>
 		</div>
 	);

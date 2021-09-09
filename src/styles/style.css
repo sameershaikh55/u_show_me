@@ -1693,9 +1693,9 @@ input:focus {
   .hero_container.howHero {
     position: absolute;
     bottom: -46%;
-    left: 45%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 7%;
+    -webkit-transform: translate(-2%, -48%);
+            transform: translate(-2%, -48%);
   }
   .hero_container.howHero button {
     font-size: 1.1rem;
@@ -1721,7 +1721,6 @@ input:focus {
   .hero_container button {
     font-size: 1.4rem;
     margin-bottom: 5rem;
-    width: 150px;
     font-weight: 600;
   }
   .hero_container h1 {

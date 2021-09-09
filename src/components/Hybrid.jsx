@@ -27,8 +27,8 @@ const Hybrid = ({ dataHome }) => {
 									);
 								})}
 							</div>
-
-							<div id="wru" className="WHO_cont">
+							<div id="wru"></div>
+							<div className="WHO_cont pt-5">
 								<p className="color5 mb-0 f19 spaceMono">{who1}</p>
 								<h1 className="text-white f54 underlineAbout NeueMachina d-flex pb-5 fw600">
 									{who2}{" "}
