@@ -69,6 +69,10 @@
   font-family: spaceMono;
 }
 
+.redColor {
+  color: #ff2a2a;
+}
+
 .swiper-wrapper {
   -webkit-transition-duration: 0.3s !important;
           transition-duration: 0.3s !important;

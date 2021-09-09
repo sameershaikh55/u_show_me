@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import WHOMobile from "./WHOMobile";
+import WhoForm from "./WhoForm";
 
 const WHO = ({ dataHome }) => {
 	const {
@@ -21,6 +22,7 @@ const WHO = ({ dataHome }) => {
 		present,
 		present2,
 		send,
+		response,
 	} = dataHome;
 
 	const [one, setOne] = useState(false);
@@ -167,29 +169,13 @@ const WHO = ({ dataHome }) => {
 								>
 									<h4 className="f30 mb-4 NeueMachina fw-bold">{slide1T2}</h4>
 									<p className="f19 mb-0 NeueMachina lh22">{slide1D}</p>
-									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
-									<div className="d-flex align-items-end mt-4">
-										<div className="d-flex flex-column">
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="Name"
-												className="f19"
-											/>
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="E—mail"
-												className="mt-3 f19"
-											/>
-										</div>
-										<div className="ms-3">
-											<button className="btnS NeueMachina fw600">{send}</button>
-										</div>
-									</div>
+									<WhoForm
+										send={send}
+										response={response}
+										formNo={1}
+										present={present}
+									/>
 								</div>
 							)}
 						</div>
@@ -230,29 +216,13 @@ const WHO = ({ dataHome }) => {
 								<div className="WHO_detail ms-5 text-white">
 									<h4 className="mb-4 NeueMachina fw-bold f30">{slide2T2}</h4>
 									<p className="f19 mb-0 NeueMachina lh22">{slide2D}</p>
-									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
-									<div className="d-flex align-items-end mt-4">
-										<div className="d-flex flex-column">
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="Name"
-												className="f19"
-											/>
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="E—mail"
-												className="mt-3 f19"
-											/>
-										</div>
-										<div className="ms-3">
-											<button className="btnS NeueMachina fw600">{send}</button>
-										</div>
-									</div>
+									<WhoForm
+										send={send}
+										response={response}
+										formNo={2}
+										present={present}
+									/>
 								</div>
 							)}
 						</div>
@@ -293,29 +263,13 @@ const WHO = ({ dataHome }) => {
 								<div className="WHO_detail ms-5 text-white">
 									<h4 className="mb-4 NeueMachina fw-bold f30">{slide3T2}</h4>
 									<p className="f19 mb-0 NeueMachina lh22">{slide3D}</p>
-									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
-									<div className="d-flex align-items-end mt-4">
-										<div className="d-flex flex-column">
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="Name"
-												className="f19"
-											/>
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="E—mail"
-												className="mt-3 f19"
-											/>
-										</div>
-										<div className="ms-3">
-											<button className="btnS NeueMachina fw600">{send}</button>
-										</div>
-									</div>
+									<WhoForm
+										send={send}
+										response={response}
+										formNo={3}
+										present={present}
+									/>
 								</div>
 							)}
 						</div>
@@ -361,29 +315,13 @@ const WHO = ({ dataHome }) => {
 								<div className="WHO_detail ms-5 text-white">
 									<h4 className="mb-4 NeueMachina fw-bold f30">{slide4T2}</h4>
 									<p className="f19 mb-0 NeueMachina lh22">{slide4D}</p>
-									<p className="fw-bold NeueMachina mt-4 f19">{present2}</p>
 
-									<div className="d-flex align-items-end mt-4">
-										<div className="d-flex flex-column">
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="Name"
-												className="f19"
-											/>
-											<input
-												type="text"
-												name=""
-												id=""
-												placeholder="E—mail"
-												className="mt-3 f19"
-											/>
-										</div>
-										<div className="ms-3">
-											<button className="btnS NeueMachina fw600">{send}</button>
-										</div>
-									</div>
+									<WhoForm
+										send={send}
+										response={response}
+										formNo={0}
+										present={present2}
+									/>
 								</div>
 							)}
 						</div>

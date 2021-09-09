@@ -100,6 +100,8 @@ export const data = [
 				who1under: "I’m a",
 				present: "Get in Touch:",
 				present2: "Subscribe Newsletter:",
+				response:
+					"Thank you for getting in touch, we will get back to you shortly",
 				send: "Send",
 				slide1T: "Artist/ Label",
 				slide1T2: "Reach and interact with global audiences",
@@ -2692,6 +2694,8 @@ export const data = [
 				who1under: "soy un",
 				present: "Ponte en contacto:",
 				present2: "Suscríbete al boletín de noticias:",
+				response:
+					"Gracias por ponerte en contacto, te responderemos a la brevedad.",
 				send: "Enviar",
 				slide1T: "Artista / sello",
 				slide1T2: "Llegue e interactúe con una audiencia global",
@@ -5329,6 +5333,8 @@ export const data = [
 				who1under: "Eu sou um",
 				present: "Entre em contato:",
 				present2: "Inscrever-se no boletim informativo:",
+				response:
+					"Obrigado por entrar em contato, entraremos em contato em breve",
 				send: "Mandar",
 				slide1T: "Artista / gravadora",
 				slide1T2: "Alcance e interaja com públicos globais",
