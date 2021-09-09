@@ -54,7 +54,7 @@ const FeaturedShows = ({ dataHome }) => {
 
 			{/* MOBILE SCREEN START */}
 			<div
-				id="feature"
+				id="feature2"
 				className="d-block d-md-none position-relative feature_container py-5"
 			>
 				<div className="w-100">

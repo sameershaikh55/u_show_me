@@ -73,6 +73,8 @@ const Sidebar = ({
 		},
 	];
 
+	const dataSide = ["/#about", "/#hybrid", "/#wru", "/#feature2"];
+
 	return (
 		<div
 			style={{
@@ -153,7 +155,7 @@ const Sidebar = ({
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
 								{sideBar2.map((prev, i) => {
-									console.log(i)
+									console.log(dataSide[i]);
 									return (
 										<div
 											key={i}
@@ -186,12 +188,7 @@ const Sidebar = ({
 															onClick={() => {
 																ClickEvent(false);
 															}}
-															to={
-																(i === 0 && "/#about") ||
-																(i === 1 && "/#hybrid") ||
-																(i === 2 && "/#wru") ||
-																(i === 3 && "/#feature")
-															}
+															to={dataSide[i]}
 															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 														>
 															{prev.t}
