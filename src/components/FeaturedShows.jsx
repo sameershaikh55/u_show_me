@@ -24,7 +24,7 @@ const FeaturedShows = ({ dataHome }) => {
 				.then((data) => setData([...data, ...data]));
 		};
 		fetchData();
-	}, [data]);
+	}, []);
 
 	return (
 		<>

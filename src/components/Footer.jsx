@@ -21,14 +21,16 @@ const Footer = ({ dataHome }) => {
 								<div className="d-flex align-items-center flex-wrap justify-content-center gap-2 gap-lg-0 mt-4 mt-lg-0">
 									{footer.map((prev, i) => {
 										const { t, l, el } = prev;
-										console.log(el)
+
 										return (
 											<>
 												{(el && (
 													<a
 														target="blank"
 														className="text-white text-decoration-none NeueMachina mx-3 f14"
-														href={el}
+														href={
+															(el.indexOf("@") > 0 && `mailto:${el}`) || `${el}`
+														}
 													>
 														{t}
 													</a>

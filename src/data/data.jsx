@@ -32,6 +32,11 @@ export const data = [
 				),
 				// ABOUT END
 
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HYBRID START
 				hybH: "Why Hybrid is the Future?",
 				hybP: [
@@ -138,7 +143,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -157,6 +162,11 @@ export const data = [
 				// FOOTER END
 			},
 			hiw: {
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HERO START
 				heroBtn: "Engage & Control Video",
 				// HERO END
@@ -199,7 +209,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -261,6 +271,11 @@ export const data = [
 				// HIW BODY END
 			},
 			privacyPolicy: {
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HERO START
 				hero: "Privacy Policy",
 				// HERO END
@@ -303,7 +318,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -1040,6 +1055,11 @@ export const data = [
 				// PRIVACY BODY END
 			},
 			terms: {
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HERO START
 				hero: "Terms & Conditions",
 				// HERO END
@@ -1082,7 +1102,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -2195,6 +2215,11 @@ export const data = [
 				],
 			},
 			jobs: {
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HERO START
 				hero: "Jobs",
 				// HERO END
@@ -2237,7 +2262,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -2316,6 +2341,11 @@ export const data = [
 				// BODY END
 			},
 			faq: {
+				// FORM START
+				nameN: "Name",
+				emailE: "E-mail",
+				// FORM END
+
 				// HERO START
 				hero: "FAQ",
 				// HERO END
@@ -2358,7 +2388,7 @@ export const data = [
 					},
 					{
 						t: "Contact Us",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Media",
@@ -2536,7 +2566,7 @@ export const data = [
 				},
 
 				faq4: {
-					h1: "FANS",
+					h1: "Fans",
 
 					faqList: [
 						{
@@ -2544,7 +2574,7 @@ export const data = [
 							a: "UshowMe is an interactive live stream and video-on-demand platform built to help evolve live shows into hybrid shows, delivering new ways of engagement between audiences, artists and brands, and multiple revenue streams for show creators.",
 						},
 						{
-							q: "FAQ’s for FANS",
+							q: "What browsers and devices are supported",
 							a: "We currently support the most recent versions of Brave, Chrome, Edge, Firefox, Opera and Safari on Mobile, Tablet, Desktop devices and SmartTV’s that allow installing any browser mentioned above. Internet Explorer is not supported",
 						},
 						{
@@ -2597,6 +2627,11 @@ export const data = [
 		},
 		ES: {
 			home: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				hero: "Se trata de tu experiencia",
 				hero2:
@@ -2732,7 +2767,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -2751,6 +2786,11 @@ export const data = [
 				// FOOTER END
 			},
 			hiw: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				heroBtn: "Vídeo de participación y control",
 				// HERO END
@@ -2792,7 +2832,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -2854,6 +2894,11 @@ export const data = [
 				// HIW BODY END
 			},
 			privacyPolicy: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				hero: "Política de privacidad",
 				// HERO END
@@ -2895,7 +2940,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -3585,6 +3630,11 @@ export const data = [
 				// BODY END
 			},
 			terms: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				hero: "Términos y Condiciones",
 				// HERO END
@@ -3626,7 +3676,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -4825,6 +4875,11 @@ export const data = [
 				// BODY END
 			},
 			jobs: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				hero: "Trabajos",
 				// HERO END
@@ -4866,7 +4921,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -4944,6 +4999,11 @@ export const data = [
 				jobBtn: "Ver detalles de la solicitud de empleo",
 			},
 			faq: {
+				// FORM START
+				nameN: "Nombre",
+				emailE: "Correo electrónico",
+				// FORM END
+
 				// HERO START
 				hero: "Preguntas más frecuentes",
 				// HERO END
@@ -4985,7 +5045,7 @@ export const data = [
 					},
 					{
 						t: "Contáctenos",
-						l: "",
+						l: "hello@ushowme.tv",
 					},
 					{
 						t: "Medios de comunicación",
@@ -5171,7 +5231,7 @@ export const data = [
 							a: "UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido creada para ayudar a convertir los programas en vivo en programas híbridos, brindando nuevas formas de participación entre el público, los artistas y las marcas, y múltiples fuentes de ingresos para los creadores de programas",
 						},
 						{
-							q: "Preguntas frecuentes para FANS",
+							q: "Qué navegadores y dispositivos son compatibles",
 							a: "Actualmente admitimos las versiones más recientes de Brave, Chrome, Edge, Firefox, Opera y Safari en dispositivos móviles, tabletas, computadoras de escritorio y SmartTV que permiten instalar cualquier navegador mencionado anteriormente. Internet Explorer no es compatible",
 						},
 						{
@@ -5238,6 +5298,11 @@ export const data = [
 		},
 		PT: {
 			home: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				hero: "É tudo sobre a sua experiência",
 				hero2: "FULL SCREEN VIDEO GERAL CURTO AUTOPLAY SEM SOM",
@@ -5371,7 +5436,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -5390,6 +5455,11 @@ export const data = [
 				// FOOTER END
 			},
 			hiw: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				heroBtn: "Envolva e controle o vídeo",
 				// HERO END
@@ -5431,7 +5501,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -5493,6 +5563,11 @@ export const data = [
 				// HIW BODY END
 			},
 			privacyPolicy: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				hero: "Política de Privacidade",
 				// HERO END
@@ -5534,7 +5609,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -6222,6 +6297,11 @@ export const data = [
 				// BODY END
 			},
 			terms: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				hero: "Termos e Termos",
 				// HERO END
@@ -6263,7 +6343,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -7433,6 +7513,11 @@ export const data = [
 				// BODY END
 			},
 			jobs: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				hero: "Empregos",
 				// HERO END
@@ -7474,7 +7559,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -7551,6 +7636,11 @@ export const data = [
 				jobBtn: "Exibir detalhes do formulário de emprego",
 			},
 			faq: {
+				// FORM START
+				nameN: "Nome",
+				emailE: "Correio eletrônico",
+				// FORM END
+
 				// HERO START
 				hero: "Perguntas frequentes",
 				// HERO END
@@ -7592,7 +7682,7 @@ export const data = [
 					},
 					{
 						t: "Entre em contato conosco",
-						l: "",
+						el: "hello@ushowme.tv",
 					},
 					{
 						t: "Meios de comunicação",
@@ -7778,7 +7868,7 @@ export const data = [
 							a: "UshowMe é uma plataforma interativa de transmissão ao vivo e vídeo sob demanda criada para ajudar a transformar shows ao vivo em programas híbridos, fornecendo novas formas de envolvimento entre públicos, artistas e marcas, e vários fluxos de receita para os criadores do programa",
 						},
 						{
-							q: "Perguntas mais frequentes para os FÃS",
+							q: "Quais navegadores e dispositivos são compatíveis",
 							a: "Atualmente, oferecemos suporte às versões mais recentes do Brave, Chrome, Edge, Firefox, Opera e Safari em dispositivos móveis, tablets, desktops e SmartTVs que permitem a instalação de qualquer navegador mencionado acima. O Internet Explorer não é compatível",
 						},
 						{

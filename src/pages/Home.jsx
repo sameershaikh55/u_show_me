@@ -23,7 +23,7 @@ const Home = () => {
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
 	const [dropdown, setDropdown] = useState({
-		t: Lang,
+		t: Lang || "EN",
 	});
 	const [dropdown2, setDropdown2] = useState({
 		t: (Lang === "ES" && "EN") || "ES",

@@ -23,6 +23,8 @@ const WHO = ({ dataHome }) => {
 		present2,
 		send,
 		response,
+		nameN,
+		emailE,
 	} = dataHome;
 
 	const [one, setOne] = useState(false);
@@ -157,8 +159,10 @@ const WHO = ({ dataHome }) => {
 								</h1>
 							</div>
 							<div className="inner_text two firstS w-100">
-								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
-								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold w-100">
+								<h6 className="text-white NeueMachina w-100">
+									{who1under + "n"}
+								</h6>
+								<h1 className="pb-1 f34 text-white NeueMachina fw-bold w-100">
 									{slide1T}
 								</h1>
 							</div>
@@ -171,6 +175,8 @@ const WHO = ({ dataHome }) => {
 									<p className="f19 mb-0 NeueMachina lh22">{slide1D}</p>
 
 									<WhoForm
+										nameN={nameN}
+										emailE={emailE}
 										send={send}
 										response={response}
 										formNo={1}
@@ -208,7 +214,7 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two secondS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 f34 text-white NeueMachina fw-bold">
 									{slide2T}
 								</h1>
 							</div>
@@ -218,6 +224,8 @@ const WHO = ({ dataHome }) => {
 									<p className="f19 mb-0 NeueMachina lh22">{slide2D}</p>
 
 									<WhoForm
+										nameN={nameN}
+										emailE={emailE}
 										send={send}
 										response={response}
 										formNo={2}
@@ -258,7 +266,7 @@ const WHO = ({ dataHome }) => {
 								className="inner_text two thirdS"
 							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 f34 text-white NeueMachina fw-bold">
 									{slide3T}
 								</h1>
 							</div>
@@ -268,6 +276,8 @@ const WHO = ({ dataHome }) => {
 									<p className="f19 mb-0 NeueMachina lh22">{slide3D}</p>
 
 									<WhoForm
+										nameN={nameN}
+										emailE={emailE}
 										send={send}
 										response={response}
 										formNo={3}
@@ -310,7 +320,7 @@ const WHO = ({ dataHome }) => {
 								className="inner_text two fourthS"
 							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 f34 text-white NeueMachina fw-bold">
 									{slide4T}
 								</h1>
 							</div>
@@ -320,6 +330,8 @@ const WHO = ({ dataHome }) => {
 									<p className="f19 mb-0 NeueMachina lh22">{slide4D}</p>
 
 									<WhoForm
+										nameN={nameN}
+										emailE={emailE}
 										send={send}
 										response={response}
 										formNo={0}

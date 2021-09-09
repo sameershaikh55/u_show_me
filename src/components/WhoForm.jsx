@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-const WhoForm = ({ send, formNo, present, response, mobile }) => {
+const WhoForm = ({
+	send,
+	formNo,
+	present,
+	response,
+	mobile,
+	nameN,
+	emailE,
+}) => {
 	const [getResponse, SetGetResponse] = useState();
 
 	const {
@@ -16,16 +24,15 @@ const WhoForm = ({ send, formNo, present, response, mobile }) => {
 		const { name, email } = data;
 
 		// POST API FOR DATA SENDING
-		const headers = {
-			name: name,
-			mail: email,
-			subscription_type: formNo,
-		};
+		// POST request using fetch with set headers
 		axios
 			.post("https://virtserver.swaggerhub.com/ushowmetv/api/1.1/subscribe", {
-				headers,
+				name: name,
+				mail: email,
+				subscription_type: formNo,
 			})
 			.then((response) => SetGetResponse(response));
+
 		reset();
 	};
 
@@ -56,7 +63,7 @@ const WhoForm = ({ send, formNo, present, response, mobile }) => {
 							})}
 							disabled={getResponse && true}
 							type="text"
-							placeholder="Name"
+							placeholder={nameN}
 							className="f19"
 						/>
 						<div className="redColor f14 fw-bold position-absolute end-0">
@@ -76,7 +83,7 @@ const WhoForm = ({ send, formNo, present, response, mobile }) => {
 								})}
 								disabled={getResponse && true}
 								type="text"
-								placeholder="E-mail"
+								placeholder={emailE}
 								className="mt-3 f19"
 							/>
 							<div className="redColor f14 fw-bold position-absolute end-0">

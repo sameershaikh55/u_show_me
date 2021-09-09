@@ -16,7 +16,7 @@ const FAQ = () => {
 	const data = useContext(GlobalContext);
 	const [on, setOn] = useState(false);
 	const [dropdown, setDropdown] = useState({
-		t: Lang,
+		t: Lang || "EN",
 	});
 	const [dropdown2, setDropdown2] = useState({
 		t: (Lang === "ES" && "EN") || "ES",
@@ -165,7 +165,7 @@ const FAQ = () => {
 								onClick={funcFourth}
 								className="w-100 py-2 text-white fw-bold NeueMachina border-0"
 							>
-								{dataHome.faq3.h1}
+								{dataHome.faq4.h1}
 							</button>
 						</div>
 					</div>

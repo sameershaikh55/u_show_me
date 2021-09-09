@@ -39,9 +39,11 @@ const HIWBody = ({ dataHome }) => {
 						</div>
 
 						<div className="col-12 d-flex justify-content-center mt-5">
-							<button className="hero_btn d-flex align-items-center btn1 purpleBg text-white border-0 px-2 mt-4 py-1 NeueMachina fw500">
-								{cBtn}
-							</button>
+							<a href="mailto:hello@ushowme.tv">
+								<button className="hero_btn d-flex align-items-center btn1 purpleBg text-white border-0 px-2 mt-4 py-1 NeueMachina fw500">
+									{cBtn}
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
