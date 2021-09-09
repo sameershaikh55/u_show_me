@@ -2268,7 +2268,7 @@ export const data = [
 					</h1>
 				),
 
-				h2: <h1 className="color8 fw-bold">Positions open:</h1>,
+				h2: <h1 className="color8 f54 fw-bold">Positions open:</h1>,
 
 				paras: [
 					{
@@ -4895,7 +4895,7 @@ export const data = [
 					</h1>
 				),
 
-				h2: <h1 className="color8 fw-bold"> Posiciones abiertas: </h1>,
+				h2: <h1 className="color8  f54 fw-bold"> Posiciones abiertas: </h1>,
 
 				paras: [
 					{
@@ -7492,7 +7492,7 @@ export const data = [
 				// PARTNER END
 
 				h1: (
-					<h1 className="color8 fw-bold display-4">
+					<h1 className="color8 f54 fw-bold display-4">
 						<span className="color9"> Junte-se </span> ao nosso crescimento {""}
 						<span className="color9"> equipe </span> e {""}
 						<span className="color9">vamos construir {""}</span> {""}o futuro
@@ -7501,7 +7501,7 @@ export const data = [
 					</h1>
 				),
 
-				h2: <h1 className="color8 fw-bold"> Posições abertas: </h1>,
+				h2: <h1 className="color8 fw-bold  f54"> Posições abertas: </h1>,
 
 				paras: [
 					{

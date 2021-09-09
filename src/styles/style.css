@@ -189,6 +189,10 @@ html body {
   font-size: 4rem;
 }
 
+.lh22 {
+  line-height: 22px;
+}
+
 .fw400 {
   font-weight: 400;
 }
@@ -357,6 +361,11 @@ input:focus {
   display: flex;
   overflow: auto;
   margin-bottom: -18px;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge add Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .feature_slider_container::-webkit-scrollbar {
@@ -432,10 +441,14 @@ input:focus {
 }
 
 .feature_slider_container .text_content button {
-  width: 150px;
   height: 30px;
+  line-height: 21px;
   -webkit-box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
           box-shadow: 3px 3px 2px rgba(27, 27, 27, 0.445);
+}
+
+.feature_slider_container::-webkit-scrollbar {
+  display: none;
 }
 
 .partners_container {
@@ -445,6 +458,15 @@ input:focus {
   display: flex;
   overflow: auto;
   margin-bottom: -18px;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge add Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.partners_container::-webkit-scrollbar {
+  display: none;
 }
 
 .partners_container::-webkit-scrollbar {
@@ -776,6 +798,15 @@ input:focus {
   display: flex;
   overflow: auto;
   margin-bottom: -18px;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge add Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.news_container .newsSliderContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .news_container .newsSliderContainer::-webkit-scrollbar {
@@ -1004,7 +1035,7 @@ input:focus {
 }
 
 .WHO_detail {
-  max-width: 700px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   -webkit-animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -1361,6 +1392,14 @@ input:focus {
   transition: 0.4s;
 }
 
+.its_all_container .its_all_abs h1 {
+  padding-bottom: 1.2rem;
+}
+
+.its_all_container .btn_ {
+  margin-top: 1.5rem;
+}
+
 @media screen and (min-width: 1500px) {
   .page_container2 {
     max-width: 1130px;
@@ -1369,6 +1408,97 @@ input:focus {
   }
   .feature_slider_container {
     margin-bottom: -26px;
+  }
+  .WHOSlide1 .text_content .inner_text,
+  .WHOSlide2 .text_content .inner_text,
+  .WHOSlide3 .text_content .inner_text,
+  .WHOSlide4 .text_content .inner_text {
+    max-width: 325px;
+  }
+  .WHOSlide1 .underlineAbout,
+  .WHOSlide2 .underlineAbout,
+  .WHOSlide3 .underlineAbout,
+  .WHOSlide4 .underlineAbout {
+    font-size: 3.375rem;
+  }
+  .feature_slider_container .upp .upperfeatureCard {
+    width: 475px;
+  }
+  .feature_slider_container .text_content {
+    width: 70%;
+  }
+  .feature_slider_container .text_content h2 {
+    line-height: 50px;
+    font-size: 3.375rem;
+  }
+  .feature_slider_container .text_content h6 {
+    font-size: 1.625rem;
+  }
+  .feature_slider_container .text_content button {
+    width: auto;
+    line-height: 21px;
+    font-weight: bold;
+  }
+  .its_all_container .its_all_abs h1 {
+    font-size: 5.813rem;
+    line-height: 90px;
+    max-width: 380px;
+  }
+  .its_all_container button {
+    font-size: 2.063rem;
+  }
+  .underlineAbout::before {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 35px;
+    background: #fff;
+    bottom: 0%;
+    left: 0%;
+    z-index: 1;
+  }
+  .its_all_container .its_all_abs h1 {
+    padding-bottom: 3.2rem;
+  }
+  .its_all_container .btn_ {
+    margin-top: 2.8rem;
+  }
+  .underlineDark::before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 30px;
+    background: #000;
+    bottom: 0%;
+    left: 0%;
+    z-index: 1;
+  }
+  .hiw_body_container h2 {
+    font-size: 2.25rem;
+  }
+  .hiw_body_container p {
+    font-size: 1.313rem;
+  }
+  .custom_accordion h5 {
+    font-size: 1.625rem;
+  }
+  .custom_accordion p {
+    font-size: 1.5rem;
+  }
+  .privacyBody_container p {
+    font-size: 1.5rem;
+  }
+  .privacyBody_container li {
+    font-size: 1.5rem;
+  }
+  .privacyBody_container h5 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .WHO_detail {
+    max-width: 700px;
   }
 }
 

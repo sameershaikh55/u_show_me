@@ -35,11 +35,11 @@ const FeaturedShows = ({ dataHome }) => {
 						<div className="row">
 							<div className="col-11 col-md-12 mx-auto">
 								<div className="ps-5 d-flex flex-column flex-sm-row align-items-start">
-									<h1 className="text-white f50 underlineAbout pb-4 me-5 NeueMachina fw-bold">
+									<h1 className="text-white f54 underlineAbout pb-4 me-5 NeueMachina fw-bold">
 										{feature1}
 									</h1>
 									<a target="blank" href="https://app.ushowme.tv/">
-										<button className="btnS NeueMachina fw500 align-self-end align-self-sm-start bg3 reg text-white border-0 py-1 ps-1 pe-2 mt-4">
+										<button className="btnS NeueMachina f18 fw600 align-self-end align-self-sm-start bg3 reg text-white border-0 py-1 ps-1 pe-3 mt-4">
 											<img src={rightArrow} alt="arrow" className="ms-2 me-2" />{" "}
 											{feature2}
 										</button>
@@ -140,7 +140,7 @@ const FeaturedShows = ({ dataHome }) => {
 											target="blank"
 											href={`https://qua-app.ushowme.tv/show?id=${id}`}
 										>
-											<button className="NeueMachina fw500 bg3 text-white border-0 py-1 mt-5">
+											<button className="NeueMachina f19 px-3 pb-3 pt-1 fw500 bg3 text-white border-0 mt-5">
 												{featureCardBtn}
 											</button>
 										</a>

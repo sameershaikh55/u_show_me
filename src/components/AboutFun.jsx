@@ -11,7 +11,7 @@ const AboutFun = ({ dataHome }) => {
 
 			{/* ABSOLUTE START */}
 			<div className="its_all_abs">
-				<h1 className="text-white f64 underlineAbout NeueMachina pb-4 fw-bold">
+				<h1 className="text-white f64 underlineAbout NeueMachina fw-bold">
 					{itsAll1}
 				</h1>
 
@@ -20,7 +20,7 @@ const AboutFun = ({ dataHome }) => {
 					className="text-decoration-none"
 					href="https://s3.eu-west-1.amazonaws.com/landing.ushowme.tv/USHOWME_TOP_FANS_1080P_2%2C5mbs.mp4"
 				>
-					<button className="mt-4 purpleBg px-2 text-white d-flex align-items-center border-0">
+					<button className="btn_ purpleBg NeueMachina fw-bold px-2 px-xl-4 text-white d-flex align-items-center border-0">
 						<BsFillEyeFill className="me-2" /> {itsAll2}
 					</button>
 				</a>

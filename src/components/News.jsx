@@ -8,7 +8,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://cdn.demium.com/wp-content/uploads/2021/08/12105648/USHOWME-co-founders-1.png",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					UShowMe Raises €100K Pre-seed Investment Round from Think Bigger
 					Capital
 				</p>
@@ -18,7 +18,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://media-manager.noticiasaominuto.com/1920/naom_5edf5030d0b32.jpg?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyMzk5LCJjcm9wSGVpZ2h0IjoxMzUwLCJjcm9wWCI6NjYsImNyb3BZIjoyMTV9fQ==",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					Eis as 15 startups escolhidas para integrar o 'Acelerador 5G'
 				</p>
 			),
@@ -27,7 +27,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://jornaleconomico.sapo.pt/wp-content/uploads/2021/03/leitor_604288bf857cc_5g_7.png?w=730&h=456&q=60&compress=auto,format&fit=crop",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					NOS e Amazon Web Services escolhem 15 startups para o programa de
 					inovação em 5G
 				</p>
@@ -37,7 +37,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://jornaleconomico.sapo.pt/wp-content/uploads/2021/03/leitor_604288bf857cc_5g_7.png?w=730&h=456&q=60&compress=auto,format&fit=crop",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					NOS e Amazon Web Services escolhem 15 startups para o programa de
 					inovação em 5G
 				</p>
@@ -47,7 +47,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://jornaleconomico.sapo.pt/wp-content/uploads/2021/03/leitor_604288bf857cc_5g_7.png?w=730&h=456&q=60&compress=auto,format&fit=crop",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					NOS e Amazon Web Services escolhem 15 startups para o programa de
 					inovação em 5G
 				</p>
@@ -57,7 +57,7 @@ const News = ({ dataHome }) => {
 		{
 			i: "https://jornaleconomico.sapo.pt/wp-content/uploads/2021/03/leitor_604288bf857cc_5g_7.png?w=730&h=456&q=60&compress=auto,format&fit=crop",
 			t: (
-				<p className="text-white f14 mb-0">
+				<p className="text-white f18 mb-0">
 					NOS e Amazon Web Services escolhem 15 startups para o programa de
 					inovação em 5G
 				</p>
@@ -86,13 +86,13 @@ const News = ({ dataHome }) => {
 									<div className="mt-5 pe-3">
 										<img className="thumbnail w-100" src={i} alt="" />
 										<div className="mt-3">
-											<span className="spaceMono">{t}</span>
+											<div className="spaceMono">{t}</div>
 											<a
 												target="blank"
 												className="text-decoration-none"
 												href={l}
 											>
-												<button className="mt-2 purpleBg px-2 NeueMachina text-white d-flex justify-content-center justify-content-md-start align-items-center border-0 f16 py-2 py-md-1 px-3 mt-3">
+												<button className="mt-2 f18 purpleBg px-2 NeueMachina text-white d-flex justify-content-center justify-content-md-start align-items-center border-0 f16 py-2 py-md-1 px-3 mt-3">
 													<img src={eye} alt="" className="me-2" /> {newsBtn}
 												</button>
 											</a>

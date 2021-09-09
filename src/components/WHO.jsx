@@ -144,7 +144,7 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text w-100">
-								<h6 className="text-white NeueMachina w-100">
+								<h6 className="text-white NeueMachina f19 w-100">
 									{who1under + "n"}
 								</h6>
 								<h1
@@ -156,7 +156,7 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two firstS w-100">
 								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold w-100">
+								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold w-100">
 									{slide1T}
 								</h1>
 							</div>
@@ -165,19 +165,25 @@ const WHO = ({ dataHome }) => {
 									// style={{ opacity: (one && 1) || 0 }}
 									className="WHO_detail ms-5 text-white"
 								>
-									<h4 className="mb-4 NeueMachina fw-bold">{slide1T2}</h4>
-									<p className="mb-0 NeueMachina">{slide1D}</p>
-									<p className="fw-bold NeueMachina mt-4">{present}</p>
+									<h4 className="f30 mb-4 NeueMachina fw-bold">{slide1T2}</h4>
+									<p className="f19 mb-0 NeueMachina lh22">{slide1D}</p>
+									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
-											<input type="text" name="" id="" placeholder="Name" />
+											<input
+												type="text"
+												name=""
+												id=""
+												placeholder="Name"
+												className="f19"
+											/>
 											<input
 												type="text"
 												name=""
 												id=""
 												placeholder="E—mail"
-												className="mt-3"
+												className="mt-3 f19"
 											/>
 										</div>
 										<div className="ms-3">
@@ -206,7 +212,7 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h6 className="text-white f19 NeueMachina">{who1under}</h6>
 								<h1
 									style={{ wordBreak: "break-word" }}
 									className="underlineAbout text-white NeueMachina fw-bold"
@@ -216,25 +222,31 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two secondS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide2T}
 								</h1>
 							</div>
 							{two && (
 								<div className="WHO_detail ms-5 text-white">
-									<h4 className="mb-4 NeueMachina fw-bold">{slide2T2}</h4>
-									<p className="mb-0 NeueMachina">{slide2D}</p>
-									<p className="fw-bold NeueMachina mt-4">{present}</p>
+									<h4 className="mb-4 NeueMachina fw-bold f30">{slide2T2}</h4>
+									<p className="f19 mb-0 NeueMachina lh22">{slide2D}</p>
+									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
-											<input type="text" name="" id="" placeholder="Name" />
+											<input
+												type="text"
+												name=""
+												id=""
+												placeholder="Name"
+												className="f19"
+											/>
 											<input
 												type="text"
 												name=""
 												id=""
 												placeholder="E—mail"
-												className="mt-3"
+												className="mt-3 f19"
 											/>
 										</div>
 										<div className="ms-3">
@@ -263,7 +275,7 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h6 className="text-white f19 NeueMachina">{who1under}</h6>
 								<h1
 									style={{ wordBreak: "break-word" }}
 									className="underlineAbout text-white NeueMachina fw-bold"
@@ -273,25 +285,31 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two thirdS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide3T}
 								</h1>
 							</div>
 							{three && (
 								<div className="WHO_detail ms-5 text-white">
-									<h4 className="mb-4 NeueMachina fw-bold">{slide3T2}</h4>
-									<p className="mb-0 NeueMachina">{slide3D}</p>
-									<p className="fw-bold NeueMachina mt-4">{present}</p>
+									<h4 className="mb-4 NeueMachina fw-bold f30">{slide3T2}</h4>
+									<p className="f19 mb-0 NeueMachina lh22">{slide3D}</p>
+									<p className="fw-bold NeueMachina mt-4 f19">{present}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
-											<input type="text" name="" id="" placeholder="Name" />
+											<input
+												type="text"
+												name=""
+												id=""
+												placeholder="Name"
+												className="f19"
+											/>
 											<input
 												type="text"
 												name=""
 												id=""
 												placeholder="E—mail"
-												className="mt-3"
+												className="mt-3 f19"
 											/>
 										</div>
 										<div className="ms-3">
@@ -320,7 +338,7 @@ const WHO = ({ dataHome }) => {
 
 						<div className="text_content h-100">
 							<div className="inner_text">
-								<h6 className="text-white NeueMachina">{who1under}</h6>
+								<h6 className="text-white f19 NeueMachina">{who1under}</h6>
 								<h1
 									style={{
 										wordBreak: "keep-all",
@@ -335,25 +353,31 @@ const WHO = ({ dataHome }) => {
 								className="inner_text two fourthS"
 							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout text-white NeueMachina fw-bold">
+								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide4T}
 								</h1>
 							</div>
 							{four && (
 								<div className="WHO_detail ms-5 text-white">
-									<h4 className="mb-4 NeueMachina fw-bold">{slide4T2}</h4>
-									<p className="mb-0 NeueMachina">{slide4D}</p>
-									<p className="fw-bold NeueMachina mt-4">{present2}</p>
+									<h4 className="mb-4 NeueMachina fw-bold f30">{slide4T2}</h4>
+									<p className="f19 mb-0 NeueMachina lh22">{slide4D}</p>
+									<p className="fw-bold NeueMachina mt-4 f19">{present2}</p>
 
 									<div className="d-flex align-items-end mt-4">
 										<div className="d-flex flex-column">
-											<input type="text" name="" id="" placeholder="Name" />
+											<input
+												type="text"
+												name=""
+												id=""
+												placeholder="Name"
+												className="f19"
+											/>
 											<input
 												type="text"
 												name=""
 												id=""
 												placeholder="E—mail"
-												className="mt-3"
+												className="mt-3 f19"
 											/>
 										</div>
 										<div className="ms-3">

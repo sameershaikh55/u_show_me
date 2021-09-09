@@ -24,9 +24,9 @@ const Partner = ({ dataHome }) => {
 	return (
 		<div className="partner_container ps-4 ps-md-5">
 			<div className="w-100">
-				<p className="mb-0 NeueMachina">{partner1}</p>
-				<h1 className="underlineAbout NeueMachina fw-bold">{partner2}</h1>
-				<p className="underText mb-0 underlineDark NeueMachina pb-4 f24">
+				<p className="mb-0 NeueMachina f19">{partner1}</p>
+				<h1 className="underlineAbout NeueMachina f54 fw-bold">{partner2}</h1>
+				<p className="underText mb-0 f35 underlineDark NeueMachina pb-4">
 					{partner3}
 				</p>
 

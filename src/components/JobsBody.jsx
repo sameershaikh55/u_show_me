@@ -3,14 +3,14 @@ import eye from "../assets/images/eye.svg";
 
 const JobsBody = ({ dataHome }) => {
 	const { h1, paras, h2, jobBtn, job } = dataHome;
-	console.log(job)
+	console.log(job);
 	return (
 		<div className="privacyBody_container">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							<h1 className="fw-bold NeueMachina display-5 color8">{h1}</h1>
+							<div className="fw-bold	 NeueMachina display-5 color8">{h1}</div>
 
 							<div className="px-3">
 								<div className="NeueMachina mt-4 fw500">

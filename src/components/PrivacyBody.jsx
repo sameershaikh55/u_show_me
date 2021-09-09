@@ -12,7 +12,7 @@ const PrivacyBody = ({ dataHome }) => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-12">
-							<h1 className="fw-bold NeueMachina display-5 color8">{h1}</h1>
+							<h1 className="fw-bold f54 NeueMachina display-5 color8">{h1}</h1>
 
 							<div className="px-3">
 								<div className="NeueMachina mt-4 fw500">
