@@ -1103,7 +1103,7 @@ input {
 			}
 
 			&.thirdS {
-				margin-left: -18rem;
+				margin-left: -17rem;
 			}
 
 			.underlineAbout {
@@ -1430,6 +1430,9 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+	.feature_slider_container .text_content h2 {
+		line-height: 25px;
+	}
 	.about_container h1 {
 		line-height: 34px;
 	}

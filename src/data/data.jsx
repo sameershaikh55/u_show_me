@@ -2605,7 +2605,7 @@ export const data = [
 				// HERO END
 
 				// ABOUT START
-				aboutH: "sobre nosotros",
+				aboutH: "Sobre nosotros",
 				aboutL:
 					"UshowMe es una plataforma interactiva de transmisión en vivo y video a pedido que ayuda a artistas, productores de eventos como lugares y festivales a evolucionar hacia espectáculos híbridos con alcance global, nuevas experiencias, múltiples fuentes de ingresos y marcas y audiencias digitales para ofrecer nuevas posibilidades para Interacción.",
 				aboutR1: "EDIFICIO PARA CADA DISPOSITIVO MODERNO",

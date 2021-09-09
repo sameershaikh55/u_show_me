@@ -158,7 +158,7 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two firstS w-100">
 								<h6 className="text-white NeueMachina w-100">{who1under}</h6>
-								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold w-100">
+								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold w-100">
 									{slide1T}
 								</h1>
 							</div>
@@ -208,7 +208,7 @@ const WHO = ({ dataHome }) => {
 							</div>
 							<div className="inner_text two secondS">
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide2T}
 								</h1>
 							</div>
@@ -253,9 +253,12 @@ const WHO = ({ dataHome }) => {
 									{slide3T}
 								</h1>
 							</div>
-							<div className="inner_text two thirdS">
+							<div
+								style={{ marginLeft: slide4T === "marca" && "-17.5rem" }}
+								className="inner_text two thirdS"
+							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide3T}
 								</h1>
 							</div>
@@ -307,7 +310,7 @@ const WHO = ({ dataHome }) => {
 								className="inner_text two fourthS"
 							>
 								<h6 className="text-white NeueMachina">{who1under}</h6>
-								<h1 className="underlineAbout f34 text-white NeueMachina fw-bold">
+								<h1 className="pb-1 underlineAbout f34 text-white NeueMachina fw-bold">
 									{slide4T}
 								</h1>
 							</div>

@@ -153,12 +153,13 @@ const Sidebar = ({
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row">
 								{sideBar2.map((prev, i) => {
+									console.log(i)
 									return (
 										<div
 											key={i}
 											className="col-12 col-sm-6 text-center text-sm-start mb-4"
 										>
-											{(i === 3 && (
+											{(i === 4 && (
 												<h2>
 													<LinkR
 														to="/howItWorks"
@@ -181,20 +182,20 @@ const Sidebar = ({
 													</h2>
 												)) || (
 													<h2>
-														<Link
+														<LinkR
 															onClick={() => {
 																ClickEvent(false);
 															}}
 															to={
 																(i === 0 && "/#about") ||
-																(i === 1 && "/#feature") ||
-																(i === 2 && "/#hybrid") ||
-																(i === 4 && "/#wru")
+																(i === 1 && "/#hybrid") ||
+																(i === 2 && "/#wru") ||
+																(i === 3 && "/#feature")
 															}
 															className="text-white text-decoration-none NeueMachina fw-bolder pointer NeueMachina"
 														>
 															{prev.t}
-														</Link>
+														</LinkR>
 													</h2>
 												)}
 										</div>
