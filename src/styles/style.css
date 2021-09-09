@@ -1583,6 +1583,9 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .about_container h1 {
+    line-height: 34px;
+  }
   .SideBarContainer {
     padding-left: 0rem;
     height: 100vh;
@@ -1705,6 +1708,9 @@ input:focus {
   }
   .f19 {
     font-size: 1.1rem;
+  }
+  .WHO_detail.mobile input {
+    width: auto;
   }
 }
 

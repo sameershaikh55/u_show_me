@@ -35,11 +35,11 @@ const Newsletter = ({ dataHome }) => {
 				<div className="container-fluid">
 					<div className="row">
 						{(getResponse && (
-							<div className="col-11 col-md-12 mx-auto text-center d-flex justify-content-center">
+							<div className="col-11 col-md-12 mx-auto text-center d-flex flex-column flex-md-row justify-content-center">
 								<p className="mb-0 text-white NeueMachina fw600">
 									{newsletter1}
 								</p>
-								<p className="ms-2 mb-0 text-white NeueMachina fw600">
+								<p className="mt-4 mt-md-0 ms-md-2 mb-0 text-white NeueMachina fw600">
 									Thank you for your subscription, you will be the first to know
 									new awesome shows
 								</p>

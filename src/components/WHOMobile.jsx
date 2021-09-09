@@ -4,6 +4,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import { FiPlus } from "react-icons/fi";
+import WhoForm from "./WhoForm";
 
 const WHOMobile = ({ dataHome }) => {
 	const {
@@ -23,6 +24,7 @@ const WHOMobile = ({ dataHome }) => {
 		present,
 		send,
 		present2,
+		response,
 	} = dataHome;
 
 	return (
@@ -44,26 +46,16 @@ const WHOMobile = ({ dataHome }) => {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						<div className="WHO_detail mobile px-2 text-white">
-							<h2 className="mb-4">{slide1T2}</h2>
-							<p className="mb-4">{slide1D}</p>
-							<p> {present} </p>
-
-							<div className="d-flex flex-column align-items-end mt-4">
-								<div className="d-flex flex-column w-100">
-									<input type="text" name="" id="" placeholder="Name" />
-									<input
-										type="text"
-										name=""
-										id=""
-										placeholder="E—mail"
-										className="mt-3"
-									/>
-								</div>
-								<div className="ms-3 mt-3">
-									<button className="btnS NeueMachina fw600">{send}</button>
-								</div>
-							</div>
+						<div className="WHO_detail px-2 text-white">
+							<h2 className="mb-4 NeueMachina">{slide1T2}</h2>
+							<p className="mb-4 spaceMono">{slide1D}</p>
+							<WhoForm
+								mobile
+								send={send}
+								response={response}
+								formNo={1}
+								present={present}
+							/>
 						</div>
 					</Typography>
 				</AccordionDetails>
@@ -85,26 +77,17 @@ const WHOMobile = ({ dataHome }) => {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						<div className="WHO_detail mobile pxxt-white">
-							<h2 className="mb-4">{slide2T2}</h2>
-							<p>{slide2D}</p>
-							<p className="mt-4">{present}</p>
+						<div className="WHO_detail text-white">
+							<h2 className="mb-4 NeueMachina">{slide2T2}</h2>
+							<p className="spaceMono">{slide2D}</p>
 
-							<div className="d-flex flex-column align-items-end mt-4">
-								<div className="d-flex flex-column w-100">
-									<input type="text" name="" id="" placeholder="Name" />
-									<input
-										type="text"
-										name=""
-										id=""
-										placeholder="E—mail"
-										className="mt-3"
-									/>
-								</div>
-								<div className="ms-3 mt-3">
-									<button className="btnS NeueMachina fw600">{send}</button>
-								</div>
-							</div>
+							<WhoForm
+								mobile
+								send={send}
+								response={response}
+								formNo={2}
+								present={present}
+							/>
 						</div>
 					</Typography>
 				</AccordionDetails>
@@ -126,26 +109,17 @@ const WHOMobile = ({ dataHome }) => {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						<div className="WHO_detail mobile px-2 text-white">
-							<h2 className="mb-4">{slide3T2}</h2>
-							<p>{slide3D}</p>
-							<p className="mt-4">{present}</p>
+						<div className="WHO_detail px-2 text-white">
+							<h2 className="mb-4 NeueMachina">{slide3T2}</h2>
+							<p className="spaceMono">{slide3D}</p>
 
-							<div className="d-flex flex-column align-items-end mt-4">
-								<div className="d-flex flex-column w-100">
-									<input type="text" name="" id="" placeholder="Name" />
-									<input
-										type="text"
-										name=""
-										id=""
-										placeholder="E—mail"
-										className="mt-3"
-									/>
-								</div>
-								<div className="ms-3 mt-3">
-									<button className="btnS NeueMachina fw600">{send}</button>
-								</div>
-							</div>
+							<WhoForm
+								mobile
+								send={send}
+								response={response}
+								formNo={3}
+								present={present}
+							/>
 						</div>
 					</Typography>
 				</AccordionDetails>
@@ -167,26 +141,17 @@ const WHOMobile = ({ dataHome }) => {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						<div className="WHO_detail mobile px-2 text-white">
-							<h2 className="mb-4">{slide4T2}</h2>
-							<p className="mb-4">{slide4D}</p>
-							<p>{present2}</p>
+						<div className="WHO_detail px-2 text-white">
+							<h2 className="mb-4 NeueMachina">{slide4T2}</h2>
+							<p className="mb-4 spaceMono">{slide4D}</p>
 
-							<div className="d-flex flex-column align-items-end mt-4">
-								<div className="d-flex flex-column w-100">
-									<input type="text" name="" id="" placeholder="Name" />
-									<input
-										type="text"
-										name=""
-										id=""
-										placeholder="E—mail"
-										className="mt-3"
-									/>
-								</div>
-								<div className="ms-3 mt-3">
-									<button className="btnS NeueMachina fw600">{send}</button>
-								</div>
-							</div>
+							<WhoForm
+								mobile
+								send={send}
+								response={response}
+								formNo={0}
+								present={present2}
+							/>
 						</div>
 					</Typography>
 				</AccordionDetails>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-const WhoForm = ({ send, formNo, present, response }) => {
+const WhoForm = ({ send, formNo, present, response, mobile }) => {
 	const [getResponse, SetGetResponse] = useState();
 
 	const {
@@ -41,6 +41,7 @@ const WhoForm = ({ send, formNo, present, response }) => {
 				style={{
 					opacity: (getResponse && "0") || "1",
 					transition: "0.6s",
+					display: mobile && getResponse && "none",
 				}}
 				onSubmit={handleSubmit(onSubmit)}
 			>
@@ -62,7 +63,7 @@ const WhoForm = ({ send, formNo, present, response }) => {
 							{errors.name && errors.name.type === "required" && "Required*"}
 						</div>
 					</div>
-					<div className="d-flex align-items-end mt-2">
+					<div className="d-flex flex-column flex-md-row align-items-end mt-2">
 						<div className="position-relative">
 							<input
 								style={{
@@ -87,7 +88,7 @@ const WhoForm = ({ send, formNo, present, response }) => {
 									"Invalid Email*"}
 							</div>
 						</div>
-						<div className="ms-3">
+						<div className="mt-4 mt-md-0 ms-md-3">
 							<button
 								disabled={getResponse && true}
 								type="submit"
